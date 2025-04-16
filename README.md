@@ -1,4 +1,4 @@
-# ☕ Repositório de Códigos Java com Spring para Estudo e Ensino de POO
+# ☕ Repositório de Códigos Java com Spring para Estudo e Ensino de Programação Orientada a Objetos
 
 Este repositório contém códigos desenvolvidos em **Java**, com uso do **framework Spring**, com o objetivo de auxiliar no ensino e na aprendizagem dos conceitos de **Programação Orientada a Objetos (POO)**. Os exemplos são utilizados nas aulas e também organizados para estudo individual.
 
