@@ -1,25 +1,95 @@
-# ☕ Repositório de Códigos Java com Spring para Estudo e Ensino de Programação Orientada a Objetos
+# Sistema de Gerenciamento de Pessoas
 
-Este repositório contém códigos desenvolvidos em **Java**, com uso do **framework Spring**, com o objetivo de auxiliar no ensino e na aprendizagem dos conceitos de **Programação Orientada a Objetos (POO)**. Os exemplos são utilizados nas aulas e também organizados para estudo individual.
+## Descrição
+Este é um sistema Java que demonstra conceitos fundamentais de Programação Orientada a Objetos (POO), incluindo encapsulamento, construtores e interfaces de usuário baseadas em console.
 
-## 📚 Objetivo
+## Estrutura do Projeto
 
-Disponibilizar exemplos práticos, simples e didáticos para apoiar o ensino de **POO com Java**, integrando conceitos da linguagem com práticas modernas de desenvolvimento usando o ecossistema **Spring**.
+### Pacotes
+- `com.exemplo.modelos`: Contém as classes de modelo
+- `com.exemplo.testes`: Contém as classes de teste e implementação
 
-## 🎓 Público-alvo
+### Classes Principais
 
-Estudantes de cursos de tecnologia e iniciantes na linguagem Java que desejam compreender a Programação Orientada a Objetos de forma aplicada, assim como profissionais que queiram revisar os fundamentos da linguagem e aprender a estrutura de um projeto com Spring.
+#### Pessoa (`com.exemplo.modelos.Pessoa`)
+```java
+public class Pessoa {
+    private String nome;
+    private int idade;
+}
+```
+- **Atributos**:
+  - `nome`: String privada para armazenar o nome
+  - `idade`: int privado para armazenar a idade
 
-## 🧠 O que você encontrará aqui?
+- **Construtores**:
+  - `Pessoa(String nome, int idade)`: Construtor completo
+  - `Pessoa(String nome)`: Construtor com valores padrão
 
-- Conceitos fundamentais da Programação Orientada a Objetos em Java
-- Estruturação de projetos com Spring Boot
-- Criação e uso de classes, objetos, herança, polimorfismo e encapsulamento
-- Utilização de anotações e injeção de dependências com Spring
-- Exemplos com controllers, services e repositórios
-- Projetos simples com execução via terminal e/ou APIs REST
-- Códigos comentados e organizados por tema ou aula
+- **Métodos**:
+  - `saudacao()`: Exibe uma mensagem personalizada
+  - Getters e Setters para acesso controlado
+  - `toString()`: Representação textual do objeto
 
----
+### Classes de Teste
 
-> ✨ Sinta-se à vontade para explorar, adaptar e contribuir com o repositório para fortalecer o aprendizado colaborativo.
+#### TesteAcessoMenu
+- Interface interativa baseada em console
+- Menu com opções para:
+  1. Mostrar dados da pessoa
+  2. Alterar nome
+  3. Alterar idade
+  4. Mostrar saudação
+  0. Sair
+- Implementa validações de entrada
+- Tratamento de exceções
+
+#### TesteAcesso
+- Demonstração básica de acesso aos métodos da classe Pessoa
+- Exemplo de uso dos getters e setters
+
+#### Teste
+- Demonstração de casos de teste
+- Tratamento de objetos nulos
+- Teste dos construtores
+
+## Tecnologias Utilizadas
+- Java 8+
+- Scanner para entrada de dados
+- Tratamento de Exceções
+- Programação Orientada a Objetos
+
+## Recursos de POO Demonstrados
+- Encapsulamento
+- Sobrecarga de construtores
+- Métodos públicos e privados
+- ToString override
+- Validação de dados
+
+## Como Executar
+1. Compile todas as classes Java
+2. Execute qualquer uma das classes de teste:
+   - `TesteAcessoMenu` para interface interativa
+   - `TesteAcesso` para demonstração básica
+   - `Teste` para casos de teste
+
+## Validações Implementadas
+- Nome:
+  - Não pode conter números
+  - Não pode estar vazio
+- Idade:
+  - Não pode ser negativa
+  - Não pode ser maior que 150
+  - Deve ser um número inteiro válido
+
+## Configuração do Ambiente
+- IDE: Visual Studio Code
+- Estrutura de pastas:
+  - `src/`: Código fonte
+  - `bin/`: Arquivos compilados
+  - `lib/`: Dependências (se houver)
+
+## Requisitos do Sistema
+- JDK 8 ou superior
+- IDE com suporte a Java (recomendado VS Code)
+- Terminal/Console para interação
