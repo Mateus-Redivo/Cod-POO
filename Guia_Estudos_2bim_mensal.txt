@@ -9,7 +9,7 @@ Conceitos:
 - Proteção dos dados através de métodos de acesso
 - Uso de modificadores de acesso
 
-Exercícios, crie os metodos para essas classes a seguir:
+Identifique as diferenças de implementação desses codigos:
 
 1.1 Exercício - Conta Bancária
 ------------------------------------
