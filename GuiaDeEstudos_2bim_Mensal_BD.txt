@@ -1,0 +1,183 @@
+GUIA DE ESTUDOS - BANCO DE DADOS: CONCEITOS BÁSICOS
+
+========================================
+1. CRIAÇÃO E GERENCIAMENTO DE BANCOS DE DADOS
+========================================
+
+Conceitos-chave:
+- CREATE DATABASE: Comando para criar um novo banco de dados
+- IF NOT EXISTS: Cláusula que evita erros quando o banco já existe
+- USE: Comando para selecionar um banco de dados específico como contexto de trabalho
+- Scripts idempotentes: Scripts que podem ser executados múltiplas vezes produzindo o mesmo resultado
+
+Exercícios:
+
+1.1. Crie um script que estabeleça um banco de dados chamado "BibliotecaVirtual" de forma segura 
+(que não gere erros se executado várias vezes) e configure-o como banco de dados ativo.
+
+1.2. Explique por que o seguinte script pode causar problemas em um ambiente de produção e como 
+você o corrigiria:
+CREATE DATABASE Vendas;
+USE Vendas;
+CREATE TABLE Clientes (...);
+
+1.3. Um colega desenvolvedor está tendo problemas ao executar um script SQL em diferentes ambientes. 
+Às vezes ele recebe um erro "database already exists" e outras vezes "no database selected". 
+Descreva as modificações necessárias para tornar este script mais robusto.
+
+========================================
+2. CRIAÇÃO DE TABELAS E TIPOS DE DADOS
+========================================
+
+Conceitos-chave:
+- CREATE TABLE: Sintaxe e estrutura para criar tabelas
+- Tipos de dados: VARCHAR vs. CHAR vs. TEXT
+- Armazenamento de strings: Tipos de comprimento fixo vs. variável
+- Tipos numéricos: INT, DECIMAL, etc.
+- Tipos de data: DATE, DATETIME, TIMESTAMP
+- ENUM: Tipo para valores de uma lista predefinida
+
+Exercícios:
+
+2.1. Explique a diferença entre usar VARCHAR(50) e CHAR(50) para armazenar o código de um produto. 
+Em quais situações cada um seria mais apropriado?
+
+2.2. Crie uma tabela chamada "Produto" com campos para código, nome, descrição, preço, quantidade 
+em estoque e categoria. Escolha os tipos de dados mais adequados para cada campo e justifique suas escolhas.
+
+2.3. Considere uma coluna que armazenará o estado civil de uma pessoa. Quais seriam as vantagens e 
+desvantagens de usar um tipo ENUM('Solteiro', 'Casado', 'Divorciado', 'Viúvo') versus um VARCHAR(15)?
+
+========================================
+3. RESTRIÇÕES E INTEGRIDADE DE DADOS
+========================================
+
+Conceitos-chave:
+- PRIMARY KEY: Identificação única de registros
+- FOREIGN KEY: Manutenção da integridade referencial
+- NOT NULL: Garantia de preenchimento obrigatório
+- UNIQUE: Restrição de unicidade
+- DEFAULT: Valores padrão
+- CHECK: Validação de dados
+- AUTO_INCREMENT: Geração automática de valores sequenciais
+
+Exercícios:
+
+3.1. Crie uma tabela "Pedido" que se relacione com a tabela "Cliente" e a tabela "Produto" usando 
+chaves estrangeiras. Inclua restrições que garantam que não seja possível:
+- Cadastrar um pedido sem cliente
+- Inserir um valor negativo para o total do pedido
+- Registrar um pedido sem data
+
+3.2. Considere o seguinte cenário: Um sistema acadêmico onde professores não podem ser removidos 
+enquanto estiverem vinculados a turmas ativas. Como você implementaria essa restrição usando 
+chaves estrangeiras? Escreva o trecho de código SQL.
+
+3.3. Analise a seguinte declaração de tabela e identifique possíveis problemas de integridade de dados:
+CREATE TABLE Funcionario (
+    Id INT,
+    Nome VARCHAR(100),
+    Email VARCHAR(150),
+    Salario DECIMAL(10,2),
+    DataAdmissao DATE
+);
+
+========================================
+4. MODELAGEM DE DADOS E NORMALIZAÇÃO
+========================================
+
+Conceitos-chave:
+- Atributos compostos: Campos que podem ser divididos em partes menores
+- Atributos multivalorados: Campos que podem ter múltiplos valores
+- Formas normais: Regras para organização eficiente de dados
+- Relacionamentos: 1:1, 1:N e N:M
+- Tabelas associativas: Implementação de relacionamentos N:M
+
+Exercícios:
+
+4.1. Você está modelando um sistema para uma loja online. Um cliente pode ter múltiplos endereços 
+de entrega. Proponha uma estrutura de tabelas que implemente esta necessidade, garantindo a 
+normalização adequada.
+
+4.2. Em um sistema hospitalar, pacientes podem ter múltiplos contatos de emergência, cada um com 
+nome, telefone e grau de parentesco. Crie o esquema de tabelas necessário para representar esta 
+situação e explique por que sua solução é melhor que armazenar estes dados diretamente na tabela 
+de pacientes.
+
+4.3. Uma universidade precisa de um sistema que registre alunos, professores e disciplinas. Um aluno 
+pode se matricular em várias disciplinas e uma disciplina pode ter vários alunos. Cada disciplina 
+tem exatamente um professor responsável, mas um professor pode ser responsável por várias disciplinas. 
+Crie um modelo relacional para este cenário, explicando os tipos de relacionamentos implementados.
+
+========================================
+5. CHAVES PRIMÁRIAS E ESTRANGEIRAS
+========================================
+
+Conceitos-chave:
+- Chave primária simples: Identificação única baseada em um único campo
+- Chave primária composta: Identificação única baseada em múltiplos campos
+- Integridade referencial: Garantir consistência entre tabelas relacionadas
+- Referências órfãs: Registros que apontam para dados inexistentes
+- ON DELETE/ON UPDATE: Comportamento em cascata para alterações/exclusões
+
+Exercícios:
+
+5.1. Em um sistema de biblioteca, cada livro pode ter múltiplos autores e cada autor pode ter escrito 
+múltiplos livros. Crie um esquema de tabelas para representar esta relação, definindo adequadamente 
+as chaves primárias e estrangeiras.
+
+5.2. Você está projetando um sistema de agendamento médico. Cada consulta envolve um paciente, um 
+médico e uma sala específica, em uma data e horário determinados. Crie uma tabela "Consulta" 
+utilizando uma chave primária adequada e explique sua escolha (chave simples vs. composta).
+
+5.3. Um sistema de comércio eletrônico precisa rastrear os itens em cada pedido. Projete a tabela 
+"ItemPedido" que relaciona pedidos e produtos, incluindo quantidade e preço unitário. O que 
+aconteceria se um produto fosse removido do catálogo? Como você trataria esta situação para 
+preservar o histórico de vendas?
+
+========================================
+6. MECANISMOS DE ARMAZENAMENTO E CONFIGURAÇÕES DO MYSQL
+========================================
+
+Conceitos-chave:
+- ENGINE: Diferentes mecanismos de armazenamento (InnoDB, MyISAM, etc.)
+- CHARSET: Configuração de conjuntos de caracteres
+- COLLATION: Regras de ordenação e comparação de strings
+- Propriedades ACID: Atomicidade, Consistência, Isolamento e Durabilidade
+
+Exercícios:
+
+6.1. Compare os mecanismos de armazenamento InnoDB e MyISAM. Em que situações você escolheria 
+cada um deles?
+
+6.2. Um sistema precisa armazenar textos em diversos idiomas, incluindo caracteres especiais de 
+línguas asiáticas e emojis. Que configuração de CHARSET você recomendaria e por quê?
+
+6.3. Escreva um comando CREATE TABLE para uma tabela de transações financeiras que exija alta 
+integridade de dados, defina adequadamente o mecanismo de armazenamento e justifique sua escolha.
+
+========================================
+7. PLANEJAMENTO DE BANCO DE DADOS
+========================================
+
+Conceitos-chave:
+- Modelagem conceitual: Entendimento do domínio do problema
+- Modelagem lógica: Estruturação independente de SGBD
+- Modelagem física: Implementação específica para um SGBD
+- Considerações de desempenho: Índices, tipos de dados, etc.
+- Extensibilidade: Planejamento para alterações futuras
+
+Exercícios:
+
+7.1. Você está desenvolvendo um sistema para uma escola de música. Liste as principais entidades 
+que este sistema deveria ter e esboce um diagrama simples de relacionamento entre elas.
+
+7.2. Uma empresa deseja migrar seu sistema de uma planilha Excel para um banco de dados relacional. 
+A planilha atual contém uma única aba com colunas para: código do cliente, nome, endereço completo, 
+lista de telefones (separados por vírgulas) e histórico de compras. Proponha uma estrutura normalizada 
+de tabelas para este cenário.
+
+7.3. Você percebeu que uma tabela "Funcionarios" no banco de dados atual não tem mais espaço para 
+armazenar novos números de telefone (limitados a apenas dois por funcionário). Descreva como você 
+realizaria a modificação do esquema para permitir um número ilimitado de telefones por funcionário, 
+mantendo os dados existentes.
