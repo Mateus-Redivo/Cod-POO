@@ -1,0 +1,209 @@
+GUIA DE ESTUDOS - PROGRAMAÇÃO ORIENTADA A OBJETOS
+===============================================
+
+1. ENCAPSULAMENTO
+----------------
+
+Conceitos:
+- Ocultação de detalhes internos da implementação
+- Proteção dos dados através de métodos de acesso
+- Uso de modificadores de acesso
+
+Exercícios:
+
+1.1 Exercício - Conta Bancária
+------------------------------------
+public class ContaBancaria {
+    private int numero;
+    private double saldo;
+    private String titular;
+    
+}
+
+1.2 Exercício - Produto
+-----------------------------------
+public class Produto {
+    private String nome;
+    private double preco;
+    private int estoque;
+    
+    public void setPreco(double preco) {
+        if(preco >= 0) {
+            this.preco = preco;
+        }
+    }
+    
+    public void setEstoque(int estoque) {
+        if(estoque >= 0) {
+            this.estoque = estoque;
+        }
+    }
+}
+
+1.3 Exercício - Funcionário
+----------------------------------
+public class Funcionario {
+    private String nome;
+    private double salarioBase;
+    private double bonus;
+    
+    private double calcularBonus() {
+        return salarioBase * 0.1;
+    }
+    
+    public double calcularSalario() {
+        return salarioBase + calcularBonus();
+    }
+}
+
+2. HERANÇA
+----------
+
+Conceitos:
+- Mecanismo de reuso de código
+- Relação "é um" entre classes
+- Uso de extends e super()
+
+Exercícios:
+
+2.1 Exercício - Veículos
+------------------------------------
+public abstract class Veiculo {
+    protected String marca;
+    protected String modelo;
+    
+    public abstract void ligar();
+}
+
+public class Carro extends Veiculo {
+    @Override
+    public void ligar() {
+        System.out.println("Carro ligado");
+    }
+}
+
+2.2 Exercício - Sistema Bancário
+---------------------------------------
+public abstract class ContaBancaria {
+    protected double saldo;
+    
+    public abstract void aplicarJuros();
+}
+
+public class ContaPoupanca extends ContaBancaria {
+    @Override
+    public void aplicarJuros() {
+        saldo += saldo * 0.05;
+    }
+}
+
+3. SOBRECARGA E SOBRESCRITA
+--------------------------
+
+Conceitos:
+- Sobrecarga: múltiplos métodos com mesmo nome, diferentes parâmetros
+- Sobrescrita: reimplementação de método da classe pai
+- Uso de @Override
+
+Exercícios:
+
+3.1 Exercício - Calculadora Sobrecarga
+--------------------------------
+public class Calculadora {
+    public int somar(int a, int b) {
+        return a + b;
+    }
+    
+    public double somar(double a, double b) {
+        return a + b;
+    }
+}
+
+3.2 Exercício - Impressão Sobrecarga
+------------------------------------
+public class Impressora {
+    public void imprimir(String texto) {
+        System.out.println("Texto: " + texto);
+    }
+    
+    public void imprimir(int numero) {
+        System.out.println("Número: " + numero);
+    }
+}
+
+3.3 Exercício - Animal Sobrescrita
+-----------------------------
+public class Animal {
+    public void emitirSom() {
+        System.out.println("Som genérico");
+    }
+}
+
+public class Cachorro extends Animal {
+    @Override
+    public void emitirSom() {
+        System.out.println("Au au!");
+    }
+}
+
+4. TRATAMENTO DE EXCEÇÕES
+------------------------
+
+Conceitos:
+- Uso de try-catch-finally
+- Criação de exceções personalizadas
+- Propagação de exceções
+
+Exercícios:
+
+4.1 Exercício - Divisão Segura
+-----------------------------------
+public class Calculadora {
+    public double dividir(int a, int b) {
+        try {
+            return a / b;
+        } catch (ArithmeticException e) {
+            System.out.println("Erro: Divisão por zero!");
+            return 0;
+        }
+    }
+}
+
+4.2 Exercício - Validação de Idade
+---------------------------------------------
+
+public class Pessoa {
+    private int idade;
+    
+    public void setIdade(int idade) throws IdadeInvalidaException {
+        if(idade < 0) {
+            throw new IdadeInvalidaException("Idade não pode ser negativa");
+        }
+        this.idade = idade;
+    }
+}
+
+4.3 Exercício - Sistema de Arquivos
+-----------------------------------------
+public class LeitorArquivo {
+    public String lerArquivo(String caminho) {
+        try {
+            // código de leitura
+        } catch (FileNotFoundException e) {
+            System.out.println("Arquivo não encontrado");
+        } catch (IOException e) {
+            System.out.println("Erro de leitura");
+        } finally {
+            // fechar recursos
+        }
+        return null;
+    }
+}
+
+DICAS GERAIS DE ESTUDO
+---------------------
+1. Implemente todos os exercícios práticos
+2. Teste diferentes cenários em cada implementação
+3. Combine diferentes conceitos nos exercícios mais avançados
+4. Documente seu código usando comentários explicativos
+5. Pratique a identificação de quando usar cada conceito
