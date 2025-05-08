@@ -183,23 +183,6 @@ public class Pessoa {
     }
 }
 
-4.3 Exercício - Sistema de Arquivos
------------------------------------------
-public class LeitorArquivo {
-    public String lerArquivo(String caminho) {
-        try {
-            // código de leitura
-        } catch (FileNotFoundException e) {
-            System.out.println("Arquivo não encontrado");
-        } catch (IOException e) {
-            System.out.println("Erro de leitura");
-        } finally {
-            // fechar recursos
-        }
-        return null;
-    }
-}
-
 DICAS GERAIS DE ESTUDO
 ---------------------
 1. Implemente todos os exercícios práticos
