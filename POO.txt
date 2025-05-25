@@ -1,0 +1,138 @@
+Prova de Programação Orientada a Objetos
+
+
+
+Questão 1 (1,0 ponto)
+Explique o conceito de encapsulamento na programação orientada a objetos e dê um exemplo prático de como implementá-lo 
+em uma classe Veiculo com atributos como placa e velocidadeAtual. (Lembrem de criar o construtor e metodos de acesso)
+
+
+
+Questão 2 (1,0 ponto) 
+Observe o código abaixo:
+
+public void processarPagamento(Pagamento pagamento) {
+    // Solicita ao usuário o valor do pagamento
+    double valor = obterValorDoPagamento();
+    
+    // Registra o pagamento no sistema
+    pagamento.registrar(valor);
+    
+    // Emite o comprovante
+    String comprovante = pagamento.gerarComprovante();
+    System.out.println(comprovante);
+    
+    // Atualiza o histórico de transações
+    registrarTransacao(pagamento);
+}
+
+Explique o conceito de encapsulamento demonstrado neste código. 
+Como o encapsulamento permite que o método processarPagamento() trabalhe com diferentes tipos de pagamento como cartao ou dinheiro sem conhecer os detalhes de implementação de cada um? 
+Quais são os benefícios desta abordagem para a manutenção do código e extensibilidade do sistema?
+
+
+
+Questão 3 (1,0 ponto)
+Explique o conceito de herança na programação orientada a objetos. 
+Dê um exemplo de uma hierarquia de classes envolvendo uma classe base Animal e duas classes derivadas, 
+
+
+
+Questão 4 (1,0 ponto)
+Compare as duas implementações diferentes de validação de dados:
+
+Abordagem 1: Métodos estáticos em uma classe utilitária
+
+public class Validador {
+    public static boolean validarCPF(String cpf) { /* implementação */ }
+    public static boolean validarEmail(String email) { /* implementação */ }
+}
+
+Abordagem 2: Interface com implementação específica
+
+public interface Validacao {
+    boolean validar(String valor);
+}
+
+public class ValidacaoCPF implements Validacao {
+    public boolean validar(String cpf) { /* implementação */ }
+}
+
+Quais são as vantagens e desvantagens de cada abordagem? Em quais contextos cada uma seria mais adequada?
+
+
+
+Questão 5 (1,0 ponto)
+Observe o código abaixo:
+
+public Documento criarDocumento(int tipo, String conteudo) {
+    Documento doc = switch (tipo) {
+        case 1 -> new DocumentoTexto(conteudo);
+        case 2 -> new DocumentoHTML(conteudo);
+        case 3 -> new DocumentoPDF(conteudo);
+        default -> throw new IllegalArgumentException("Tipo inválido");
+    };
+    return doc;
+}
+
+a) Explique a sintaxe de switch expressions introduzida no Java moderno e suas vantagens em
+   comparação com o switch tradicional.
+   
+b) Considerando a estrutura do código acima, explique qual deveria ser o relacionamento entre
+   as classes Documento, DocumentoTexto, DocumentoHTML e DocumentoPDF.
+
+
+
+Questão 6 (1,0 ponto)
+Observe os construtores na classe abaixo:
+
+public class Produto {
+    private String nome;
+    private double preco;
+    private int quantidade;
+    
+    public Produto(String nome, double preco, int quantidade) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidade = quantidade;
+    }
+    
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidade = 1;
+    }
+    
+    public Produto() {
+        this.nome = "Produto genérico";
+        this.preco = 0.0;
+        this.quantidade = 0;
+    }
+}
+
+
+
+Explique o conceito de sobrecarga de construtores. Qual é a diferença entre sobrecarga e sobrescrita? 
+
+
+Questão 7 (1,0 ponto) explicar na revisao
+Analise o trecho de código abaixo:
+
+public int dividir(int a, int b) {
+    try {
+        return a / b;
+    } catch (ArithmeticException e) {
+        System.out.println("Erro: Divisão por zero!");
+        return 0;
+    } finally {
+        System.out.println("Operação finalizada");
+    }
+}
+
+Explique o mecanismo de tratamento de exceções utilizado, detalhando a função de cada bloco (try, catch, finally). 
+
+
+
+Questão 8 (1,0 ponto) 
+Projete uma classe Cliente para um sistema de e-commerce, com atributos relevantes e métodos apropriados. (Nao precisa montar o codigo, apenas as classes, funcoes e metodos)
+Considere os relacionamentos com outras classes como endereco e pedidos.
