@@ -1,0 +1,31 @@
+Descrição: Criar classes para representar alunos, turmas, professores e matérias.
+ Funcionalidades:
+
+   Matricular alunos em turmas
+   Atribuir notas para cada aluno em diferentes disciplinas
+   Calcular a média final e aprovar/reprovar o aluno
+
+Escopo básico:
+Classes principais:
+
+Pessoa (superclasse)
+
+Atributos: id, nome, dataNascimento
+
+Subclasses: Aluno, Professor
+
+Aluno
+
+Atributos: matricula, listaNotas (matéria e nota), turma
+
+Métodos: calcularMedia(), verificarAprovacao()
+
+Professor
+
+Atributos: disciplina, listaTurmas
+
+Métodos: lançarNota(aluno, nota)
+
+Turma
+
+Atributos: id, nome, listaAlunos, professor
