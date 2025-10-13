@@ -1,0 +1,60 @@
+package app;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double peso;
+        double altura;
+
+        System.out.println("Calculadora de IMC");
+        
+        // Entrada de peso com tratamento de exceções
+        try {
+            System.out.print("Digite seu peso (kg): ");
+            String pesoStr = scanner.next().replace(",","."); // Substitui vírgula por ponto
+            peso = Double.parseDouble(pesoStr);
+            
+            // Validação para peso negativo ou zero
+            if (peso <= 0) {
+                System.out.println("Peso deve ser um valor positivo maior que zero.");
+                scanner.close();
+                return;
+            }
+
+        } catch (Exception e) {
+            System.out.println("Valor inválido para peso. Por favor, insira um número.");
+            scanner.close();
+            return;
+        }
+        
+        // Entrada de altura com tratamento de exceções
+        try {
+            System.out.print("Digite sua altura (m): ");
+            String alturaStr = scanner.next().replace(",","."); // Substitui vírgula por ponto
+            altura = Double.parseDouble(alturaStr);
+            
+            // Validação para altura negativa ou zero
+            if (altura <= 0) {
+                System.out.println("Altura deve ser um valor positivo maior que zero.");
+                scanner.close();
+                return;
+            }
+            
+        } catch (Exception e) {
+            System.out.println("Valor inválido para altura. Por favor, insira um número.");
+            scanner.close();
+            return;
+        }
+        
+        // Cálculo do IMC
+        double imc = peso / (altura * altura);
+        
+        // Exibição do resultado
+        System.out.printf("Seu IMC é: %.2f\n", imc);
+
+        // Fechamento do scanner
+        scanner.close();
+    }
+}
