@@ -47,7 +47,7 @@ model/
   - Livro.java
   - Usuario.java
 app/
-    - TesteBiblioteca.java
+  - TesteBiblioteca.java
 
 EXEMPLO DE SAÍDA:
 === SISTEMA DE BIBLIOTECA ===
