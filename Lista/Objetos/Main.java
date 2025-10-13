@@ -1,4 +1,4 @@
-package app;
+package objetos;
 
 import java.util.Scanner;
 
@@ -8,6 +8,7 @@ public class Main {
     private static double peso;
     private static double altura;
 
+    // Método principal
     public static void main(String[] args) {
         int op;
         do{
@@ -30,6 +31,7 @@ public class Main {
         scanner.close();
     }
 
+    // Exibe o menu de opções
     public static void exibirMenu() {
         System.out.println("Calculadora de IMC");
         System.out.println("Menu de Opções:");
@@ -38,6 +40,7 @@ public class Main {
         System.out.print("Escolha uma opção: ");
     }
 
+    // Recebe a opção do usuário
     public static int receberOp(){
         try{ 
             return scanner.nextInt();
@@ -47,6 +50,7 @@ public class Main {
         }
     }
 
+    // Recebe o peso do usuário
     public static boolean receberPeso(){
         System.out.print("Digite seu peso (kg): ");
         
@@ -65,6 +69,7 @@ public class Main {
         }
     }
 
+    // Recebe a altura do usuário
     public static boolean receberAltura(){
         System.out.print("Digite sua altura (m): ");
         
@@ -83,6 +88,7 @@ public class Main {
         }
     }
 
+    // Calcula e exibe o IMC
     public static void calcularIMC() {
         double imc = peso / (altura * altura);
         System.out.printf("Seu IMC é: %.2f%n", imc);
