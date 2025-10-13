@@ -1,0 +1,104 @@
+EXERCICIO: SOBRECARGA E SOBRESCRITA COM SISTEMA DE FUNCIONARIOS
+
+REQUISITOS:
+
+1. CLASSE BASE (FUNCIONARIO)
+
+Atributos protegidos:
+- nome (String)
+- salarioBase (double)
+- departamento (String)
+- ativo (boolean) - valor inicial true
+
+Construtor:
+- Receba nome, salarioBase e departamento como parametros
+
+Metodos abstratos:
+- calcularSalario() - deve retornar double com o salario final
+- calcularBonus() - deve retornar double com o bonus do funcionario
+
+Metodos concretos:
+- promover(String novoDepartamento) - altera departamento e imprime mensagem
+- promover() - SOBRECARGA do metodo acima, promove sem mudar departamento
+- exibirInfo() - mostra informacoes basicas do funcionario (pode ser sobrescrito)
+- demitir() - altera ativo para false e imprime mensagem
+
+Metodos getters:
+- getNome(), getSalarioBase(), getDepartamento(), isAtivo()
+
+2. CLASSE FILHA (VENDEDOR)
+Crie uma classe Vendedor que herda de Funcionario com:
+
+Atributos privados:
+- vendas (double) - total de vendas do mes
+- comissao (double) - percentual de comissao (ex: 0.05 = 5%)
+
+Construtor:
+- Receba nome, salarioBase, departamento e comissao como parametros
+- Defina vendas como 0.0 inicialmente
+
+Metodos sobrescritos (Override):
+- calcularSalario() - retorne salarioBase + (vendas * comissao)
+- calcularBonus() - retorne 10% do total de vendas se vendas > 10000, senao 0
+- exibirInfo() - chame o metodo da classe pai e adicione vendas e comissao
+
+Metodos com sobrecarga (Overload):
+- registrarVenda(double valor) - adiciona uma venda ao total
+- registrarVenda(double valor, String cliente) - adiciona venda e imprime cliente
+- registrarVenda(double[] valores) - adiciona multiplas vendas de uma vez
+
+Metodos getters:
+- getVendas() e getComissao()
+
+3. CLASSE FILHA (GERENTE)
+Crie uma classe Gerente que herda de Funcionario com:
+
+Atributos privados:
+- equipe (int) - numero de funcionarios na equipe
+- metaMensal (double) - meta de performance da equipe
+
+Construtor:
+- Receba nome, salarioBase, departamento e equipe como parametros
+- Defina metaMensal como 50000.0 por padrao
+
+Metodos sobrescritos (Override):
+- calcularSalario() - retorne salarioBase * 1.5 (50% a mais que funcionario comum)
+- calcularBonus() - retorne salarioBase * 0.2 se equipe >= 5, senao salarioBase * 0.1
+- exibirInfo() - chame o metodo da classe pai e adicione equipe e metaMensal
+
+Metodos com sobrecarga (Overload):
+- definirMeta(double novaMeta) - altera a meta mensal
+- definirMeta(double novaMeta, int meses) - define meta para varios meses
+- definirMeta() - define meta automatica baseada no tamanho da equipe
+
+Metodos getters:
+- getEquipe() e getMetaMensal()
+
+4. CLASSE DE TESTE (TESTEFUNCIONARIOS)
+Crie uma classe de teste que demonstre:
+
+Sobrecarga:
+1. Teste os dois metodos promover() de um funcionario
+2. Teste os metodos registrarVenda() com diferentes parametros no Vendedor
+3. Teste os metodos definirMeta() com diferentes parametros no Gerente
+
+Sobrescrita e Polimorfismo:
+1. Crie um array de Funcionario contendo Vendedores e Gerentes
+2. Use um loop para chamar calcularSalario() em cada funcionario
+3. Compare os bonus de diferentes tipos de funcionario
+4. Demonstre que o metodo correto e chamado baseado no tipo real do objeto
+5. Calcule a folha de pagamento total da empresa
+
+Conceitos demonstrados:
+- Sobrecarga (Overload): multiplas versoes do mesmo metodo com parametros diferentes
+- Sobrescrita (Override): implementacao especifica de cada tipo de funcionario
+- Polimorfismo: calculo de salario diferente para cada tipo sem conhecer o tipo especifico
+
+ESTRUTURA DE PASTAS:
+model/
+  - Funcionario.java (classe abstrata)
+  - Vendedor.java
+  - Gerente.java
+app/
+  - TesteFuncionarios.java
+
