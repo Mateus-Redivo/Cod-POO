@@ -22,7 +22,7 @@ public class TesteFuncionarios {
         System.out.println("--- Testando sobrecarga do método registrarVenda() ---");
         vendedor1.registrarVenda(5000.0); // Um valor
         vendedor1.registrarVenda(3000.0, "Empresa XYZ"); // Valor + cliente
-        double[] vendas = { 1500.0, 2000.0, 1800.0 };
+        double[] vendas = { 1500.0, 2000.0, 1800.0 }; // Array de valores ( Pratica mais comum em testes )
         vendedor1.registrarVenda(vendas); // Array de valores
 
         vendedor2.registrarVenda(12000.0); // Para testar bônus > 10000
@@ -36,7 +36,9 @@ public class TesteFuncionarios {
         System.out.println();
 
         // Array polimórfico de funcionários
-        Funcionario[] funcionarios = { vendedor1, vendedor2, gerente1, gerente2 };
+        Funcionario[] funcionarios = { vendedor1, vendedor2, gerente1, gerente2 }; // Array de Funcionarios (
+                                                                                   // Polimorfismo (upcasting) )
+        // Pratica mais comum em testes
 
         System.out.println("--- Informações dos Funcionários ---");
         for (int i = 0; i < funcionarios.length; i++) {
