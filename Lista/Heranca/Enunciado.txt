@@ -1,7 +1,5 @@
 EXERCICIO: HERANCA COM PERSONAGENS DE RPG
 
-Desenvolva um sistema de personagens de RPG utilizando o conceito de heranca em Java. 
-
 REQUISITOS:
 
 1. CLASSE BASE (PERSONAGEM)
