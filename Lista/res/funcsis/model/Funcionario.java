@@ -1,4 +1,4 @@
-package funcsis.model;
+package res.funcsis.model;
 
 public abstract class Funcionario {
     protected String nome;

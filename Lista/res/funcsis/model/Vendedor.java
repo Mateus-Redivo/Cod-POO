@@ -1,4 +1,4 @@
-package funcsis.model;
+package res.funcsis.model;
 
 public class Vendedor extends Funcionario {
     private double vendas;

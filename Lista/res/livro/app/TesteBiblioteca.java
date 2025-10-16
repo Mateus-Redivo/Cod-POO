@@ -1,7 +1,7 @@
-package livro.app;
+package res.livro.app;
 
-import livro.model.Livro;
-import livro.model.Usuario;
+import res.livro.model.Livro;
+import res.livro.model.Usuario;
 
 public class TesteBiblioteca {
     public static void main(String[] args) {

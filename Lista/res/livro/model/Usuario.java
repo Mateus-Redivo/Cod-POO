@@ -1,4 +1,4 @@
-package livro.model;
+package res.livro.model;
 
 public class Usuario {
     private String nome;

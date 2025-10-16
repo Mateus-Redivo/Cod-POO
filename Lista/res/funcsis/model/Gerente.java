@@ -1,4 +1,4 @@
-package funcsis.model;
+package res.funcsis.model;
 
 public class Gerente extends Funcionario {
     private int equipe;

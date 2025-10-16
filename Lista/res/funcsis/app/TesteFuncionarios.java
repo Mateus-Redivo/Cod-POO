@@ -1,6 +1,6 @@
-package funcsis.app;
+package res.funcsis.app;
 
-import funcsis.model.*;
+import res.funcsis.model.*;
 
 public class TesteFuncionarios {
     public static void main(String[] args) {
