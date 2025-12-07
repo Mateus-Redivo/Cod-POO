@@ -12,6 +12,8 @@ public class Carro extends Veiculo {
         this.tipoCombustivel = tipoCombustivel;
     }
     
+
+
     // Sobrescrevendo o método acelerar para adicionar funcionalidade específica do carro
     @Override
     public void acelerar(double incremento) {
