@@ -86,9 +86,8 @@ public class Main {
     
     private static int lerOpcao() {
         try {
-            int opcao = Integer.parseInt(scanner.nextLine());
-            return opcao;
-        } catch (NumberFormatException e) {
+            return Integer.parseInt(scanner.nextLine());
+        } catch (NumberFormatException _) {
             return -1; // Retorna opção inválida
         }
     }
@@ -124,7 +123,7 @@ public class Main {
             } else {
                 System.out.println("Erro: Produto com este código já existe!");
             }
-        } catch (NumberFormatException e) {
+        } catch (NumberFormatException _) {
             System.out.println("Erro: Valor numérico inválido!");
         }
     }
@@ -145,7 +144,7 @@ public class Main {
             } else {
                 System.out.println("Erro: Produto não encontrado ou quantidade insuficiente!");
             }
-        } catch (NumberFormatException e) {
+        } catch (NumberFormatException _) {
             System.out.println("Erro: Valor numérico inválido!");
         }
     }
@@ -163,7 +162,7 @@ public class Main {
             } else {
                 System.out.println("Erro: Produto não encontrado!");
             }
-        } catch (NumberFormatException e) {
+        } catch (NumberFormatException _) {
             System.out.println("Erro: Valor numérico inválido!");
         }
     }
