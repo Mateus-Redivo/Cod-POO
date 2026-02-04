@@ -25,7 +25,7 @@ public class Teste {  // Definição da classe Teste
         imprimirPessoa(pessoa);
         
         // Testando o construtor com valores padrão
-        Pessoa pessoaPadrao = new Pessoa("");
+        Pessoa pessoaPadrao = new Pessoa();
         System.out.println("\nTestando construtor com valores padrão:");
         imprimirPessoa(pessoaPadrao);
     }
