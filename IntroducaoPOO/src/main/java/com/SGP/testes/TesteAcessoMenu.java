@@ -9,8 +9,7 @@ public class TesteAcessoMenu {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Pessoa pessoa = new Pessoa("Teste", 20
-        );
+        Pessoa pessoa = new Pessoa("Teste", 20);
         int opcao;
 
         do {
