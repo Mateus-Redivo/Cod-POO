@@ -1,95 +1,47 @@
-# Sistema de Gerenciamento de Pessoas
+Projeto: Introdução à POO (exemplos simples)
 
-## Descrição
-Este é um sistema Java que demonstra conceitos fundamentais de Programação Orientada a Objetos (POO), incluindo encapsulamento, construtores e interfaces de usuário baseadas em console.
+Descrição
+--------
 
-## Estrutura do Projeto
+Este projeto contém exemplos simples em Java que demonstram conceitos básicos de Programação Orientada a Objetos (POO): encapsulamento, construtores, getters/setters e validações.
 
-### Pacotes
-- `com.exemplo.modelos`: Contém as classes de modelo
-- `com.exemplo.testes`: Contém as classes de teste e implementação
+Arquivos principais
+------------------
 
-### Classes Principais
+- `src/main/java/com/sgp/modelos/Pessoa.java` — classe `Pessoa` com `nome`, `idade`, construtores, `saudacao()`, getters, setters e `toString()`.
+- `src/main/java/com/sgp/testes/Teste.java` — exemplo que cria objetos `Pessoa`, testa construtores e imprime resultados.
+- `src/main/java/com/sgp/testes/TesteAcessoMenu.java` — menu de console para visualizar/alterar `Pessoa`.
+- `src/main/java/com/sgp/util/Validacoes.java` — validações estáticas para nome e idade, com mensagens de erro.
 
-#### Pessoa (`com.exemplo.modelos.Pessoa`)
-```java
-public class Pessoa {
-    private String nome;
-    private int idade;
-}
+Principais pontos
+-----------------
+
+- Validações de entrada: nome (não vazio, sem dígitos) e idade (0–150).
+- Menu interativo (`TesteAcessoMenu`) com opções para mostrar dados, alterar nome/idade e exibir saudação.
+- Construtor padrão em `Pessoa` fornece valores de exemplo quando necessário.
+
+Como compilar e executar (linha de comando)
+-----------------------------------------
+
+1. Compile o código a partir da raiz do projeto:
+
+```bash
+javac -d bin src/main/java/com/sgp/**/*.java
 ```
-- **Atributos**:
-  - `nome`: String privada para armazenar o nome
-  - `idade`: int privado para armazenar a idade
 
-- **Construtores**:
-  - `Pessoa(String nome, int idade)`: Construtor completo
-  - `Pessoa(String nome)`: Construtor com valores padrão
+1. Execute o menu interativo:
 
-- **Métodos**:
-  - `saudacao()`: Exibe uma mensagem personalizada
-  - Getters e Setters para acesso controlado
-  - `toString()`: Representação textual do objeto
+```bash
+java -cp bin com.sgp.testes.TesteAcessoMenu
+```
 
-### Classes de Teste
+1. Execute a classe de teste não interativa:
 
-#### TesteAcessoMenu
-- Interface interativa baseada em console
-- Menu com opções para:
-  1. Mostrar dados da pessoa
-  2. Alterar nome
-  3. Alterar idade
-  4. Mostrar saudação
-  0. Sair
-- Implementa validações de entrada
-- Tratamento de exceções
+```bash
+java -cp bin com.sgp.testes.Teste
+```
 
-#### TesteAcesso
-- Demonstração básica de acesso aos métodos da classe Pessoa
-- Exemplo de uso dos getters e setters
+Observações
+-----------
 
-#### Teste
-- Demonstração de casos de teste
-- Tratamento de objetos nulos
-- Teste dos construtores
-
-## Tecnologias Utilizadas
-- Java 8+
-- Scanner para entrada de dados
-- Tratamento de Exceções
-- Programação Orientada a Objetos
-
-## Recursos de POO Demonstrados
-- Encapsulamento
-- Sobrecarga de construtores
-- Métodos públicos e privados
-- ToString override
-- Validação de dados
-
-## Como Executar
-1. Compile todas as classes Java
-2. Execute qualquer uma das classes de teste:
-   - `TesteAcessoMenu` para interface interativa
-   - `TesteAcesso` para demonstração básica
-   - `Teste` para casos de teste
-
-## Validações Implementadas
-- Nome:
-  - Não pode conter números
-  - Não pode estar vazio
-- Idade:
-  - Não pode ser negativa
-  - Não pode ser maior que 150
-  - Deve ser um número inteiro válido
-
-## Configuração do Ambiente
-- IDE: Visual Studio Code
-- Estrutura de pastas:
-  - `src/`: Código fonte
-  - `bin/`: Arquivos compilados
-  - `lib/`: Dependências (se houver)
-
-## Requisitos do Sistema
-- JDK 8 ou superior
-- IDE com suporte a Java (recomendado VS Code)
-- Terminal/Console para interação
+- Recomendo usar uma IDE (ex.: VS Code com extensão Java) para facilitar compilação e execução.
