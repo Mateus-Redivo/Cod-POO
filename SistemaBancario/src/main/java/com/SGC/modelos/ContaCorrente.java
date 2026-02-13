@@ -1,4 +1,4 @@
-package main.java.com.SGC.modelos;
+package main.java.com.sgc.modelos;
 
 public class ContaCorrente extends Conta {
     private double tarifaMensal = 12.90;

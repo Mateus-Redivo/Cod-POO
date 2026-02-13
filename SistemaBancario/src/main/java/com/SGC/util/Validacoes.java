@@ -1,4 +1,4 @@
-package main.java.com.SGC.util;
+package main.java.com.sgc.util;
 
 import java.util.Scanner;
 

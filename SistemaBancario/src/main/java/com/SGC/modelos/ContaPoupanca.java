@@ -1,4 +1,4 @@
-package main.java.com.SGC.modelos;
+package main.java.com.sgc.modelos;
 
 public class ContaPoupanca extends Conta {
     public ContaPoupanca(int numero, String titular) {

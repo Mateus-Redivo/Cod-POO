@@ -1,9 +1,10 @@
-package main.java.com.SGC.app;
+package main.java.com.sgc.app;
 
-import main.java.com.SGC.modelos.*;
-import main.java.com.SGC.util.Validacoes;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import main.java.com.sgc.modelos.*;
+import main.java.com.sgc.util.Validacoes;
 
 public class Main {
     private static ArrayList<Conta> contas = new ArrayList<>();

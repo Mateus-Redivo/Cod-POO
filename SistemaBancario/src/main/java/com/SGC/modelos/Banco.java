@@ -1,4 +1,4 @@
-package main.java.com.SGC.modelos;
+package main.java.com.sgc.modelos;
 
 public class Banco {
     public void processarMensal(Conta conta) {
