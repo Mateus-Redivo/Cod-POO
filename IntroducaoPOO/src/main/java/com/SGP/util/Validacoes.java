@@ -1,6 +1,10 @@
-package com.SGP.util;
+package com.sgp.util;
 
 public class Validacoes {
+
+    private Validacoes() {
+        // Construtor privado para evitar instância
+    }
 
     public static boolean nomeValido(String nome) {
         return !(nome == null || nome.trim().isEmpty() || nome.matches(".*\\d+.*"));

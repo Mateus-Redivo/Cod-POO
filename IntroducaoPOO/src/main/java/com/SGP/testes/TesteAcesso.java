@@ -1,6 +1,6 @@
-package com.SGP.testes;  // Declaração do pacote
+package com.sgp.testes;  // Declaração do pacote
 
-import com.SGP.modelos.Pessoa;  // Importação da classe Pessoa
+import com.sgp.modelos.Pessoa;
 
 public class TesteAcesso {
 

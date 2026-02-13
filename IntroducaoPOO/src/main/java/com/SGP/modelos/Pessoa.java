@@ -1,4 +1,4 @@
-package com.SGP.modelos;  // Declaração do pacote
+package com.sgp.modelos;  // Declaração do pacote
 
 public class Pessoa {
     
@@ -25,7 +25,7 @@ public class Pessoa {
 
     // Métodos Getters e Setters para acesso controlado aos atributos privados
     
-    // Retorna o nome da pessoa
+    // Retorna o nome da pesso
     public String getNome() {
         return nome;
     }
