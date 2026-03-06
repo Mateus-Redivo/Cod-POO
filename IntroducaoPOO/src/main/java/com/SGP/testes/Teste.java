@@ -11,12 +11,18 @@ public class Teste { // Definição da classe Teste
 
         // Testando o método com uma pessoa inicializada
         Pessoa pessoa = new Pessoa("Davi", 20);
+        pessoa.setAltura(1.8);
         imprimirPessoa(pessoa);
 
         // Testando o construtor com valores padrão
         Pessoa pessoaPadrao = new Pessoa();
         System.out.println("\nTestando construtor com valores padrão:");
         imprimirPessoa(pessoaPadrao);
+
+        // Testando construtor com altura
+        Pessoa pessoaComAltura = new Pessoa("Ana", 30, 1.65);
+        System.out.println("\nTestando construtor com altura:");
+        imprimirPessoa(pessoaComAltura);
 
         // Acesso ao método público
         pessoa.saudacao();

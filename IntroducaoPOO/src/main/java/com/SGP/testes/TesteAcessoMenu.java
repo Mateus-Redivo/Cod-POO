@@ -31,6 +31,9 @@ public class TesteAcessoMenu {
                 case 4:
                     pessoa.saudacao();
                     break;
+                case 5:
+                    alterarAltura(pessoa, scanner);
+                    break;
                 case 0:
                     System.out.println("Programa finalizado!");
                     break;
@@ -48,6 +51,7 @@ public class TesteAcessoMenu {
         System.out.println("2. Alterar nome");
         System.out.println("3. Alterar idade");
         System.out.println("4. Mostrar saudação");
+        System.out.println("5. Alterar altura");
         System.out.println("0. Sair");
         System.out.print("Escolha uma opção: ");
     }
@@ -86,6 +90,21 @@ public class TesteAcessoMenu {
             }
         } catch (NumberFormatException e) {
             System.out.println("Erro: Por favor, digite um número inteiro válido!");
+        }
+    }
+
+    public static void alterarAltura(Pessoa pessoa, Scanner scanner) {
+        System.out.print("Digite a nova altura (em metros, ex: 1.75): ");
+        try {
+            double novaAltura = Double.parseDouble(scanner.nextLine());
+            if (Validacoes.alturaValida(novaAltura)) {
+                pessoa.setAltura(novaAltura);
+                System.out.println("Altura alterada com sucesso!");
+            } else {
+                System.out.println(Validacoes.mensagemErroAltura(novaAltura));
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Erro: Por favor, digite um número válido para a altura!");
         }
     }
 
