@@ -1,10 +1,10 @@
 # Sistema de Gestão Acadêmica (SGA)
 
-## 📚 Descrição
+## Descrição
 
 O Sistema de Gestão Acadêmica (SGA) é um projeto desenvolvido em Java que demonstra conceitos fundamentais de Programação Orientada a Objetos (POO). O sistema permite gerenciar informações de alunos e professores em um ambiente acadêmico.
 
-## 🏗️ Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 src/
@@ -22,7 +22,7 @@ src/
                 └── Validacoes.java   # Utilitários para validação de dados
 ```
 
-## 🎯 Objetivos de Aprendizagem
+## Objetivos de Aprendizagem
 
 Este projeto foi desenvolvido para ensinar e praticar:
 
@@ -33,7 +33,7 @@ Este projeto foi desenvolvido para ensinar e praticar:
 - **Validação de Dados**: Implementação de validações robustas
 - **Organização de Código**: Estrutura de pacotes Java
 
-## 🔧 Funcionalidades
+## Funcionalidades
 
 ### Classe Pessoa
 - Atributos básicos: nome
@@ -58,7 +58,7 @@ Este projeto foi desenvolvido para ensinar e praticar:
 
 ## � Passo a Passo: Como Criar e Testar os Códigos
 
-### 🚀 Passo 1: Criando a Classe Base `Pessoa`
+### Passo 1: Criando a Classe Base `Pessoa`
 
 1. **Crie o arquivo `Pessoa.java`** no pacote `com.java.sga.model`
 2. **Implemente a classe base**:
@@ -88,7 +88,7 @@ Este projeto foi desenvolvido para ensinar e praticar:
    ```
 3. **Teste básico**: Crie uma instância e teste os métodos
 
-### 🎓 Passo 2: Criando a Classe `Aluno`
+### Passo 2: Criando a Classe `Aluno`
 
 1. **Crie o arquivo `Aluno.java`** no pacote `com.java.sga.model`
 2. **Implemente herança e funcionalidades específicas**:
@@ -122,7 +122,7 @@ Este projeto foi desenvolvido para ensinar e praticar:
    ```
 3. **Teste**: Crie um aluno, adicione notas e calcule a média
 
-### 👨‍🏫 Passo 3: Criando a Classe `Professor`
+###  Passo 3: Criando a Classe `Professor`
 
 1. **Crie o arquivo `Professor.java`** no pacote `com.java.sga.model`
 2. **Implemente funcionalidades específicas**:
@@ -177,7 +177,7 @@ Este projeto foi desenvolvido para ensinar e praticar:
    ```
 3. **Execute o teste** e verifique os resultados
 
-### 🎯 Passo 5: Aplicação Principal
+### Passo 5: Aplicação Principal
 
 1. **Crie o arquivo `App.java`** no pacote `com.java.sga.app`
 2. **Implemente uma aplicação interativa**:
@@ -207,7 +207,7 @@ Este projeto foi desenvolvido para ensinar e praticar:
    }
    ```
 
-### ✅ Passo 6: Compilação e Execução
+### Passo 6: Compilação e Execução
 
 1. **Abra o terminal** no diretório do projeto
 2. **Crie a pasta bin**:
@@ -227,7 +227,7 @@ Este projeto foi desenvolvido para ensinar e praticar:
    java -cp bin com.java.sga.app.App
    ```
 
-### 🔍 Exercícios de Prática
+### Exercícios de Prática
 
 **Exercício 1**: Adicione um método `isAprovado()` na classe `Aluno` (média >= 7.0)
 
@@ -237,7 +237,7 @@ Este projeto foi desenvolvido para ensinar e praticar:
 
 **Exercício 4**: Adicione tratamento de exceções para validações
 
-## 🧪 Testes
+## Testes
 
 O arquivo `Teste.java` contém exemplos de como testar as funcionalidades:
 
@@ -246,7 +246,7 @@ O arquivo `Teste.java` contém exemplos de como testar as funcionalidades:
 - Cálculos de média
 - Verificação de aprovação
 
-## 📊 Validações Implementadas
+## Validações Implementadas
 
 | Validação | Descrição | Método |
 |-----------|-----------|---------|
@@ -257,7 +257,7 @@ O arquivo `Teste.java` contém exemplos de como testar as funcionalidades:
 | Nota | Deve estar entre 0 e 10 | `isNotaValida()` |
 | Objeto | Não pode ser nulo | `isObjetoValido()` |
 
-## 🎨 Boas Práticas Aplicadas
+## Boas Práticas Aplicadas
 
 1. **Convenções de Nomenclatura**
    - Classes com primeira letra maiúscula (`PascalCase`)
@@ -278,7 +278,7 @@ O arquivo `Teste.java` contém exemplos de como testar as funcionalidades:
    - Comentários explicativos
    - JavaDoc para métodos públicos
 
-## 🔄 Extensões Possíveis
+## Extensões Possíveis
 
 - [ ] Adicionar mais tipos de pessoa (Funcionário, Coordenador)
 - [ ] Implementar persistência de dados (arquivos, banco de dados)
@@ -287,7 +287,7 @@ O arquivo `Teste.java` contém exemplos de como testar as funcionalidades:
 - [ ] Implementar sistema de login
 - [ ] Adicionar histórico acadêmico
 
-## 💡 Dicas para Estudo
+## Dicas para Estudo
 
 1. **Comece pela classe `Pessoa`**: Entenda a classe base
 2. **Explore a herança**: Veja como `Aluno` e `Professor` estendem `Pessoa`
@@ -295,7 +295,7 @@ O arquivo `Teste.java` contém exemplos de como testar as funcionalidades:
 4. **Experimente**: Modifique o código e observe os resultados
 5. **Debug**: Use breakpoints para entender o fluxo de execução
 
-## 📚 Conceitos de POO Demonstrados
+## Conceitos de POO Demonstrados
 
 ### Herança
 ```java
@@ -323,7 +323,7 @@ public void setNome(String nome) {
 - Métodos `toString()` sobrescritos em cada classe
 - Comportamentos específicos para cada tipo de pessoa
 
-## 🐛 Solução de Problemas Comuns
+## Solução de Problemas Comuns
 
 ### Erro de Compilação
 ```
@@ -345,7 +345,7 @@ Este é um projeto educacional. Sinta-se à vontade para:
 - Melhorar a documentação
 - Reportar bugs ou sugerir melhorias
 
-## 📄 Licença
+## Licença
 
 Este projeto é para fins educacionais e está disponível sob a licença MIT.
 
