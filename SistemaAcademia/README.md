@@ -1,6 +1,7 @@
 # Academia Fitness Manager 🏋️‍♂️
 
 ## Sobre o Projeto
+
 Este projeto é um sistema simples para gerenciamento de uma academia, desenvolvido para praticar conceitos de Programação Orientada a Objetos (POO) em Java. Ele permite o cadastro de alunos, a criação de treinos personalizados e a remoção de alunos, utilizando validações e boas práticas de programação.
 
 ---
@@ -10,6 +11,7 @@ Este projeto é um sistema simples para gerenciamento de uma academia, desenvolv
 ### Classes Principais
 
 #### 1. Aluno 👤
+
 Representa um aluno da academia.
 
 - Atributos:
@@ -25,6 +27,7 @@ Representa um aluno da academia.
 ---
 
 #### 2. Treino 💪
+
 Representa um treino personalizado para um aluno.
 
 - Atributos:
@@ -41,6 +44,7 @@ Representa um treino personalizado para um aluno.
 ---
 
 #### 3. Validacoes ✅
+
 Classe utilitária para validações de entrada.
 
 - Métodos Estáticos:
@@ -52,6 +56,7 @@ Classe utilitária para validações de entrada.
 ---
 
 #### 4. Main 🚀
+
 Classe principal que contém o menu interativo e gerencia as operações do sistema.
 
 - Atributos:

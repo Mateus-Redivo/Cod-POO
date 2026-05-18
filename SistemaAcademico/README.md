@@ -6,7 +6,7 @@ O Sistema de Gestão Acadêmica (SGA) é um projeto desenvolvido em Java que dem
 
 ## Estrutura do Projeto
 
-```
+```text
 src/
 └── com/
     └── java/
@@ -36,20 +36,24 @@ Este projeto foi desenvolvido para ensinar e praticar:
 ## Funcionalidades
 
 ### Classe Pessoa
+
 - Atributos básicos: nome
 - Métodos de acesso (getters/setters)
 - Validações de entrada
 
 ### Classe Aluno (herda de Pessoa)
+
 - Atributos específicos: matrícula, notas
 - Cálculo de média
 - Verificação de aprovação
 
 ### Classe Professor (herda de Pessoa)
+
 - Atributos específicos: disciplina, turma
 - Métodos específicos para gestão acadêmica
 
 ### Classe Validacoes
+
 - Validação de nomes
 - Validação de matrículas
 - Validação de notas (0-10)
@@ -62,6 +66,7 @@ Este projeto foi desenvolvido para ensinar e praticar:
 
 1. **Crie o arquivo `Pessoa.java`** no pacote `com.java.sga.model`
 2. **Implemente a classe base**:
+
    ```java
    package com.java.sga.model;
    import com.java.sga.util.Validacoes;
@@ -86,12 +91,14 @@ Este projeto foi desenvolvido para ensinar e praticar:
        }
    }
    ```
+
 3. **Teste básico**: Crie uma instância e teste os métodos
 
 ### Passo 2: Criando a Classe `Aluno`
 
 1. **Crie o arquivo `Aluno.java`** no pacote `com.java.sga.model`
 2. **Implemente herança e funcionalidades específicas**:
+
    ```java
    package com.java.sga.model;
    import com.java.sga.util.Validacoes;
@@ -120,12 +127,14 @@ Este projeto foi desenvolvido para ensinar e praticar:
        }
    }
    ```
+
 3. **Teste**: Crie um aluno, adicione notas e calcule a média
 
-###  Passo 3: Criando a Classe `Professor`
+### Passo 3: Criando a Classe `Professor`
 
 1. **Crie o arquivo `Professor.java`** no pacote `com.java.sga.model`
 2. **Implemente funcionalidades específicas**:
+
    ```java
    package com.java.sga.model;
    import com.java.sga.util.Validacoes;
@@ -148,12 +157,14 @@ Este projeto foi desenvolvido para ensinar e praticar:
        }
    }
    ```
+
 3. **Teste**: Crie um professor e defina disciplina e turma
 
 ### 🧪 Passo 4: Criando Testes Simples
 
 1. **Crie o arquivo `Teste.java`** no pacote `com.java.sga.app`
 2. **Implemente testes básicos**:
+
    ```java
    package com.java.sga.app;
    import com.java.sga.model.*;
@@ -175,12 +186,14 @@ Este projeto foi desenvolvido para ensinar e praticar:
        }
    }
    ```
+
 3. **Execute o teste** e verifique os resultados
 
 ### Passo 5: Aplicação Principal
 
 1. **Crie o arquivo `App.java`** no pacote `com.java.sga.app`
 2. **Implemente uma aplicação interativa**:
+
    ```java
    package com.java.sga.app;
    import com.java.sga.model.*;
@@ -211,18 +224,25 @@ Este projeto foi desenvolvido para ensinar e praticar:
 
 1. **Abra o terminal** no diretório do projeto
 2. **Crie a pasta bin**:
+
    ```powershell
    mkdir bin
    ```
+
 3. **Compile todos os arquivos**:
+
    ```powershell
    javac -d bin src/com/java/sga/**/*.java
    ```
+
 4. **Execute os testes**:
+
    ```powershell
    java -cp bin com.java.sga.app.Teste
    ```
+
 5. **Execute a aplicação**:
+
    ```powershell
    java -cp bin com.java.sga.app.App
    ```
@@ -249,7 +269,7 @@ O arquivo `Teste.java` contém exemplos de como testar as funcionalidades:
 ## Validações Implementadas
 
 | Validação | Descrição | Método |
-|-----------|-----------|---------|
+| ----------- | ----------- | --------- |
 | Nome | Não pode ser nulo ou vazio | `isNomeValido()` |
 | Matrícula | Não pode ser nula ou vazia | `isMatriculaValida()` |
 | Disciplina | Não pode ser nula ou vazia | `isDisciplinaValida()` |
@@ -298,6 +318,7 @@ O arquivo `Teste.java` contém exemplos de como testar as funcionalidades:
 ## Conceitos de POO Demonstrados
 
 ### Herança
+
 ```java
 public class Aluno extends Pessoa {
     // Aluno herda todos os atributos e métodos de Pessoa
@@ -305,6 +326,7 @@ public class Aluno extends Pessoa {
 ```
 
 ### Encapsulamento
+
 ```java
 private String nome;
 public String getNome() { return nome; }
@@ -316,30 +338,37 @@ public void setNome(String nome) {
 ```
 
 ### Abstração
+
 - Separação de responsabilidades em diferentes classes
 - Interface clara através de métodos públicos
 
 ### Polimorfismo
+
 - Métodos `toString()` sobrescritos em cada classe
 - Comportamentos específicos para cada tipo de pessoa
 
 ## Solução de Problemas Comuns
 
 ### Erro de Compilação
-```
+
+```text
 Error: Could not find or load main class
 ```
+
 **Solução**: Verifique se o classpath está correto e se compilou todos os arquivos.
 
 ### ClassNotFoundException
+
 **Solução**: Certifique-se de que está executando a partir do diretório correto.
 
 ### Validação Falhando
+
 **Solução**: Verifique se os dados de entrada atendem aos critérios de validação.
 
 ## 👥 Contribuindo
 
 Este é um projeto educacional. Sinta-se à vontade para:
+
 - Fazer fork do projeto
 - Adicionar novas funcionalidades
 - Melhorar a documentação
@@ -348,4 +377,3 @@ Este é um projeto educacional. Sinta-se à vontade para:
 ## Licença
 
 Este projeto é para fins educacionais e está disponível sob a licença MIT.
-
