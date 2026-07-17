@@ -74,7 +74,7 @@ Na prática, sua IDE gera os dois para você (no VS Code: clique direito, "Sourc
 
 ### A anatomia de um sistema de console
 
-Quase todo sistema interativo deste curso segue este esqueleto:
+Quase todo sistema interativo destes módulos segue este esqueleto:
 
 ```mermaid
 flowchart TD

@@ -1,6 +1,6 @@
 # Módulo 09 — Refatoração: de código que funciona para código bom
 
-Você já sabe todos os conceitos de POO do curso. Este módulo ensina uma habilidade diferente — e talvez a mais usada na vida profissional: **melhorar código existente sem mudar o que ele faz**. É aqui que a POO deixa de ser sintaxe e vira ferramenta de pensamento.
+Você já sabe todos os conceitos de POO dos módulos anteriores. Este módulo ensina uma habilidade diferente — e talvez a mais usada na vida profissional: **melhorar código existente sem mudar o que ele faz**. É aqui que a POO deixa de ser sintaxe e vira ferramenta de pensamento.
 
 ## Objetivos de aprendizagem
 

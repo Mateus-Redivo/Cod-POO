@@ -1,6 +1,6 @@
 # Módulo 02 — Classes e objetos
 
-Hora de construir suas primeiras classes de verdade. Este módulo é a fundação de todo o resto do curso: se estes conceitos ficarem sólidos, os próximos módulos serão muito mais fáceis.
+Hora de construir suas primeiras classes de verdade. Este módulo é a fundação de todos os módulos seguintes: se estes conceitos ficarem sólidos, os próximos módulos serão muito mais fáceis.
 
 ## Objetivos de aprendizagem
 
@@ -37,7 +37,7 @@ classDiagram
     }
 ```
 
-Este é um **diagrama de classes**, a "planta baixa" que usaremos o curso inteiro. O `-` indica privado, o `+` indica público — isso importa no módulo 03.
+Este é um **diagrama de classes**, a "planta baixa" que usaremos em todos os módulos. O `-` indica privado, o `+` indica público — isso importa no módulo 03.
 
 ### O construtor
 

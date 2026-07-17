@@ -1,0 +1,18 @@
+package model;
+
+public class ContaCorrente extends Conta {
+    private double tarifaMensal = 12.90;
+
+    public ContaCorrente(int numero, String titular) {
+        super(numero, titular);
+    }
+
+    public void descontarTarifaMensal() {
+        sacar(tarifaMensal);
+    }
+
+    @Override
+    public void processarFimDeMes() {
+        descontarTarifaMensal(); // reaproveita o metodo que ja existia
+    }
+}

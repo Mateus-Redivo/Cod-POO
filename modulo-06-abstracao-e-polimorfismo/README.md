@@ -1,6 +1,6 @@
 # Módulo 06 — Abstração e polimorfismo
 
-Este é o módulo mais denso do curso — e o mais recompensador. Aqui a herança do módulo 05 ganha superpoderes: classes que não podem ser instanciadas, métodos sem corpo que obrigam as filhas a trabalhar, e uma única linha de código que se comporta diferente para cada tipo de objeto.
+Este é o módulo mais denso de todos — e o mais recompensador. Aqui a herança do módulo 05 ganha superpoderes: classes que não podem ser instanciadas, métodos sem corpo que obrigam as filhas a trabalhar, e uma única linha de código que se comporta diferente para cada tipo de objeto.
 
 ## Objetivos de aprendizagem
 

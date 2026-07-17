@@ -9,7 +9,7 @@ Critérios usados na correção dos exercícios e do projeto integrador. Use com
 | Funciona | 30% | Compila sem erros; a saída cumpre o roteiro do enunciado; entradas inválidas não derrubam o programa |
 | Atende aos requisitos | 30% | Todos os itens do enunciado e os critérios de aceitação presentes |
 | Qualidade do modelo | 25% | Atributos privados; validações onde o enunciado pede; responsabilidade no lugar certo (regra de negócio no `model`, não no `main`); sem duplicação evidente |
-| Legibilidade | 15% | Nomes descritivos em português ou inglês (consistente); indentação correta; estrutura de pacotes do curso |
+| Legibilidade | 15% | Nomes descritivos em português ou inglês (consistente); indentação correta; estrutura de pacotes dos módulos |
 
 ## Projeto integrador
 
@@ -26,7 +26,7 @@ Critérios usados na correção dos exercícios e do projeto integrador. Use com
 - Cópia de colega ou gabarito. Solução idêntica = conversa com os envolvidos; o objetivo aqui é aprender, e a cópia só adia o problema para a prova.
 - `catch` vazio engolindo erro.
 - Atributos públicos sem justificativa.
-- Uso de recursos claramente colados de fora do escopo do curso sem saber explicar. Regra simples: **você precisa saber explicar cada linha do que entregar** — explicou, valeu.
+- Uso de recursos claramente colados de fora do escopo dos módulos sem saber explicar. Regra simples: **você precisa saber explicar cada linha do que entregar** — explicou, valeu.
 
 ## O que impressiona (além do pedido)
 

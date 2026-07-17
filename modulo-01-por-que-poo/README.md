@@ -79,7 +79,7 @@ Ao criar a classe `Pessoa` para uma calculadora de IMC, escolhemos guardar **nom
 
 **Abstrair é decidir o que entra no modelo e o que fica de fora**, guiado pelo problema que se quer resolver. A mesma "pessoa" seria modelada com outros atributos num sistema de RH (salário, cargo) ou num hospital (tipo sanguíneo, alergias). Não existe modelo certo universal: existe modelo adequado ao problema.
 
-Você fará essa decisão em todos os exercícios do curso a partir de agora.
+Você fará essa decisão em todos os exercícios dos próximos módulos.
 
 ## Os 4 pilares (apresentação rápida)
 

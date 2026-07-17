@@ -64,7 +64,7 @@ Dica de quem já corrigiu muitos projetos: a fase 2 malfeita é a principal caus
 
 ## Entrega
 
-- Repositório (ou pasta) com a estrutura de pacotes do curso.
+- Repositório (ou pasta) com a estrutura de pacotes dos módulos.
 - Um `README.md` do SEU projeto contendo: o que o sistema faz, o diagrama de classes (Mermaid) e onde está cada requisito da tabela (ex.: "Req. 7: `exception/EstoqueVazioException.java`, tratada em `app/Main.java`").
 - Data e formato de entrega: definidos em aula.
 

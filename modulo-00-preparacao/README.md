@@ -53,7 +53,7 @@ java OlaTurma
 
 Se as duas mensagens apareceram, parabéns: seu ambiente está pronto.
 
-Sobre o `public static void main(String[] args)`: por enquanto, aceite-o como "a porta de entrada do programa" — é onde a JVM começa a executar. Cada palavra dessa assinatura vai fazer sentido ao longo do curso.
+Sobre o `public static void main(String[] args)`: por enquanto, aceite-o como "a porta de entrada do programa" — é onde a JVM começa a executar. Cada palavra dessa assinatura vai fazer sentido ao longo dos módulos.
 
 ## Experimente quebrar
 

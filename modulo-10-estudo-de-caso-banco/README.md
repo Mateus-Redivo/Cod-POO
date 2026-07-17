@@ -1,6 +1,6 @@
 # Módulo 10 — Estudo de caso: sistema bancário
 
-Chegou a hora de ver todos os conceitos do curso trabalhando juntos em um sistema clássico: um banco com tipos diferentes de conta. Este módulo é menos sobre conceito novo e mais sobre **leitura crítica**: você vai estudar o sistema, entender as decisões de projeto e depois melhorá-lo nos exercícios.
+Chegou a hora de ver todos os conceitos dos módulos anteriores trabalhando juntos em um sistema clássico: um banco com tipos diferentes de conta. Este módulo é menos sobre conceito novo e mais sobre **leitura crítica**: você vai estudar o sistema, entender as decisões de projeto e depois melhorá-lo nos exercícios.
 
 ## Objetivos de aprendizagem
 
@@ -47,6 +47,7 @@ classDiagram
 - [model/ContaCorrente.java](exemplo/model/ContaCorrente.java) — especializa com tarifa mensal.
 - [model/ContaPoupanca.java](exemplo/model/ContaPoupanca.java) — especializa com rendimento de juros.
 - [model/Banco.java](exemplo/model/Banco.java) — processa o fechamento mensal de qualquer conta.
+- [util/Validacoes.java](exemplo/util/Validacoes.java) — leitura validada de dados no console, a mesma auxiliar do módulo 04.
 - [app/Main.java](exemplo/app/Main.java) — menu interativo de operações.
 
 ```bash
@@ -101,7 +102,7 @@ Os dois exercícios transformam as críticas do roteiro em trabalho prático:
 
 ## Auto-avaliação
 
-- [ ] Sei explicar o papel de cada uma das 5 classes sem olhar o código
+- [ ] Sei explicar o papel de cada uma das 6 classes sem olhar o código
 - [ ] Sei apontar onde estão encapsulamento, herança e validação no sistema
 - [ ] Entendi por que o `instanceof` em cadeia é um sinal de alerta
 - [ ] Fiz os dois exercícios e o sistema continuou funcionando

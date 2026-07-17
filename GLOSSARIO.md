@@ -1,6 +1,6 @@
 # Glossário de POO
 
-Termos usados no curso, explicados em linguagem simples e com um exemplo mínimo. Use este arquivo como consulta rápida sempre que um nome aparecer e você não lembrar o que significa.
+Termos usados nos módulos, explicados em linguagem simples e com um exemplo mínimo. Use este arquivo como consulta rápida sempre que um nome aparecer e você não lembrar o que significa.
 
 ## Classe
 
@@ -95,7 +95,7 @@ Melhorar a estrutura interna do código **sem mudar seu comportamento**: extrair
 
 ## Pacote (package)
 
-Uma pasta lógica que organiza classes relacionadas. No curso usamos `model` (domínio), `app` (executáveis), `util` (auxiliares) e `exception` (exceções personalizadas).
+Uma pasta lógica que organiza classes relacionadas. Nos módulos usamos `model` (domínio), `app` (executáveis), `util` (auxiliares) e `exception` (exceções personalizadas).
 
 ## ArrayList / List
 

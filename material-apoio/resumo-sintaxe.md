@@ -1,6 +1,6 @@
 # Resumo de sintaxe — cola rápida de POO em Java
 
-Consulta rápida da sintaxe usada no curso, na ordem em que aparece. Para os conceitos, veja o [GLOSSARIO](../GLOSSARIO.md); aqui é só o "como se escreve".
+Consulta rápida da sintaxe usada nos módulos, na ordem em que aparece. Para os conceitos, veja o [GLOSSARIO](../GLOSSARIO.md); aqui é só o "como se escreve".
 
 ## Classe, atributos, construtor (módulo 02)
 

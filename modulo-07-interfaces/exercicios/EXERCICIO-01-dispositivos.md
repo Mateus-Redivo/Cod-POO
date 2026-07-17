@@ -74,4 +74,4 @@ FoneBluetooth JBL: bateria 80%
 
 ## Desafio extra (opcional)
 
-Adicione um método `default` na interface `Conectavel` chamado `reconectar()`, que desconecta e conecta de novo na mesma rede. Pesquise "default method Java" — é um recurso das interfaces modernas que o curso não cobre em aula.
+Adicione um método `default` na interface `Conectavel` chamado `reconectar()`, que desconecta e conecta de novo na mesma rede. Pesquise "default method Java" — é um recurso das interfaces modernas que os módulos não cobrem em aula.

@@ -1,6 +1,6 @@
-# Curso de Programação Orientada a Objetos com Java
+# Programação Orientada a Objetos com Java
 
-Bem-vindo! Este repositório é a trilha oficial da disciplina de POO. Ele foi organizado como um **curso sequencial**: cada módulo é uma aula autocontida, com teoria, exemplo comentado, exercícios e um checklist para você saber se está pronto para avançar.
+Bem-vindo! Este repositório é a trilha oficial da disciplina de POO. Ele foi organizado como uma **sequência de módulos**: cada módulo é uma aula autocontida, com teoria, exemplo comentado, exercícios e um checklist para você saber se está pronto para avançar.
 
 ## Como estudar com este repositório
 
@@ -66,13 +66,13 @@ modulo-XX-nome/
 └── exercicios/      <- enunciados para você resolver
 ```
 
-Essa separação em pacotes (`model`, `app`, `util`, `exception`) é uma convenção usada no curso inteiro e muito parecida com a que você encontrará em projetos profissionais.
+Essa separação em pacotes (`model`, `app`, `util`, `exception`) é uma convenção usada em todos os módulos e muito parecida com a que você encontrará em projetos profissionais.
 
 ## Material de apoio
 
 - [GUIA-DO-ALUNO.md](GUIA-DO-ALUNO.md) — como instalar tudo e como compilar e executar os projetos.
 - [GLOSSARIO.md](GLOSSARIO.md) — todos os termos de POO explicados em linguagem simples.
-- [material-apoio/resumo-sintaxe.md](material-apoio/resumo-sintaxe.md) — cola rápida da sintaxe Java usada no curso.
+- [material-apoio/resumo-sintaxe.md](material-apoio/resumo-sintaxe.md) — cola rápida da sintaxe Java usada nos módulos.
 - [material-apoio/rubrica-avaliacao.md](material-apoio/rubrica-avaliacao.md) — como os exercícios são avaliados.
 - [gabaritos/](gabaritos/) — resoluções comentadas dos exercícios (use com responsabilidade).
 
