@@ -1,7 +1,7 @@
 package model;
 
-// Agora ABSTRATA: nao existe "conta generica" no banco, so contas concretas.
-// O metodo abstrato obriga cada filha a dizer o que acontece no fim do mes.
+// Agora ABSTRATA: não existe "conta genérica" no banco, só contas concretas.
+// O método abstrato obriga cada filha a dizer o que acontece no fim do mês.
 public abstract class Conta {
     private int numero;
     private String titular;

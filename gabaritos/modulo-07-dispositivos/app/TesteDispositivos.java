@@ -16,7 +16,7 @@ public class TesteDispositivos {
         SmartTv tv = new SmartTv(55);
         FoneBluetooth fone = new FoneBluetooth("JBL");
 
-        // 2. Lista de quem pode conectar — o tipo e a INTERFACE, nao a classe
+        // 2. Lista de quem pode conectar — o tipo é a INTERFACE, não a classe
         List<Conectavel> conectaveis = new ArrayList<>();
         conectaveis.add(celular);
         conectaveis.add(tv);
@@ -35,11 +35,11 @@ public class TesteDispositivos {
         }
 
         /*
-         * 4. O Smartphone aparece NAS DUAS listas. So com heranca isso seria
-         * impossivel: uma classe Java so pode estender UMA superclasse, entao
+         * 4. O Smartphone aparece NAS DUAS listas. Só com herança isso seria
+         * impossível: uma classe Java só pode estender UMA superclasse, então
          * Smartphone teria que escolher entre ser "filho de Conectavel" OU
          * "filho de Carregavel" — nunca os dois. Interfaces resolvem porque
-         * sao contratos de capacidade, e uma classe pode assinar quantos
+         * são contratos de capacidade, e uma classe pode assinar quantos
          * contratos quiser (implements Conectavel, Carregavel).
          */
     }

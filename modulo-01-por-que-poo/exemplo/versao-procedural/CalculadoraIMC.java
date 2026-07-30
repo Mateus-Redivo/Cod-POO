@@ -24,7 +24,7 @@ public class CalculadoraIMC {
                 }
             }
             case 0 -> System.out.println("Saindo...");
-            default -> System.out.println("Opção inválida. Por favor, escolha uma opção válida.");
+            default -> System.out.println("Opcao invalida. Por favor, escolha uma opcao valida.");
         }
         
         }while(op != 0);
@@ -34,10 +34,10 @@ public class CalculadoraIMC {
     // Exibe o menu de opções
     public static void exibirMenu() {
         System.out.println("Calculadora de IMC");
-        System.out.println("Menu de Opções:");
+        System.out.println("Menu de Opcoes:");
         System.out.println("0. Sair");
         System.out.println("1. Calcular IMC");
-        System.out.print("Escolha uma opção: ");
+        System.out.print("Escolha uma opcao: ");
     }
 
     // Recebe a opção do usuário
@@ -63,7 +63,7 @@ public class CalculadoraIMC {
             }
             return true;
         } catch (Exception e){
-            System.out.println("Valor inválido para peso. Por favor, insira um número.");
+            System.out.println("Valor invalido para peso. Por favor, insira um numero.");
             scanner.nextLine(); 
             return false;
         }
@@ -82,7 +82,7 @@ public class CalculadoraIMC {
             }
             return true;
         } catch (Exception e){
-            System.out.println("Valor inválido para altura. Por favor, insira um número.");
+            System.out.println("Valor invalido para altura. Por favor, insira um numero.");
             scanner.nextLine(); 
             return false;
         }
@@ -91,6 +91,6 @@ public class CalculadoraIMC {
     // Calcula e exibe o IMC
     public static void calcularIMC() {
         double imc = peso / (altura * altura);
-        System.out.printf("Seu IMC é: %.2f%n", imc);
+        System.out.printf("Seu IMC e: %.2f%n", imc);
     }
 }

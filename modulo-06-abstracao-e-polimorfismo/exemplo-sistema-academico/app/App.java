@@ -11,7 +11,7 @@ public class App {
     private static List<Professor> professores = new ArrayList<>();
     
     public static void main(String[] args) {
-        System.out.println("=== Sistema de Gestão Acadêmica ===\n");
+        System.out.println("=== Sistema de Gestao Academica ===\n");
         
         int opcao;
         do {
@@ -36,7 +36,7 @@ public class App {
                     System.out.println("Saindo do sistema...");
                     break;
                 default:
-                    System.out.println("Opção inválida!");
+                    System.out.println("Opcao invalida!");
             }
             
             if (opcao != 0) {
@@ -56,7 +56,7 @@ public class App {
         System.out.println("3. Listar Alunos");
         System.out.println("4. Listar Professores");
         System.out.println("0. Sair");
-        System.out.print("Escolha uma opção: ");
+        System.out.print("Escolha uma opcao: ");
     }
     
     private static void cadastrarAluno() {
@@ -65,10 +65,10 @@ public class App {
         System.out.print("Nome: ");
         String nome = scanner.nextLine();
         
-        System.out.print("Matrícula: ");
+        System.out.print("Matricula: ");
         String matricula = scanner.nextLine();
         
-        System.out.print("Notas (separadas por vírgula): ");
+        System.out.print("Notas (separadas por virgula): ");
         String notas = scanner.nextLine();
         
         System.out.print("Turma: ");
@@ -89,13 +89,13 @@ public class App {
         System.out.print("Nome: ");
         String nome = scanner.nextLine();
         
-        System.out.print("Matrícula: ");
+        System.out.print("Matricula: ");
         String matricula = scanner.nextLine();
         
         System.out.print("Disciplina: ");
         String disciplina = scanner.nextLine();
         
-        System.out.print("Turmas (separadas por vírgula): ");
+        System.out.print("Turmas (separadas por virgula): ");
         String turmas = scanner.nextLine();
         
         try {

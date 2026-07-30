@@ -23,6 +23,7 @@ Sua solução pode ser diferente do gabarito e ainda assim estar correta (às ve
 | [modulo-02-produto/](modulo-02-produto/) | [Módulo 02, Exercício 01 — Produto](../modulo-02-classes-e-objetos/exercicios/EXERCICIO-01-produto.md) |
 | [modulo-02-biblioteca/](modulo-02-biblioteca/) | [Módulo 02, Exercício 02 — Biblioteca](../modulo-02-classes-e-objetos/exercicios/EXERCICIO-02-biblioteca.md) |
 | [modulo-03-conta-de-jogador/](modulo-03-conta-de-jogador/) | [Módulo 03, Exercício 01 — Conta de jogador](../modulo-03-encapsulamento-e-validacao/exercicios/EXERCICIO-01-conta-de-jogador.md) |
+| [modulo-03-termostato/](modulo-03-termostato/) | [Módulo 03, Exercício 02 — Termostato](../modulo-03-encapsulamento-e-validacao/exercicios/EXERCICIO-02-termostato.md) |
 | [modulo-04-agenda-de-contatos/](modulo-04-agenda-de-contatos/) | [Módulo 04, Exercício 01 — Agenda de contatos](../modulo-04-colecoes-e-menus/exercicios/EXERCICIO-01-agenda-de-contatos.md) |
 | [modulo-05-moto/](modulo-05-moto/) | [Módulo 05, Exercício 01 — Moto](../modulo-05-heranca/exercicios/EXERCICIO-01-moto.md) |
 | [modulo-05-rpg/](modulo-05-rpg/) | [Módulo 05, Exercício 02 — RPG](../modulo-05-heranca/exercicios/EXERCICIO-02-rpg.md) |

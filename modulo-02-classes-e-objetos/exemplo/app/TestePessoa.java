@@ -16,7 +16,7 @@ public class TestePessoa { // Definição da classe Teste
 
         // Testando o construtor com valores padrão
         Pessoa pessoaPadrao = new Pessoa();
-        System.out.println("\nTestando construtor com valores padrão:");
+        System.out.println("\nTestando construtor com valores padrao:");
         imprimirPessoa(pessoaPadrao);
 
         // Testando construtor com altura
@@ -28,21 +28,21 @@ public class TestePessoa { // Definição da classe Teste
         pessoa.saudacao();
 
         // Acessando o atributo através do getter público
-        System.out.println("Nome (público): " + pessoa.getNome());
+        System.out.println("Nome (publico): " + pessoa.getNome());
 
         // Modificando o atributo privado através do setter
-        pessoa.setNome("João");
+        pessoa.setNome("Joao");
         System.out.println("Nome modificado (setter): " + pessoa.getNome());
 
         // Modificando a idade através do setter
         pessoa.setIdade(35);
-        System.out.println("Pessoa após modificações: " + pessoa.toString());
+        System.out.println("Pessoa apos modificacoes: " + pessoa.toString());
     }
 
     // Método estático para imprimir informações de uma pessoa
     public static void imprimirPessoa(Pessoa pessoa) {
         if (pessoa == null) {
-            System.out.println("Pessoa não inicializada!");
+            System.out.println("Pessoa nao inicializada!");
             return;
         }
         System.out.println(pessoa);

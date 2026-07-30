@@ -14,12 +14,12 @@ public class Main {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Bem-vindo à Academia!");
+        System.out.println("Bem-vindo a Academia!");
         
         boolean continuar = true;
         while (continuar) {
             exibirMenu();
-            int opcao = Validacoes.validarInteiro(scanner, "Escolha uma opção: ", 0, 4);
+            int opcao = Validacoes.validarInteiro(scanner, "Escolha uma opcao: ", 0, 4);
             
             switch (opcao) {
                 case 1:
@@ -39,7 +39,7 @@ public class Main {
                     System.out.println("Encerrando o programa...");
                     break;
                 default:
-                    System.out.println("Opção inválida. Tente novamente.");
+                    System.out.println("Opcao invalida. Tente novamente.");
                     break;
             }
         }
@@ -71,8 +71,8 @@ public class Main {
         }
         aluno.setIdade(idade);
         
-        System.out.println("Planos disponíveis:");
-        System.out.println("1 - Básico");
+        System.out.println("Planos disponiveis:");
+        System.out.println("1 - Basico");
         System.out.println("2 - Premium");
         int plano = Validacoes.validarInteiro(scanner, "Escolha o plano (1-2): ", 1, 2);
         aluno.setPlano(plano);
@@ -83,14 +83,14 @@ public class Main {
     
     private static void removerAluno() {
         if (alunos.isEmpty()) {
-            System.out.println("Não há alunos cadastrados para remover.");
+            System.out.println("Nao ha alunos cadastrados para remover.");
             return;
         }
         
-        System.out.println("\n--- REMOÇÃO DE ALUNO ---");
+        System.out.println("\n--- REMOCAO DE ALUNO ---");
         listarAlunos();
         
-        int indice = Validacoes.validarInteiro(scanner, "Digite o número do aluno que deseja remover: ", 1, alunos.size()) - 1;
+        int indice = Validacoes.validarInteiro(scanner, "Digite o numero do aluno que deseja remover: ", 1, alunos.size()) - 1;
         Aluno alunoRemovido = alunos.remove(indice);
         
         System.out.println("Aluno '" + alunoRemovido.getNome() + "' removido com sucesso!");
@@ -98,27 +98,27 @@ public class Main {
     
     private static void criarTreino() {
         if (alunos.isEmpty()) {
-            System.out.println("Não há alunos cadastrados. Cadastre um aluno primeiro.");
+            System.out.println("Nao ha alunos cadastrados. Cadastre um aluno primeiro.");
             return;
         }
         
-        System.out.println("\n--- CRIAÇÃO DE TREINO ---");
+        System.out.println("\n--- CRIACAO DE TREINO ---");
         listarAlunos();
         
-        int indiceAluno = Validacoes.validarInteiro(scanner, "Escolha o aluno pelo número: ", 1, alunos.size()) - 1;
+        int indiceAluno = Validacoes.validarInteiro(scanner, "Escolha o aluno pelo numero: ", 1, alunos.size()) - 1;
         Aluno alunoSelecionado = alunos.get(indiceAluno);
         
         System.out.println("Criando treino para " + alunoSelecionado.getNome());
         
         Treino treino = new Treino();
         
-        String nomeExercicio = Validacoes.validarString(scanner, "Nome do exercício: ");
+        String nomeExercicio = Validacoes.validarString(scanner, "Nome do exercicio: ");
         treino.setNomeExercicio(nomeExercicio);
         
-        int series = Validacoes.validarInteiro(scanner, "Número de séries: ", 1, 20);
+        int series = Validacoes.validarInteiro(scanner, "Numero de series: ", 1, 20);
         treino.setSeries(series);
         
-        int repeticoes = Validacoes.validarInteiro(scanner, "Número de repetições: ", 1, 100);
+        int repeticoes = Validacoes.validarInteiro(scanner, "Numero de repeticoes: ", 1, 100);
         treino.setRepeticoes(repeticoes);
         
         System.out.print("Carga (kg): ");
@@ -133,7 +133,7 @@ public class Main {
                 }
                 break;
             } catch (NumberFormatException e) {
-                System.out.println("Erro: Digite um número válido.");
+                System.out.println("Erro: Digite um numero valido.");
                 System.out.print("Carga (kg): ");
             }
         }
@@ -146,7 +146,7 @@ public class Main {
     
     private static void listarAlunos() {
         if (alunos.isEmpty()) {
-            System.out.println("Não há alunos cadastrados.");
+            System.out.println("Nao ha alunos cadastrados.");
             return;
         }
         

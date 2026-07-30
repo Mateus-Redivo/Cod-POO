@@ -1,7 +1,7 @@
 package model;
 
 // TV fica na tomada: implementa APENAS Conectavel.
-// O modelo reflete a realidade — carregar nao faz sentido aqui.
+// O modelo reflete a realidade — carregar não faz sentido aqui.
 public class SmartTv implements Conectavel {
     private int polegadas;
     private boolean conectado;

@@ -1,10 +1,10 @@
-// VERSAO "ANTES": tudo dentro do main, com codigo repetido.
+// VERSÃO "ANTES": tudo dentro do main, com código repetido.
 // Este programa FUNCIONA, mas repare nos problemas:
-//   1. O mesmo calculo de media aparece 3 vezes (copiar e colar).
-//   2. Se a regra de aprovacao mudar (ex.: media 7.0), precisamos
-//      corrigir em 3 lugares — e e facil esquecer um deles.
-//   3. Os dados de cada aluno estao espalhados em variaveis soltas.
-// No README deste modulo, refatoramos este codigo passo a passo.
+//   1. O mesmo cálculo de média aparece 3 vezes (copiar e colar).
+//   2. Se a regra de aprovação mudar (ex.: média 7.0), precisamos
+//      corrigir em 3 lugares — e é fácil esquecer um deles.
+//   3. Os dados de cada aluno estão espalhados em variáveis soltas.
+// No README deste módulo, refatoramos este código passo a passo.
 public class SistemaNotas {
 
     public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class SistemaNotas {
         }
         System.out.printf("%s: media %.2f - %s%n", nome1, media1, situacao1);
 
-        // Aluno 2 — mesmo codigo copiado e colado
+        // Aluno 2 — mesmo código copiado e colado
         String nome2 = "Bruno";
         double prova2a = 5.0;
         double prova2b = 4.5;
@@ -58,7 +58,7 @@ public class SistemaNotas {
         }
         System.out.printf("%s: media %.2f - %s%n", nome3, media3, situacao3);
 
-        // E a media da turma? Mais variaveis soltas...
+        // E a média da turma? Mais variáveis soltas...
         double mediaTurma = (media1 + media2 + media3) / 3;
         System.out.printf("%nMedia da turma: %.2f%n", mediaTurma);
     }

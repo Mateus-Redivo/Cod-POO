@@ -14,9 +14,9 @@ public class Main {
         boolean executando = true;
         while (executando) {
             exibirMenu();
-            int opcao = Validacoes.validarInteiro(scanner, "Escolha uma opção: ", 0, 6);
+            int opcao = Validacoes.validarInteiro(scanner, "Escolha uma opcao: ", 0, 6);
 
-            // Cada opcao em um metodo proprio: main enxuto
+            // Cada opção em um método próprio: main enxuto
             switch (opcao) {
                 case 1 -> adicionarContato();
                 case 2 -> listarTodos();
@@ -44,7 +44,7 @@ public class Main {
 
     private static void adicionarContato() {
         System.out.println("\n=== ADICIONAR CONTATO ===");
-        // A leitura ja e validada: nenhum contato entra com dado invalido
+        // A leitura já é validada: nenhum contato entra com dado inválido
         String nome = Validacoes.validarString(scanner, "Nome: ");
         String telefone = Validacoes.validarString(scanner, "Telefone: ");
         String email = Validacoes.validarEmail(scanner, "E-mail: ");
@@ -119,7 +119,7 @@ public class Main {
         }
     }
 
-    // Lista numerada + escolha validada: numero fora da faixa e recusado pelo validarInteiro
+    // Lista numerada + escolha validada: número fora da faixa é recusado pelo validarInteiro
     private static Contato escolherContato() {
         if (contatos.isEmpty()) {
             System.out.println("Nenhum contato cadastrado.");
@@ -128,7 +128,7 @@ public class Main {
         for (int i = 0; i < contatos.size(); i++) {
             System.out.println((i + 1) + " - " + contatos.get(i));
         }
-        int numero = Validacoes.validarInteiro(scanner, "Número do contato: ", 1, contatos.size());
+        int numero = Validacoes.validarInteiro(scanner, "Numero do contato: ", 1, contatos.size());
         return contatos.get(numero - 1);
     }
 }

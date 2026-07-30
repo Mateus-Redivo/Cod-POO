@@ -38,10 +38,10 @@ public class Validacoes {
     public static String mensagemErroNome(String nome) {
         // Verifica se o nome é nulo ou vazio
         if (nome == null || nome.trim().isEmpty()) {
-            return "Erro: O nome não pode estar vazio!";
+            return "Erro: O nome nao pode estar vazio!";
         // Verifica se o nome contém números usando regex
         } else if (nome.matches(".*\\d+.*")) {
-            return "Erro: O nome não pode conter números!";
+            return "Erro: O nome nao pode conter numeros!";
         }
         // Retorna string vazia se o nome for válido
         return "";
@@ -68,10 +68,10 @@ public class Validacoes {
     public static String mensagemErroIdade(int idade) {
         // Verifica se a idade é negativa
         if (idade < 0) {
-            return "Erro: A idade não pode ser negativa!";
+            return "Erro: A idade nao pode ser negativa!";
         // Verifica se a idade excede o limite máximo
         } else if (idade > 150) {
-            return "Erro: Idade inválida!";
+            return "Erro: Idade invalida!";
         }
         // Retorna string vazia se a idade for válida
         return "";
@@ -101,7 +101,7 @@ public class Validacoes {
             return "Erro: Altura muito baixa!";
         // Verifica se a altura excede o limite máximo
         } else if (altura > 3.0) {
-            return "Erro: Altura inválida!";
+            return "Erro: Altura invalida!";
         }
         // Retorna string vazia se a altura for válida
         return "";

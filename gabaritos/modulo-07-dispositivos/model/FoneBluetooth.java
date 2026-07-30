@@ -1,6 +1,6 @@
 package model;
 
-// Fone: implementa APENAS Carregavel (a conexao bluetooth nao e wifi)
+// Fone: implementa APENAS Carregavel (a conexão bluetooth não é wifi)
 public class FoneBluetooth implements Carregavel {
     private String marca;
     private int nivelBateria;

@@ -27,8 +27,8 @@ public class Vendedor extends Funcionario {
     @Override
     public void exibirInfo() {
         super.exibirInfo(); // Chama o método da classe pai
-        System.out.println("Vendas do mês: R$ " + vendas);
-        System.out.println("Comissão: " + (comissao * 100) + "%");
+        System.out.println("Vendas do mes: R$ " + vendas);
+        System.out.println("Comissao: " + (comissao * 100) + "%");
     }
 
     // Métodos com sobrecarga (Overload)
@@ -48,7 +48,7 @@ public class Vendedor extends Funcionario {
             this.vendas += valor;
             total += valor;
         }
-        System.out.println("Múltiplas vendas registradas no total de R$ " + total);
+        System.out.println("Multiplas vendas registradas no total de R$ " + total);
     }
 
     // Getters

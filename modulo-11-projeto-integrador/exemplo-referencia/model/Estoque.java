@@ -14,7 +14,7 @@ public class Estoque {
         if (produto != null) {
             for (Produto p : produtos) {
                 if (p.getId() == produto.getId()) {
-                    System.out.println("Erro: Produto com ID " + produto.getId() + " já existe!");
+                    System.out.println("Erro: Produto com ID " + produto.getId() + " ja existe!");
                     return false;
                 }
             }
@@ -43,7 +43,7 @@ public class Estoque {
             }
             return true; // Quantidade zero é uma operação válida mas não faz nada
         } else {
-            System.out.println("Produto com ID " + id + " não encontrado!");
+            System.out.println("Produto com ID " + id + " nao encontrado!");
             return false;
         }
     }
@@ -55,14 +55,14 @@ public class Estoque {
             System.out.println("Produto '" + produto.getNome() + "' removido com sucesso!");
             return true;
         } else {
-            System.out.println("Produto com ID " + id + " não encontrado!");
+            System.out.println("Produto com ID " + id + " nao encontrado!");
             return false;
         }
     }
     
     public void listarProdutos() {
         if (produtos.isEmpty()) {
-            System.out.println("Não há produtos cadastrados no estoque.");
+            System.out.println("Nao ha produtos cadastrados no estoque.");
             return;
         }
         

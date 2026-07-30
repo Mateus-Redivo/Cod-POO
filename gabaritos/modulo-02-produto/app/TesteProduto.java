@@ -19,7 +19,7 @@ public class TesteProduto {
         caderno.vender(4);
         System.out.println(caderno);
 
-        // 4. Venda maior que o estoque: nada muda, so avisa
+        // 4. Venda maior que o estoque: nada muda, só avisa
         System.out.println();
         caderno.vender(50);
 

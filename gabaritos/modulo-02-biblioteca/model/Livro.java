@@ -18,7 +18,7 @@ public class Livro {
             disponivel = false;
             System.out.println("Livro '" + titulo + "' foi emprestado com sucesso!");
         } else {
-            System.out.println("Livro '" + titulo + "' não está disponível para empréstimo.");
+            System.out.println("Livro '" + titulo + "' nao esta disponivel para emprestimo.");
         }
     }
     
@@ -27,12 +27,12 @@ public class Livro {
             disponivel = true;
             System.out.println("O livro '" + titulo + "' foi devolvido com sucesso!");
         } else {
-            System.out.println("O livro '" + titulo + "' já está disponível na biblioteca.");
+            System.out.println("O livro '" + titulo + "' ja esta disponivel na biblioteca.");
         }
     }
     
     public void exibirInfo() {
-        System.out.println("Livro: " + titulo + " | Autor: " + autor + " | Páginas: " + numeroPaginas + " | Disponível: " + disponivel);
+        System.out.println("Livro: " + titulo + " | Autor: " + autor + " | Paginas: " + numeroPaginas + " | Disponivel: " + disponivel);
     }
     
     // Getters

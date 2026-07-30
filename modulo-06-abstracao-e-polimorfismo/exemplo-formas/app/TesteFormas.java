@@ -12,20 +12,20 @@ public static void main(String[] args) {
         System.out.println("Criando um retangulo...");
         Retangulo ret = new Retangulo(5.0, 3.0, "Azul");
         
-        // Sobrecarga do metodo pintar()
-        ret.pintar("Vermelho");  // Versao com parametro
-        ret.pintar();            // Versao sem parametro
+        // Sobrecarga do método pintar()
+        ret.pintar("Vermelho");  // Versão com parâmetro
+        ret.pintar();            // Versão sem parâmetro
         System.out.println();
 
-        // Demonstrando Sobrecarga em metodos especificos
-        ret.redimensionar(8.0, 6.0);        // Dois parametros
-        ret.redimensionar(1.5);              // Um parametro (fator)
+        // Demonstrando Sobrecarga em métodos específicos
+        ret.redimensionar(8.0, 6.0);        // Dois parâmetros
+        ret.redimensionar(1.5);              // Um parâmetro (fator)
         System.out.println();
 
-        // Criando um circulo para demonstrar sobrecarga tambem
+        // Criando um círculo para demonstrar sobrecarga também
         Circulo circ = new Circulo(4.0, "Verde");
-        circ.redimensionar(6.0);             // Um parametro
-        circ.redimensionar(2.0, true);       // Dois parametros
+        circ.redimensionar(6.0);             // Um parâmetro
+        circ.redimensionar(2.0, true);       // Dois parâmetros
         System.out.println();
 
         //  Demonstrando Sobrescrita (Override) com polimorfismo
@@ -37,11 +37,11 @@ public static void main(String[] args) {
 
         for (int i = 0; i < formas.length; i++) {
             System.out.println("Forma " + (i + 1) + ":");
-            formas[i].exibirInfo(); // Chama versao sobrescrita de cada classe
+            formas[i].exibirInfo(); // Chama versão sobrescrita de cada classe
             System.out.println();
         }
 
-        // Comparando areas (sobrescrita em acao)
+        // Comparando areas (sobrescrita em ação)
         Retangulo ret1 = new Retangulo(5.0, 4.0, "Branco");
         Circulo circ1 = new Circulo(3.0, "Preto");
         

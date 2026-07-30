@@ -13,7 +13,7 @@ public class Contato {
         this.favorito = false;
     }
 
-    // Setters com validacao: nenhum contato fica com dado invalido
+    // Setters com validação: nenhum contato fica com dado inválido
     public void setNome(String nome) {
         if (nome != null && !nome.trim().isEmpty()) {
             this.nome = nome.trim();

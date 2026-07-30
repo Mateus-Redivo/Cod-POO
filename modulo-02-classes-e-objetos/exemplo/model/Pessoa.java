@@ -30,7 +30,7 @@ public class Pessoa {
 
     // Método que exibe uma mensagem de saudação com o nome e idade da pessoa
     public void saudacao() {
-        System.out.println("Olá, " + nome + "!" + " Você tem " + idade + " anos.");
+        System.out.println("Ola, " + nome + "!" + " Voce tem " + idade + " anos.");
     }
 
     // Métodos Getters e Setters para acesso controlado aos atributos privados

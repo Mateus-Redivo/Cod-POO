@@ -18,7 +18,7 @@ public class Produto {
             this.quantidadeEmEstoque += quantidade;
             System.out.println(quantidade + " unidades adicionadas ao estoque de " + nome);
         } else {
-            System.out.println("Quantidade inválida para adicionar ao estoque");
+            System.out.println("Quantidade invalida para adicionar ao estoque");
         }
     }
     
@@ -28,7 +28,7 @@ public class Produto {
             System.out.println(quantidade + " unidades removidas do estoque de " + nome);
             return true;
         } else {
-            System.out.println("Quantidade inválida ou insuficiente para remover do estoque");
+            System.out.println("Quantidade invalida ou insuficiente para remover do estoque");
             return false;
         }
     }
@@ -36,7 +36,7 @@ public class Produto {
     public void exibirInformacoes() {
         System.out.println("ID: " + id);
         System.out.println("Nome: " + nome);
-        System.out.println("Preço: R$" + preco);
+        System.out.println("Preco: R$" + preco);
         System.out.println("Quantidade em estoque: " + quantidadeEmEstoque);
     }
     

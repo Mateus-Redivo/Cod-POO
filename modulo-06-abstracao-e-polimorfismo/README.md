@@ -89,6 +89,13 @@ A MESMA linha `f.calcularArea()` executa a fórmula do círculo na primeira volt
 
 O ganho prático: amanhã alguém cria `Triangulo extends Forma` e este `for` continua funcionando **sem mudar uma linha**. Código que aceita extensão sem precisar de modificação é o que separa sistemas fáceis de manter dos difíceis.
 
+> **Cheiro de código** — o oposto dessa linha mágica é a escada de `if`:
+> `if (forma instanceof Circulo) { ... } else if (forma instanceof Retangulo) { ... }`.
+> Ela funciona, mas cresce a cada tipo novo e obriga a mexer em código que já estava pronto.
+> Sempre que escrever uma dessas, pergunte: "isso não deveria ser um método sobrescrito?".
+> Trocar escada de `if` por polimorfismo é uma das refatorações do
+> [módulo 09](../modulo-09-refatoracao/).
+
 ## Exemplos guiados (dois!)
 
 ### 1. Formas geométricas — o essencial em miniatura

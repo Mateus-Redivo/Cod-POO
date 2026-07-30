@@ -10,7 +10,7 @@ public abstract class Funcionario {
         this.nome = nome;
         this.salarioBase = salarioBase;
         this.departamento = departamento;
-        this.ativo = true; // Ativo por padrao
+        this.ativo = true; // Ativo por padrão
     }
 
     // Métodos abstratos
@@ -29,9 +29,9 @@ public abstract class Funcionario {
 
     public void exibirInfo() {
         System.out.println("Nome: " + nome);
-        System.out.println("Salário Base: R$ " + salarioBase);
+        System.out.println("Salario Base: R$ " + salarioBase);
         System.out.println("Departamento: " + departamento);
-        System.out.println("Ativo: " + (ativo ? "Sim" : "Não"));
+        System.out.println("Ativo: " + (ativo ? "Sim" : "Nao"));
     }
 
     public void demitir() {

@@ -8,7 +8,7 @@ public class Jogador {
     private int pontuacao;
 
     public Jogador(String apelido, int nivel) {
-        // Reutiliza os setters: a regra mora em Validacoes, nao se repete aqui
+        // Reutiliza os setters: a regra mora em Validacoes, não se repete aqui
         setApelido(apelido);
         setNivel(nivel);
         this.pontuacao = 0;
@@ -18,7 +18,7 @@ public class Jogador {
         if (Validacoes.validarApelido(apelido)) {
             this.apelido = apelido;
         }
-        // Se for invalido, o atributo simplesmente nao muda: o objeto continua integro
+        // Se for inválido, o atributo simplesmente não muda: o objeto continua íntegro
     }
 
     public void setNivel(int nivel) {

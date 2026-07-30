@@ -3,9 +3,9 @@ package app;
 import model.Aluno;
 import model.Turma;
 
-// Compare este main com o da versao "antes": mesmo comportamento,
+// Compare este main com o da versão "antes": mesmo comportamento,
 // mas agora ele apenas monta os objetos e delega o trabalho.
-// Adicionar um quarto aluno custa 3 linhas, nao 15.
+// Adicionar um quarto aluno custa 3 linhas, não 15.
 public class SistemaNotas {
 
     public static void main(String[] args) {

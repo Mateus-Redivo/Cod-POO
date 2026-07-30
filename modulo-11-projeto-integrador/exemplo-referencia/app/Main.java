@@ -38,10 +38,10 @@ public class Main {
                     break;
                 case 0:
                     executando = false;
-                    System.out.println("Finalizando o programa. Até mais!");
+                    System.out.println("Finalizando o programa. Ate mais!");
                     break;
                 default:
-                    System.out.println("Opção inválida. Por favor, tente novamente.");
+                    System.out.println("Opcao invalida. Por favor, tente novamente.");
             }
             
             // Pausa para o usuário ler a saída
@@ -81,7 +81,7 @@ public class Main {
         System.out.println("4 - Buscar produto por nome");
         System.out.println("5 - Listar todos os produtos");
         System.out.println("0 - Sair");
-        System.out.print("Escolha uma opção: ");
+        System.out.print("Escolha uma opcao: ");
     }
     
     private static int lerOpcao() {
@@ -96,13 +96,13 @@ public class Main {
         try {
             System.out.println("\n--- CADASTRO DE PRODUTO ---");
             
-            System.out.print("Informe o código do produto: ");
+            System.out.print("Informe o codigo do produto: ");
             int codigo = Integer.parseInt(scanner.nextLine());
             
             System.out.print("Informe o nome do produto: ");
             String nome = scanner.nextLine();
             
-            System.out.print("Informe o preço do produto: R$ ");
+            System.out.print("Informe o preco do produto: R$ ");
             double preco = Double.parseDouble(scanner.nextLine());
             
             Produto novoProduto = new Produto(codigo, nome, preco);
@@ -121,18 +121,18 @@ public class Main {
                     System.out.println("Estoque atualizado com sucesso!");
                 }
             } else {
-                System.out.println("Erro: Produto com este código já existe!");
+                System.out.println("Erro: Produto com este codigo ja existe!");
             }
         } catch (NumberFormatException _) {
-            System.out.println("Erro: Valor numérico inválido!");
+            System.out.println("Erro: Valor numerico invalido!");
         }
     }
     
     private static void atualizarEstoque() {
         try {
-            System.out.println("\n--- ATUALIZAÇÃO DE ESTOQUE ---");
+            System.out.println("\n--- ATUALIZACAO DE ESTOQUE ---");
             
-            System.out.print("Informe o código do produto: ");
+            System.out.print("Informe o codigo do produto: ");
             int codigo = Integer.parseInt(scanner.nextLine());
             
             System.out.print("Informe a quantidade a adicionar (use valores negativos para remover): ");
@@ -142,28 +142,28 @@ public class Main {
             if (sucesso) {
                 System.out.println("Estoque atualizado com sucesso!");
             } else {
-                System.out.println("Erro: Produto não encontrado ou quantidade insuficiente!");
+                System.out.println("Erro: Produto nao encontrado ou quantidade insuficiente!");
             }
         } catch (NumberFormatException _) {
-            System.out.println("Erro: Valor numérico inválido!");
+            System.out.println("Erro: Valor numerico invalido!");
         }
     }
     
     private static void removerProduto() {
         try {
-            System.out.println("\n--- REMOÇÃO DE PRODUTO ---");
+            System.out.println("\n--- REMOCAO DE PRODUTO ---");
             
-            System.out.print("Informe o código do produto a remover: ");
+            System.out.print("Informe o codigo do produto a remover: ");
             int codigo = Integer.parseInt(scanner.nextLine());
             
             boolean sucesso = estoque.removerProduto(codigo);
             if (sucesso) {
                 System.out.println("Produto removido com sucesso!");
             } else {
-                System.out.println("Erro: Produto não encontrado!");
+                System.out.println("Erro: Produto nao encontrado!");
             }
         } catch (NumberFormatException _) {
-            System.out.println("Erro: Valor numérico inválido!");
+            System.out.println("Erro: Valor numerico invalido!");
         }
     }
     

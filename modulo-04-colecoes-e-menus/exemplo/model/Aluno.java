@@ -49,7 +49,7 @@ public class Aluno {
     
     @Override
     public String toString() {
-        String tipoPlano = plano == 1 ? "Básico" : "Premium";
+        String tipoPlano = plano == 1 ? "Basico" : "Premium";
         return "Aluno{" +
                 "nome='" + nome + '\'' +
                 ", idade=" + idade +

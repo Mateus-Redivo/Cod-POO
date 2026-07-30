@@ -22,7 +22,7 @@ public class Veiculo {
     }
     
     public void fazerBarulho() {
-        System.out.println("O veículo está fazendo barulho!");
+        System.out.println("O veiculo esta fazendo barulho!");
     }
 
     // Método frear

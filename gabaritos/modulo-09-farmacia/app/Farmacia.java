@@ -7,11 +7,11 @@ import model.ItemVenda;
 
 /*
  * Respostas da secao "O que refatorar" do enunciado:
- * 1. Bloco duplicado 3 vezes: o calculo de subtotal, desconto e total,
+ * 1. Bloco duplicado 3 vezes: o cálculo de subtotal, desconto e total,
  *    seguido do printf da linha do item.
- * 2. Variaveis numeradas: nome1/2/3, preco1/2/3, quantidade1/2/3,
+ * 2. Variáveis numeradas: nome1/2/3, preco1/2/3, quantidade1/2/3,
  *    generico1/2/3, subtotal1/2/3, desconto1/2/3, total1/2/3.
- * 3. Numeros magicos: 0.20 (desconto de generico), 0.10 (desconto de compra
+ * 3. Números mágicos: 0.20 (desconto de genérico), 0.10 (desconto de compra
  *    grande) e 100.0 (limite de subtotal para o desconto de compra grande).
  */
 public class Farmacia {

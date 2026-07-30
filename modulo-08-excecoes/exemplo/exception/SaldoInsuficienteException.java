@@ -1,9 +1,9 @@
 package exception;
 
-// Excecao PERSONALIZADA: criada por nos para representar um erro
-// do NOSSO dominio (banco), com nome claro e dados uteis.
-// Estende Exception, portanto e uma excecao VERIFICADA (checked):
-// quem chamar um metodo que a lanca sera obrigado a tratar.
+// Exceção PERSONALIZADA: criada por nos para representar um erro
+// do NOSSO domínio (banco), com nome claro e dados úteis.
+// Estende Exception, portanto é uma exceção VERIFICADA (checked):
+// quem chamar um método que a lança será obrigado a tratar.
 public class SaldoInsuficienteException extends Exception {
 
     private double saldoAtual;
@@ -25,7 +25,7 @@ public class SaldoInsuficienteException extends Exception {
         return valorSolicitado;
     }
 
-    // Um metodo extra que a excecao pode oferecer para ajudar quem tratar o erro.
+    // Um método extra que a exceção pode oferecer para ajudar quem tratar o erro.
     public double getValorFaltante() {
         return valorSolicitado - saldoAtual;
     }

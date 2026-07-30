@@ -1,7 +1,7 @@
 package exception;
 
-// Checked: saque sem saldo e uma situacao normal do negocio — quem chama
-// sacar() e obrigado pelo compilador a decidir o que fazer com ela.
+// Checked: saque sem saldo é uma situação normal do negócio — quem chama
+// sacar() é obrigado pelo compilador a decidir o que fazer com ela.
 public class SaldoInsuficienteException extends Exception {
     private double saldoAtual;
     private double valorPedido;

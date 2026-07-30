@@ -48,24 +48,39 @@ Regras gerais:
 
 Pelo VS Code é ainda mais simples: abra o arquivo da pasta `app/` e clique em "Run" sobre o método `main`.
 
-### Acentos saindo errados no Windows (`Ol�` em vez de `Olá`)
+## 3. Como escrever o código: a convenção do repositório
 
-No Windows, o terminal e o Java nem sempre combinam sobre a tabela de caracteres, e as mensagens com acento saem embaralhadas. **Não é erro do seu código.** Duas soluções:
+Todos os exemplos e gabaritos seguem a mesma regra de acentuação, e espera-se o mesmo dos seus exercícios:
 
-```bash
-# Solução pontual: peça UTF-8 na hora de executar
-java -Dstdout.encoding=UTF-8 -cp bin app.TestePessoa
+| Onde | Acento | Por quê |
+| --- | --- | --- |
+| Comentários e Javadoc | **Com acento**, português correto | O comentário existe para ser lido por gente. Ele nunca vai para a tela, então nada pode embaralhar |
+| Mensagens de `System.out.println` | **Sem acento** | O texto vai para o console, e console é terreno traiçoeiro (veja abaixo) |
+| Nomes de classes, métodos e variáveis | Sem acento, como manda o Java | `calcularMedia`, nunca `calcularMédia` |
+
+```java
+// Define uma nova idade para a pessoa, se ela passar na validação
+public void setIdade(int idade) {
+    if (!Validacoes.idadeValida(idade)) {
+        System.out.println("Erro: a idade nao pode ser negativa!");
+        return;
+    }
+    this.idade = idade;
+}
 ```
 
+Parece um detalhe bobo, mas resolve um problema real: no Windows, o terminal e o Java nem sempre combinam sobre a tabela de caracteres, e um `System.out.println("Olá")` pode aparecer como `Ol�`. Sem acento na string, **seu programa sai igual em qualquer computador do laboratório** — e você não perde meia aula caçando um erro que não é seu.
+
+Se ainda assim você quiser acentos nas mensagens (no seu projeto final, por exemplo), use:
+
 ```bash
-# Solução definitiva: compile e execute sempre em UTF-8
 javac -encoding UTF-8 -d bin model/*.java app/*.java
 java -Dstdout.encoding=UTF-8 -cp bin app.TestePessoa
 ```
 
-Rodando pelo botão "Run" do VS Code isso normalmente já vem resolvido. Se preferir não lutar com acentuação, evite acentos nas mensagens de `System.out.println` — é o que fazem alguns exemplos deste repositório.
+Pelo botão "Run" do VS Code isso normalmente já vem resolvido.
 
-## 3. Como fazer os exercícios
+## 4. Como fazer os exercícios
 
 1. Leia o enunciado em `modulo-XX/exercicios/`.
 2. Crie uma pasta para a sua solução **fora** das pastas de exemplo (sugestão: `minhas-solucoes/modulo-XX/` na raiz do repositório — essa pasta é sua).
@@ -74,7 +89,7 @@ Rodando pelo botão "Run" do VS Code isso normalmente já vem resolvido. Se pref
 5. Passe pelos "Critérios de aceitação" do enunciado, um por um.
 6. Só depois disso, se quiser, compare com o [gabarito](gabaritos/).
 
-## 4. Fluxo de estudo recomendado
+## 5. Fluxo de estudo recomendado
 
 ```mermaid
 flowchart LR
@@ -88,7 +103,7 @@ flowchart LR
 
 O passo C é sério: altere valores, remova um `private`, apague um `@Override`, veja o que o compilador reclama. Entender os erros é metade do aprendizado.
 
-## 5. Onde pedir ajuda
+## 6. Onde pedir ajuda
 
 - Releia a seção "Erros comuns" do módulo — provavelmente seu problema está lá.
 - Consulte o [GLOSSARIO.md](GLOSSARIO.md) quando um termo não fizer sentido.

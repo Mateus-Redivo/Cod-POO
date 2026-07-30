@@ -3,8 +3,8 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-// Segunda classe extraida: a TURMA e quem sabe calcular a media geral.
-// Na versao monolitica, isso era uma conta solta no final do main.
+// Segunda classe extraida: a TURMA e quem sabe calcular a média geral.
+// Na versão monolitica, isso era uma conta solta no final do main.
 public class Turma {
 
     private String nomeDaTurma;

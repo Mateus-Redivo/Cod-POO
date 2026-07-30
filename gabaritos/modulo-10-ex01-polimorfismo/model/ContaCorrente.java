@@ -13,6 +13,6 @@ public class ContaCorrente extends Conta {
 
     @Override
     public void processarFimDeMes() {
-        descontarTarifaMensal(); // reaproveita o metodo que ja existia
+        descontarTarifaMensal(); // reaproveita o método que já existia
     }
 }

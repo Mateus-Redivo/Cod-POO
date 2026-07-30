@@ -1,6 +1,6 @@
 package model;
 
-// Nova filha da hierarquia: herda tudo de Veiculo e adiciona so a sua especialidade
+// Nova filha da hierarquia: herda tudo de Veiculo e adiciona só a sua especialidade
 public class Moto extends Veiculo {
     private int cilindradas;
     private boolean temBau;
@@ -20,10 +20,10 @@ public class Moto extends Veiculo {
     public void exibirInfo() {
         super.exibirInfo(); // reaproveita a parte comum
         System.out.println("Cilindradas: " + cilindradas);
-        System.out.println("Tem baú: " + (temBau ? "Sim" : "Não"));
+        System.out.println("Tem bau: " + (temBau ? "Sim" : "Nao"));
     }
 
-    // Metodo proprio da Moto: usa o getter herdado para decidir
+    // Método próprio da Moto: usa o getter herdado para decidir
     public void empinar() {
         if (getVelocidade() > 20) {
             System.out.println("A moto empinou! Segura firme!");
@@ -32,7 +32,7 @@ public class Moto extends Veiculo {
         }
     }
 
-    // Getters especificos
+    // Getters específicos
     public int getCilindradas() {
         return cilindradas;
     }

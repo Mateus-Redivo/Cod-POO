@@ -40,7 +40,7 @@ public class Main {
             conta.sacar(valor);
             System.out.println("Saque realizado. Retire suas notas.");
         } catch (SaldoInsuficienteException e) {
-            // Mensagem amigavel USANDO os dados da excecao
+            // Mensagem amigável USANDO os dados da exceção
             System.out.printf("Nao foi possivel sacar: saldo insuficiente. Faltam R$ %.2f.%n",
                     e.getValorFaltante());
         } catch (NotaIndisponivelException e) {
@@ -48,7 +48,7 @@ public class Main {
         } catch (ValorInvalidoException e) {
             System.out.println("Nao foi possivel sacar: " + e.getMessage());
         } finally {
-            // O finally roda SEMPRE: com sucesso ou com excecao
+            // O finally roda SEMPRE: com sucesso ou com exceção
             System.out.println("--- operacao encerrada ---");
         }
     }
@@ -65,7 +65,7 @@ public class Main {
         }
     }
 
-    // Leitura robusta: letra no lugar de numero NAO derruba o programa
+    // Leitura robusta: letra no lugar de número NÃO derruba o programa
     private static int lerInteiro(String mensagem) {
         while (true) {
             try {

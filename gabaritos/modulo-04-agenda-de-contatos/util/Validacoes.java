@@ -2,7 +2,7 @@ package util;
 
 import java.util.Scanner;
 
-// Mesmo padrao do exemplo da academia: leitura validada do Scanner em metodos static
+// Mesmo padrão do exemplo da academia: leitura validada do Scanner em métodos static
 public class Validacoes {
 
     public static String validarString(Scanner scanner, String mensagem) {
@@ -11,7 +11,7 @@ public class Validacoes {
             System.out.print(mensagem);
             entrada = scanner.nextLine().trim();
             if (entrada.isEmpty()) {
-                System.out.println("Erro: O campo não pode estar vazio.");
+                System.out.println("Erro: O campo nao pode estar vazio.");
             }
         } while (entrada.isEmpty());
         return entrada;
@@ -38,9 +38,9 @@ public class Validacoes {
                 if (numero >= min && numero <= max) {
                     return numero;
                 }
-                System.out.printf("Erro: Digite um número entre %d e %d.\n", min, max);
+                System.out.printf("Erro: Digite um numero entre %d e %d.\n", min, max);
             } catch (NumberFormatException e) {
-                System.out.println("Erro: Digite um número válido.");
+                System.out.println("Erro: Digite um numero valido.");
             }
         }
     }

@@ -16,16 +16,16 @@ public abstract class Conta {
 
     public abstract void processarFimDeMes();
 
-    // Antes: valores invalidos eram IGNORADOS em silencio.
-    // Agora: toda falha vira excecao com nome proprio.
+    // Antes: valores inválidos eram IGNORADOS em silencio.
+    // Agora: toda falha vira exceção com nome próprio.
     public void depositar(double valor) {
         if (valor <= 0) {
-            throw new ValorInvalidoException("O valor do depósito deve ser positivo.");
+            throw new ValorInvalidoException("O valor do deposito deve ser positivo.");
         }
         saldo += valor;
     }
 
-    // Mudamos o CONTRATO do metodo: quem chama sacar agora e obrigado a tratar
+    // Mudamos o CONTRATO do método: quem chama sacar agora é obrigado a tratar
     public void sacar(double valor) throws SaldoInsuficienteException {
         if (valor <= 0) {
             throw new ValorInvalidoException("O valor do saque deve ser positivo.");

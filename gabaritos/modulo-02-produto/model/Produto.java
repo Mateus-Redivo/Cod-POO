@@ -20,7 +20,7 @@ public class Produto {
             System.out.println("Quantidade de venda deve ser positiva.");
             return;
         }
-        // "SE a quantidade pedida for menor ou igual ao estoque, vende; SENAO, avisa"
+        // "SE a quantidade pedida for menor ou igual ao estoque, vende; SENÃO, avisa"
         if (qtd <= quantidade) {
             quantidade -= qtd;
             System.out.println("Vendidas " + qtd + " unidades de " + nome + ".");

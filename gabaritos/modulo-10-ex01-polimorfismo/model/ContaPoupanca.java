@@ -12,6 +12,6 @@ public class ContaPoupanca extends Conta {
 
     @Override
     public void processarFimDeMes() {
-        renderJuros(); // reaproveita o metodo que ja existia
+        renderJuros(); // reaproveita o método que já existia
     }
 }

@@ -20,8 +20,8 @@ public class TestePagamentos {
         joao.receberAvaliacao(5);
         joao.receberAvaliacao(4);
 
-        // Aqui esta o poder da interface: uma lista que aceita QUALQUER objeto
-        // que assine o contrato Pagavel, nao importa a classe concreta.
+        // Aqui está o poder da interface: uma lista que aceita QUALQUER objeto
+        // que assine o contrato Pagavel, não importa a classe concreta.
         List<Pagavel> folhaDePagamento = new ArrayList<>();
         folhaDePagamento.add(maria);
         folhaDePagamento.add(joao);
@@ -33,7 +33,7 @@ public class TestePagamentos {
         }
         System.out.printf("%nTotal da folha: R$ %.2f%n", total);
 
-        // Freelancer tambem e Avaliavel — o mesmo objeto visto por outro contrato.
+        // Freelancer também é Avaliavel — o mesmo objeto visto por outro contrato.
         Avaliavel avaliado = joao;
         System.out.printf("%nMedia de avaliacoes de %s: %.1f%n",
                 joao.getNome(), avaliado.getMediaAvaliacoes());

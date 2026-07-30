@@ -16,7 +16,7 @@ public class Personagem {
         this.vida = 100;
     }
 
-    // Metodos
+    // Métodos
     public void atacar(double dano) {
         if (dano <= 0) {
             System.out.println("Dano deve ser maior que zero");
@@ -46,7 +46,7 @@ public class Personagem {
     }
 
     public void usarHabilidade() {
-        System.out.println("O personagem está usando uma habilidade");
+        System.out.println("O personagem esta usando uma habilidade");
     }
 
     public void exibirInfo() {
@@ -89,7 +89,7 @@ public class Personagem {
         this.vida = vida;
     }
 
-    // Metodo toString para exibir informacoes do personagem
+    // Método toString para exibir informações do personagem
     @Override
     public String toString() {
         return "Personagem{" +

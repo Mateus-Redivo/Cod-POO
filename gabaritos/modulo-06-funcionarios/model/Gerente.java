@@ -28,7 +28,7 @@ public class Gerente extends Funcionario {
     @Override
     public void exibirInfo() {
         super.exibirInfo(); // Chama o método da classe pai
-        System.out.println("Tamanho da equipe: " + equipe + " funcionários");
+        System.out.println("Tamanho da equipe: " + equipe + " funcionarios");
         System.out.println("Meta mensal: R$ " + metaMensal);
     }
 
@@ -46,7 +46,7 @@ public class Gerente extends Funcionario {
     public void definirMeta() {
         // Meta automática baseada no tamanho da equipe
         this.metaMensal = equipe * 10000.0;
-        System.out.println("Meta automática definida: R$ " + metaMensal + " (baseada na equipe de " + equipe + " pessoas)");
+        System.out.println("Meta automatica definida: R$ " + metaMensal + " (baseada na equipe de " + equipe + " pessoas)");
     }
 
     // Getters

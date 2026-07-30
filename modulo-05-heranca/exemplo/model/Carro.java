@@ -17,7 +17,7 @@ public class Carro extends Veiculo {
     // Sobrescrevendo o método acelerar para adicionar funcionalidade específica do carro
     @Override
     public void acelerar(double incremento) {
-        System.out.println("Carro " + marca + " " + modelo + " está acelerando...");
+        System.out.println("Carro " + marca + " " + modelo + " esta acelerando...");
         super.acelerar(incremento); // Chama o método da classe pai
     }
     
@@ -34,8 +34,8 @@ public class Carro extends Veiculo {
     @Override
     public void exibirInfo() {
         super.exibirInfo(); // Chama o método da classe pai
-        System.out.println("Número de portas: " + numeroPortas);
-        System.out.println("Tipo de combustível: " + tipoCombustivel);
+        System.out.println("Numero de portas: " + numeroPortas);
+        System.out.println("Tipo de combustivel: " + tipoCombustivel);
     }
     
     // Getters específicos

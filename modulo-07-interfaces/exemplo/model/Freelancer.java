@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Freelancer implementa DUAS interfaces ao mesmo tempo.
-// FuncionarioClt e Freelancer nao tem nenhum parentesco (nao ha heranca
+// FuncionarioClt e Freelancer não têm nenhum parentesco (não há herança
 // entre eles), mas ambos podem ser tratados como Pagavel.
 public class Freelancer implements Pagavel, Avaliavel {
 

@@ -13,8 +13,8 @@ public class ContaCaixa {
         this.saldo = saldoInicial;
     }
 
-    // As checked sao DECLARADAS com throws; a unchecked (ValorInvalidoException)
-    // nao precisa aparecer na assinatura
+    // As checked são DECLARADAS com throws; a unchecked (ValorInvalidoException)
+    // não precisa aparecer na assinatura
     public void sacar(double valor) throws NotaIndisponivelException, SaldoInsuficienteException {
         if (valor <= 0) {
             throw new ValorInvalidoException("O valor do saque deve ser positivo.");

@@ -26,7 +26,7 @@ public class Retangulo extends Forma {
     // Sobrescrita
     @Override
     public void exibirInfo() {
-        super.exibirInfo(); // Chama metodo da classe pai
+        super.exibirInfo(); // Chama método da classe pai
         System.out.println("Largura: " + largura);
         System.out.println("Altura: " + altura);
         System.out.println("========================");
@@ -34,14 +34,14 @@ public class Retangulo extends Forma {
     
     // Exemplo de Sobrecarga (Overload)
 
-    // Metodo redimensionar com dois parametros
+    // Método redimensionar com dois parâmetros
     public void redimensionar(double novaLargura, double novaAltura) {
         this.largura = novaLargura;
         this.altura = novaAltura;
         System.out.println("Retangulo redimensionado para: " + largura + " x " + altura);
     }
     
-    // Metodo redimensionar com um parametro - Sobrecarga do metodo acima
+    // Método redimensionar com um parâmetro - Sobrecarga do método acima
     public void redimensionar(double fatorEscala) {
         this.largura *= fatorEscala;
         this.altura *= fatorEscala;
@@ -49,7 +49,7 @@ public class Retangulo extends Forma {
                          " para: " + largura + " x " + altura);
     }
     
-    // Getters especificos
+    // Getters específicos
     public double getLargura() {
         return largura;
     }

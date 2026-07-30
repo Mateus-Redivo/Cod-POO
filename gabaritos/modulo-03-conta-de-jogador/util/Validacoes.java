@@ -1,7 +1,7 @@
 package util;
 
-// Cada regra de validacao existe SO AQUI: setters e construtor chamam estes metodos.
-// Metodos static: nao precisamos de objeto, e a classe nao guarda estado nenhum.
+// Cada regra de validação existe SÓ AQUI: setters e construtor chamam estes métodos.
+// Métodos static: não precisamos de objeto, e a classe não guarda estado nenhum.
 public class Validacoes {
 
     public static boolean validarApelido(String apelido) {

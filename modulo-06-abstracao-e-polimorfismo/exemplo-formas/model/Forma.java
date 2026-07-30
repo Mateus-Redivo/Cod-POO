@@ -5,14 +5,14 @@ public abstract class Forma {
     protected String nome;
     protected String cor;
 
-    // Construtor protegido para evitar instancia direta
+    // Construtor protegido para evitar instância direta
     protected Forma(String nome, String cor) {
         this.nome = nome;
         this.cor = cor;
     }
 
-    // Metodos abstratos: a Forma generica NAO SABE calcular area nem perimetro.
-    // Cada classe filha (Circulo, Retangulo...) e OBRIGADA a implementar os dois.
+    // Métodos abstratos: a Forma genérica NÃO SABE calcular área nem perímetro.
+    // Cada classe filha (Circulo, Retangulo...) é OBRIGADA a implementar os dois.
     public abstract double calcularArea();
 
     public abstract double calcularPerimetro();
@@ -24,13 +24,13 @@ public abstract class Forma {
         System.out.println(nome + " foi pintado(a) de " + novaCor);
     }
 
-    // Metodo pintar sem parametro - Sobrecarga do metodo acima
+    // Método pintar sem parâmetro - Sobrecarga do método acima
     public void pintar() {
         this.cor = "Branco";
         System.out.println(nome + " foi pintado(a) de Branco (cor padrao)");
     }
 
-    // Metodo que pode ser sobrescrito
+    // Método que pode ser sobrescrito
     public void exibirInfo() {
         System.out.println("=== Informacoes da Forma ===");
         System.out.println("Nome: " + nome);

@@ -1,7 +1,7 @@
 package model;
 
 public class ItemVenda {
-    // Os numeros magicos do codigo original, agora constantes com nome
+    // Os números mágicos do código original, agora constantes com nome
     private static final double DESCONTO_GENERICO = 0.20;
     private static final double DESCONTO_COMPRA_GRANDE = 0.10;
     private static final double LIMITE_COMPRA_GRANDE = 100.0;
@@ -22,7 +22,7 @@ public class ItemVenda {
         return preco * quantidade;
     }
 
-    // A regra de desconto escrita UMA unica vez (no original, copiada 3 vezes)
+    // A regra de desconto escrita UMA única vez (no original, copiada 3 vezes)
     public double calcularDesconto() {
         double subtotal = calcularSubtotal();
         if (generico) {

@@ -3,8 +3,8 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-// VERSAO "DEPOIS": os dados do aluno e as regras que operam sobre eles
-// agora vivem juntos. A regra de aprovacao existe em UM unico lugar.
+// VERSÃO "DEPOIS": os dados do aluno e as regras que operam sobre eles
+// agora vivem juntos. A regra de aprovação existe em UM único lugar.
 public class Aluno {
 
     private String nome;
@@ -32,8 +32,8 @@ public class Aluno {
         return soma / notas.size();
     }
 
-    // A regra de negocio esta centralizada: se mudar a nota de corte,
-    // alteramos apenas este metodo.
+    // A regra de negócio esta centralizada: se mudar a nota de corte,
+    // alteramos apenas este método.
     public String getSituacao() {
         double media = calcularMedia();
         if (media >= 6.0) {

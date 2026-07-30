@@ -80,6 +80,7 @@ Repare que a regra em si (`idade entre 0 e 150`) está escrita **uma vez só**, 
 - [model/Pessoa.java](exemplo/model/Pessoa.java) — a Pessoa do módulo 02, agora blindada: os setters validam e os construtores atribuem passando por eles.
 - [util/Validacoes.java](exemplo/util/Validacoes.java) — validações de nome (não vazio, sem dígitos), idade (0 a 150) e altura (0,3 m a 3,0 m).
 - [app/MenuPessoa.java](exemplo/app/MenuPessoa.java) — um menu de console que valida a entrada antes de chamar o setter.
+- [app/TesteValidacoes.java](exemplo/app/TesteValidacoes.java) — a mesma classe atacada sem menu, direto no código.
 
 ```bash
 cd exemplo
@@ -89,7 +90,11 @@ java -cp bin app.MenuPessoa
 
 Use o menu e tente ativamente quebrar o programa: idade negativa, nome com números, nome vazio. Observe que o objeto sobrevive intacto a todas as tentativas.
 
-Depois faça o teste que o menu nunca faria — escreva um `main` curto que ataca o objeto direto:
+Depois rode o teste que o menu nunca faria — o ataque direto ao objeto:
+
+```bash
+java -cp bin app.TesteValidacoes
+```
 
 ```java
 Pessoa p = new Pessoa("Ana", 30);
@@ -100,11 +105,12 @@ Pessoa q = new Pessoa("Joao123", 200);   // recusados ja no construtor
 System.out.println(q);                   // nasce com valores seguros, nao invalidos
 ```
 
-Sem a validação no setter, a primeira linha teria estragado o objeto e o programa seguiria em frente sem avisar ninguém.
+Sem a validação no setter, a primeira linha teria estragado o objeto e o programa seguiria em frente sem avisar ninguém. É por isso que a validação do menu, sozinha, não bastaria: ela protege **aquela tela**, não a classe.
 
 ## Exercícios
 
 1. [EXERCICIO-01-conta-de-jogador.md](exercicios/EXERCICIO-01-conta-de-jogador.md) — construa uma classe blindada por validações.
+2. [EXERCICIO-02-termostato.md](exercicios/EXERCICIO-02-termostato.md) — desafio: quando a regra depende de dois atributos ao mesmo tempo.
 
 ## Auto-avaliação
 

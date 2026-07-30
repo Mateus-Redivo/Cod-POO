@@ -24,20 +24,20 @@ public class Circulo extends Forma {
     // Sobrescrita
     @Override
     public void exibirInfo() {
-        super.exibirInfo(); // Chama metodo da classe pai
+        super.exibirInfo(); // Chama método da classe pai
         System.out.println("Raio: " + raio);
         System.out.println("========================");
     }
 
     // Exemplo de Sobrecarga (Overload)
 
-    // Metodo redimensionar com um parametro
+    // Método redimensionar com um parâmetro
     public void redimensionar(double novoRaio) {
         this.raio = novoRaio;
         System.out.println("Circulo redimensionado para raio: " + raio);
     }
 
-    // Metodo redimensionar com dois parametros - Sobrecarga do metodo acima
+    // Método redimensionar com dois parâmetros - Sobrecarga do método acima
     public void redimensionar(double fatorEscala, boolean manterProporcao) {
         if (manterProporcao) {
             this.raio *= fatorEscala;
@@ -47,7 +47,7 @@ public class Circulo extends Forma {
         }
     }
 
-    // Getter especifico
+    // Getter específico
     public double getRaio() {
         return raio;
     }

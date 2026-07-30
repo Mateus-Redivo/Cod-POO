@@ -97,6 +97,19 @@ Guarde os nomes; cada um terá seu próprio módulo:
 - [ ] Sei dizer o que foi abstraído (deixado de fora) na classe `Pessoa`
 - [ ] Decorei os nomes dos 4 pilares
 
+## Erros comuns
+
+Neste módulo os erros não são de compilação — são de entendimento. E eles atrapalham os oito
+módulos seguintes:
+
+| Erro | O que está acontecendo |
+| --- | --- |
+| Confundir classe com objeto | A classe é a **planta**; o objeto é a **casa construída**. Um `new` = uma casa. Duas casas com a mesma planta são objetos diferentes |
+| Achar que POO é sempre melhor | Para um script de 20 linhas, procedural é mais direto. POO paga o próprio custo quando o programa cresce e passa a ter muitas "coisas" iguais com dados diferentes |
+| Traduzir "objeto" por "coisa física" | Um objeto pode ser um `Pedido`, uma `Reserva`, um `Pagamento` — nada disso se pega com a mão |
+| Achar que abstrair é "simplificar sempre" | Abstrair é escolher **em função do problema**. Tirar o CPF é acerto num app de IMC e erro grave num sistema bancário |
+| Passar direto para o módulo 02 sem rodar as duas versões | O resto da disciplina responde a uma pergunta que você não terá feito |
+
 ## Para discutir em aula
 
 - A versão procedural é "errada"? (Dica: não. A questão é escala e manutenção.)

@@ -91,6 +91,12 @@ flowchart TD
 
 Memorize esse desenho: ele se repete no sistema bancário (módulo 10) e provavelmente no seu projeto final.
 
+> **Cheiro de código** — a partir daqui seus programas ficam grandes o bastante para você começar a
+> se repetir. Toda vez que copiar um bloco e trocar um detalhe (o mesmo `if` de validação em três
+> opções do menu, o mesmo `for` de listagem em dois lugares), anote mentalmente: isso tem nome,
+> chama-se **duplicação**, e é o assunto do [módulo 09](../modulo-09-refatoracao/). Não precisa
+> resolver agora — precisa começar a enxergar.
+
 ## Exemplo guiado: Sistema Academia
 
 - [model/Aluno.java](exemplo/model/Aluno.java) — nome, idade e plano (1 = Básico, 2 = Premium).

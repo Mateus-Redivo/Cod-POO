@@ -5,17 +5,17 @@ import model.Carro;
 
 public class TesteHeranca {
     public static void main(String[] args) {
-        System.out.println("=== TESTE DE HERANÇA EM JAVA ===");
+        System.out.println("=== TESTE DE HERANCA EM JAVA ===");
         System.out.println();
         
         // Criando um objeto Veiculo
-        System.out.println("1. Criando um veículo genérico:");
+        System.out.println("1. Criando um veiculo generico:");
         Veiculo veiculo = new Veiculo("Yamaha", "MT-07", 2023);
         veiculo.exibirInfo();
         System.out.println();
         
         // Testando métodos da classe Veiculo
-        System.out.println("2. Testando métodos do veículo:");
+        System.out.println("2. Testando metodos do veiculo:");
         veiculo.acelerar(30);
         veiculo.acelerar(20);
         veiculo.frear(15);
@@ -28,14 +28,14 @@ public class TesteHeranca {
         System.out.println();
         
         // Testando herança - usando método acelerar herdado
-        System.out.println("4. Testando herança - método acelerar:");
+        System.out.println("4. Testando heranca - metodo acelerar:");
         carro.acelerar(25);  // Método herdado e sobrescrito
         carro.acelerar(35);
         carro.frear(20);     // Método herdado
         System.out.println();
         
         // Testando métodos específicos da classe Carro
-        System.out.println("5. Testando métodos específicos do carro:");
+        System.out.println("5. Testando metodos especificos do carro:");
         carro.ligarAr();
         carro.tocarBuzina();
         System.out.println();

@@ -1,6 +1,6 @@
-// CODIGO INICIAL DO EXERCICIO DE REFATORACAO.
+// CÓDIGO INICIAL DO EXERCÍCIO DE REFATORACAO.
 // Este programa funciona, mas foi escrito sem POO: tudo no main,
-// com muito copiar e colar. Sua missao esta em EXERCICIO-01-refatorar-farmacia.md.
+// com muito copiar e colar. Sua missão esta em EXERCICIO-01-refatorar-farmacia.md.
 public class Farmacia {
 
     public static void main(String[] args) {

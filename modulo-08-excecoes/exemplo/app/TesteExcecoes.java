@@ -21,7 +21,7 @@ public class TesteExcecoes {
             conta.sacar(500.00);
             System.out.println("Esta linha NUNCA executa se a excecao for lancada.");
         } catch (SaldoInsuficienteException e) {
-            // getMessage() traz a mensagem que montamos no construtor da excecao.
+            // getMessage() traz a mensagem que montamos no construtor da exceção.
             System.out.println("Operacao falhou: " + e.getMessage());
             System.out.printf("Faltaram R$ %.2f para completar o saque.%n", e.getValorFaltante());
         }
@@ -39,8 +39,8 @@ public class TesteExcecoes {
         } catch (SaldoInsuficienteException e) {
             System.out.println("Operacao falhou: " + e.getMessage());
         } finally {
-            // O bloco finally roda com ou sem excecao.
-            // E usado para "arrumar a casa": fechar Scanner, arquivo, conexao...
+            // O bloco finally roda com ou sem exceção.
+            // E usado para "arrumar a casa": fechar Scanner, arquivo, conexão...
             System.out.println("Encerrando operacao (finally executou).");
         }
 

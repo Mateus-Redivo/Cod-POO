@@ -1,7 +1,7 @@
 package model;
 
-// FuncionarioClt assina o contrato Pagavel: e obrigado a implementar
-// calcularPagamento() e getNome(), senao o codigo nem compila.
+// FuncionarioClt assina o contrato Pagavel: é obrigado a implementar
+// calcularPagamento() e getNome(), senão o código nem compila.
 public class FuncionarioClt implements Pagavel {
 
     private String nome;
@@ -14,7 +14,7 @@ public class FuncionarioClt implements Pagavel {
 
     @Override
     public double calcularPagamento() {
-        // CLT: salario fixo mensal.
+        // CLT: salário fixo mensal.
         return salarioMensal;
     }
 

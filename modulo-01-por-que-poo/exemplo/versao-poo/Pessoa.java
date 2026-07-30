@@ -1,7 +1,7 @@
-// Versao orientada a objetos da Calculadora de IMC.
+// Versão orientada a objetos da Calculadora de IMC.
 // Compare este arquivo com ../versao-procedural/CalculadoraIMC.java:
 // aqui os DADOS (peso, altura) e os COMPORTAMENTOS (calcular, classificar)
-// vivem juntos dentro de uma unica classe.
+// vivem juntos dentro de uma única classe.
 public class Pessoa {
 
     private String nome;
@@ -14,13 +14,13 @@ public class Pessoa {
         this.altura = altura;
     }
 
-    // O calculo do IMC pertence a Pessoa: quem tem peso e altura e ela.
-    // Na versao procedural, esse calculo dependia de variaveis soltas.
+    // O cálculo do IMC pertence a Pessoa: quem tem peso e altura é ela.
+    // Na versão procedural, esse cálculo dependia de variáveis soltas.
     public double calcularIMC() {
         return peso / (altura * altura);
     }
 
-    // A classificacao tambem e responsabilidade da propria Pessoa.
+    // A classificação também é responsabilidade da própria Pessoa.
     public String classificarIMC() {
         double imc = calcularIMC();
         if (imc < 18.5) {

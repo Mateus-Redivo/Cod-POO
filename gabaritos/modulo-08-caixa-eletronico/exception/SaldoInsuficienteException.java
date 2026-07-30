@@ -1,7 +1,7 @@
 package exception;
 
-// CHECKED (estende Exception): saldo insuficiente e uma situacao NORMAL do negocio.
-// Quem chama sacar() e obrigado pelo compilador a decidir o que fazer com ela.
+// CHECKED (estende Exception): saldo insuficiente é uma situação NORMAL do negócio.
+// Quem chama sacar() é obrigado pelo compilador a decidir o que fazer com ela.
 public class SaldoInsuficienteException extends Exception {
     private double saldoAtual;
     private double valorPedido;

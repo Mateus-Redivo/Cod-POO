@@ -25,7 +25,7 @@ public class Guerreiro extends Personagem {
     public void exibirInfo() {
         super.exibirInfo();
         System.out.println("Arma: " + arma);
-        System.out.println("Armadura: " + (armadura ? "Equipada" : "Não equipada"));
+        System.out.println("Armadura: " + (armadura ? "Equipada" : "Nao equipada"));
     }
 
     public void defender() {
@@ -35,7 +35,7 @@ public class Guerreiro extends Personagem {
     }
 
     public void berrar() {
-        System.out.println(getNome() + " está berrando de raiva!");
+        System.out.println(getNome() + " esta berrando de raiva!");
     }
 
     // Getters e Setters

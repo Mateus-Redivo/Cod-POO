@@ -15,7 +15,7 @@ public class Main {
         boolean executando = true;
         while (executando) {
             exibirMenu();
-            int opcao = Validacoes.validarInteiro(scanner, "Escolha uma opção: ", 0, 6);
+            int opcao = Validacoes.validarInteiro(scanner, "Escolha uma opcao: ", 0, 6);
 
             switch (opcao) {
                 case 1 -> criarConta();
@@ -32,25 +32,25 @@ public class Main {
     }
 
     private static void exibirMenu() {
-        System.out.println("\n=== SISTEMA BANCÁRIO ===");
+        System.out.println("\n=== SISTEMA BANCARIO ===");
         System.out.println("1 - Criar nova conta");
-        System.out.println("2 - Realizar depósito");
+        System.out.println("2 - Realizar deposito");
         System.out.println("3 - Realizar saque");
         System.out.println("4 - Consultar saldo");
         System.out.println("5 - Listar todas as contas");
-        System.out.println("6 - Processar operações mensais");
+        System.out.println("6 - Processar operacoes mensais");
         System.out.println("0 - Sair");
     }
 
     private static void criarConta() {
         System.out.println("\n=== CRIAR NOVA CONTA ===");
         String titular = Validacoes.validarString(scanner, "Nome do titular: ");
-        // A ContaSalario entrou no menu sem NENHUMA mudanca no Banco
+        // A ContaSalario entrou no menu sem NENHUMA mudança no Banco
         int tipo = Validacoes.validarInteiro(scanner,
-                "Tipo de conta (1-Corrente, 2-Poupança, 3-Salário): ", 1, 3);
+                "Tipo de conta (1-Corrente, 2-Poupanca, 3-Salario): ", 1, 3);
         int numero = contas.size() + 1;
 
-        // Conta agora e abstrata: so instanciamos as filhas concretas
+        // Conta agora é abstrata: só instanciamos as filhas concretas
         Conta novaConta = switch (tipo) {
             case 1 -> new ContaCorrente(numero, titular);
             case 2 -> new ContaPoupanca(numero, titular);
@@ -64,12 +64,12 @@ public class Main {
     }
 
     private static void realizarDeposito() {
-        System.out.println("\n=== REALIZAR DEPÓSITO ===");
+        System.out.println("\n=== REALIZAR DEPOSITO ===");
         Conta conta = buscarConta();
         if (conta != null) {
-            double valor = Validacoes.validarDouble(scanner, "Valor do depósito: R$ ", 0.01);
+            double valor = Validacoes.validarDouble(scanner, "Valor do deposito: R$ ", 0.01);
             conta.depositar(valor);
-            System.out.println("Depósito realizado com sucesso!");
+            System.out.println("Deposito realizado com sucesso!");
             System.out.println("Novo saldo: R$ " + conta.getSaldo());
         }
     }
@@ -100,7 +100,7 @@ public class Main {
     private static void listarContas() {
         System.out.println("\n=== LISTA DE CONTAS ===");
         if (contas.isEmpty()) {
-            System.out.println("Não há contas cadastradas.");
+            System.out.println("Nao ha contas cadastradas.");
             return;
         }
         for (Conta conta : contas) {
@@ -109,28 +109,28 @@ public class Main {
     }
 
     private static void processarOperacoesMensais() {
-        System.out.println("\n=== PROCESSAR OPERAÇÕES MENSAIS ===");
+        System.out.println("\n=== PROCESSAR OPERACOES MENSAIS ===");
         if (contas.isEmpty()) {
-            System.out.println("Não há contas para processar.");
+            System.out.println("Nao ha contas para processar.");
             return;
         }
         banco.processarTodas(contas); // uma linha: o laco polimorfico mora no Banco
-        System.out.println("Operações mensais processadas com sucesso!");
+        System.out.println("Operacoes mensais processadas com sucesso!");
     }
 
     private static Conta buscarConta() {
         if (contas.isEmpty()) {
-            System.out.println("Não há contas cadastradas.");
+            System.out.println("Nao ha contas cadastradas.");
             return null;
         }
 
-        int numero = Validacoes.validarInteiro(scanner, "Número da conta: ", 1, contas.size());
+        int numero = Validacoes.validarInteiro(scanner, "Numero da conta: ", 1, contas.size());
         for (Conta conta : contas) {
             if (conta.getNumero() == numero) {
                 return conta;
             }
         }
-        System.out.println("Conta não encontrada.");
+        System.out.println("Conta nao encontrada.");
         return null;
     }
 }

@@ -38,7 +38,7 @@ public class MenuPessoa {
                     System.out.println("Programa finalizado!");
                     break;
                 default:
-                    System.out.println("Opção inválida!");
+                    System.out.println("Opcao invalida!");
             }
         } while (opcao != 0);
 
@@ -50,10 +50,10 @@ public class MenuPessoa {
         System.out.println("1. Mostrar dados da pessoa");
         System.out.println("2. Alterar nome");
         System.out.println("3. Alterar idade");
-        System.out.println("4. Mostrar saudação");
+        System.out.println("4. Mostrar saudacao");
         System.out.println("5. Alterar altura");
         System.out.println("0. Sair");
-        System.out.print("Escolha uma opção: ");
+        System.out.print("Escolha uma opcao: ");
     }
 
     public static int recebeOp(Scanner scanner){
@@ -61,7 +61,7 @@ public class MenuPessoa {
         try {
             opcao = Integer.parseInt(scanner.nextLine());
         } catch (NumberFormatException e) {
-            System.out.println("Por favor, digite um número válido!");
+            System.out.println("Por favor, digite um numero valido!");
             opcao = -1;
         }
         return opcao;
@@ -89,7 +89,7 @@ public class MenuPessoa {
                 System.out.println(Validacoes.mensagemErroIdade(novaIdade));
             }
         } catch (NumberFormatException e) {
-            System.out.println("Erro: Por favor, digite um número inteiro válido!");
+            System.out.println("Erro: Por favor, digite um numero inteiro valido!");
         }
     }
 
@@ -104,7 +104,7 @@ public class MenuPessoa {
                 System.out.println(Validacoes.mensagemErroAltura(novaAltura));
             }
         } catch (NumberFormatException e) {
-            System.out.println("Erro: Por favor, digite um número válido para a altura!");
+            System.out.println("Erro: Por favor, digite um numero valido para a altura!");
         }
     }
 
