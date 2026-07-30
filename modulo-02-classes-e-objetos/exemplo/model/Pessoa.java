@@ -35,7 +35,7 @@ public class Pessoa {
 
     // Métodos Getters e Setters para acesso controlado aos atributos privados
     
-    // Retorna o nome da pesso
+    // Retorna o nome da pessoa
     public String getNome() {
         return nome;
     }

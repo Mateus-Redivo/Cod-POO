@@ -48,6 +48,23 @@ Regras gerais:
 
 Pelo VS Code é ainda mais simples: abra o arquivo da pasta `app/` e clique em "Run" sobre o método `main`.
 
+### Acentos saindo errados no Windows (`Ol�` em vez de `Olá`)
+
+No Windows, o terminal e o Java nem sempre combinam sobre a tabela de caracteres, e as mensagens com acento saem embaralhadas. **Não é erro do seu código.** Duas soluções:
+
+```bash
+# Solução pontual: peça UTF-8 na hora de executar
+java -Dstdout.encoding=UTF-8 -cp bin app.TestePessoa
+```
+
+```bash
+# Solução definitiva: compile e execute sempre em UTF-8
+javac -encoding UTF-8 -d bin model/*.java app/*.java
+java -Dstdout.encoding=UTF-8 -cp bin app.TestePessoa
+```
+
+Rodando pelo botão "Run" do VS Code isso normalmente já vem resolvido. Se preferir não lutar com acentuação, evite acentos nas mensagens de `System.out.println` — é o que fazem alguns exemplos deste repositório.
+
 ## 3. Como fazer os exercícios
 
 1. Leia o enunciado em `modulo-XX/exercicios/`.

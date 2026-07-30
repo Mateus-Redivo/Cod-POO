@@ -57,18 +57,29 @@ Regra de ouro: **não existe caminho para o atributo que passe por fora da valid
 Repare no exemplo que as regras de validação moram em [util/Validacoes.java](exemplo/util/Validacoes.java), com métodos `static`:
 
 ```java
-if (Validacoes.validarIdade(idade)) { ... }   // sem new
+if (Validacoes.idadeValida(idade)) { ... }   // sem new
 ```
 
 `static` significa que o método pertence à **classe**, não a um objeto. Faz sentido aqui: validar uma idade não depende de nenhum estado — é uma função pura de apoio. Também evita repetir a mesma regra em todo setter do sistema (você verá essa ideia de "não repetir" ganhar nome no módulo 09).
 
 Cuidado com a tentação: se TUDO no seu programa é `static`, você voltou ao estilo procedural do módulo 01.
 
+### Duas camadas de validação
+
+No exemplo a mesma regra é consultada em dois lugares, e isso é de propósito:
+
+| Onde | Para quê | Se faltar |
+| --- | --- | --- |
+| No menu, antes de chamar o setter | Dar uma mensagem clara para quem está digitando | O usuário fica sem feedback bom |
+| Dentro do setter | Garantir que **nenhum** código do sistema estrague o objeto | Qualquer outra tela pode furar a regra |
+
+Repare que a regra em si (`idade entre 0 e 150`) está escrita **uma vez só**, dentro de `Validacoes`. As duas camadas apenas perguntam a ela. Duplicar a chamada é barato; duplicar a regra é que seria erro.
+
 ## Exemplo guiado
 
-- [model/Pessoa.java](exemplo/model/Pessoa.java) — a mesma Pessoa do módulo 02.
-- [util/Validacoes.java](exemplo/util/Validacoes.java) — validações de nome (não vazio, sem dígitos) e idade (0 a 150).
-- [app/MenuPessoa.java](exemplo/app/MenuPessoa.java) — um menu de console que só altera a Pessoa depois de validar a entrada.
+- [model/Pessoa.java](exemplo/model/Pessoa.java) — a Pessoa do módulo 02, agora blindada: os setters validam e os construtores atribuem passando por eles.
+- [util/Validacoes.java](exemplo/util/Validacoes.java) — validações de nome (não vazio, sem dígitos), idade (0 a 150) e altura (0,3 m a 3,0 m).
+- [app/MenuPessoa.java](exemplo/app/MenuPessoa.java) — um menu de console que valida a entrada antes de chamar o setter.
 
 ```bash
 cd exemplo
@@ -77,6 +88,19 @@ java -cp bin app.MenuPessoa
 ```
 
 Use o menu e tente ativamente quebrar o programa: idade negativa, nome com números, nome vazio. Observe que o objeto sobrevive intacto a todas as tentativas.
+
+Depois faça o teste que o menu nunca faria — escreva um `main` curto que ataca o objeto direto:
+
+```java
+Pessoa p = new Pessoa("Ana", 30);
+p.setIdade(-50);              // recusado pelo setter
+System.out.println(p);        // idade continua 30
+
+Pessoa q = new Pessoa("Joao123", 200);   // recusados ja no construtor
+System.out.println(q);                   // nasce com valores seguros, nao invalidos
+```
+
+Sem a validação no setter, a primeira linha teria estragado o objeto e o programa seguiria em frente sem avisar ninguém.
 
 ## Exercícios
 
