@@ -1,4 +1,4 @@
-# Módulo 11 — Projeto integrador
+# Módulo 17 — Projeto integrador
 
 Todos os módulos anteriores foram treino. Agora é o jogo: você vai projetar e construir um sistema completo, do zero, aplicando tudo o que aprendeu. Este é o trabalho final da disciplina.
 
@@ -14,7 +14,7 @@ Ao final deste módulo você será capaz de:
 
 ## Pré-requisitos
 
-Todos os módulos, do [00](../modulo-00-preparacao/) ao [10](../modulo-10-estudo-de-caso-banco/), concluídos e com os exercícios feitos. Este módulo não ensina conteúdo novo: ele cobra o que já foi ensinado.
+Todos os módulos, do [00](../modulo-00-preparacao/) ao [16](../modulo-16-estudo-de-caso-banco/), concluídos e com os exercícios feitos. Este módulo não ensina conteúdo novo: ele cobra o que já foi ensinado.
 
 ## O desafio
 
@@ -111,4 +111,4 @@ A correção segue a [rubrica de avaliação](../material-apoio/rubrica-avaliaca
 
 ---
 
-Anterior: [Módulo 10](../modulo-10-estudo-de-caso-banco/) | Fim da trilha — parabéns por chegar aqui.
+Anterior: [Módulo 16](../modulo-16-estudo-de-caso-banco/) | Fim da trilha — parabéns por chegar aqui.

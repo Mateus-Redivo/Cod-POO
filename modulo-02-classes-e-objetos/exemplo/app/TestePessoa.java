@@ -2,50 +2,27 @@ package app;
 
 import model.Pessoa;
 
-public class TestePessoa { // Definição da classe Teste
+public class TestePessoa {
 
     public static void main(String[] args) {
-        // Testando o método com uma pessoa não inicializada
-        Pessoa pessoaNula = null;
-        imprimirPessoa(pessoaNula);
+        // Cada "new" cria um objeto independente, com seus proprios dados
+        Pessoa maria = new Pessoa("Maria", 30, 1.65);
+        Pessoa joao = new Pessoa("Joao", 25, 1.78);
 
-        // Testando o método com uma pessoa inicializada
-        Pessoa pessoa = new Pessoa("Davi", 20);
-        pessoa.setAltura(1.8);
-        imprimirPessoa(pessoa);
+        maria.saudacao();
+        joao.saudacao();
 
-        // Testando o construtor com valores padrão
-        Pessoa pessoaPadrao = new Pessoa();
-        System.out.println("\nTestando construtor com valores padrao:");
-        imprimirPessoa(pessoaPadrao);
+        System.out.println("\n--- Dados ---");
+        maria.exibirDados();
+        joao.exibirDados();
 
-        // Testando construtor com altura
-        Pessoa pessoaComAltura = new Pessoa("Ana", 30, 1.65);
-        System.out.println("\nTestando construtor com altura:");
-        imprimirPessoa(pessoaComAltura);
+        System.out.println("\n--- Prova de independencia entre objetos ---");
+        maria.fazerAniversario();
+        // Repare: a idade de joao NAO mudou, mesmo os dois sendo Pessoa
+        maria.exibirDados();
+        joao.exibirDados();
 
-        // Acesso ao método público
-        pessoa.saudacao();
-
-        // Acessando o atributo através do getter público
-        System.out.println("Nome (publico): " + pessoa.getNome());
-
-        // Modificando o atributo privado através do setter
-        pessoa.setNome("Joao");
-        System.out.println("Nome modificado (setter): " + pessoa.getNome());
-
-        // Modificando a idade através do setter
-        pessoa.setIdade(35);
-        System.out.println("Pessoa apos modificacoes: " + pessoa.toString());
-    }
-
-    // Método estático para imprimir informações de uma pessoa
-    public static void imprimirPessoa(Pessoa pessoa) {
-        if (pessoa == null) {
-            System.out.println("Pessoa nao inicializada!");
-            return;
-        }
-        System.out.println(pessoa);
-        pessoa.saudacao();
+        // Experimente: crie uma terceira Pessoa aqui e prove que ela
+        // tambem e independente das outras duas.
     }
 }

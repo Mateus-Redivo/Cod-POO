@@ -1,4 +1,4 @@
-# Módulo 05 — Herança
+# Módulo 10 — Herança
 
 Você vai perceber que várias classes suas repetem atributos e métodos parecidos. A herança é a ferramenta da POO para escrever o comum **uma vez só** e deixar cada classe filha adicionar apenas o que tem de especial.
 
@@ -14,7 +14,7 @@ Ao final deste módulo você será capaz de:
 
 ## Pré-requisitos
 
-[Módulo 04](../modulo-04-colecoes-e-menus/) concluído.
+[Módulo 09](../modulo-09-igualdade-de-objetos/) concluído.
 
 ## Conceito
 
@@ -113,4 +113,4 @@ Experimentos que valem a pena:
 
 ---
 
-Anterior: [Módulo 04](../modulo-04-colecoes-e-menus/) | Próximo: [Módulo 06 — Abstração e polimorfismo](../modulo-06-abstracao-e-polimorfismo/)
+Anterior: [Módulo 09](../modulo-09-igualdade-de-objetos/) | Próximo: [Módulo 11 — Sobrescrita e polimorfismo](../modulo-11-sobrescrita-e-polimorfismo/)

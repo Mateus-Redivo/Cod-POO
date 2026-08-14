@@ -1,4 +1,4 @@
-# Módulo 10 — Estudo de caso: sistema bancário
+# Módulo 16 — Estudo de caso: sistema bancário
 
 Chegou a hora de ver todos os conceitos dos módulos anteriores trabalhando juntos em um sistema clássico: um banco com tipos diferentes de conta. Este módulo é menos sobre conceito novo e mais sobre **leitura crítica**: você vai estudar o sistema, entender as decisões de projeto e depois melhorá-lo nos exercícios.
 
@@ -13,7 +13,7 @@ Ao final deste módulo você será capaz de:
 
 ## Pré-requisitos
 
-Módulos 02 a 09 concluídos. Este módulo usa todos.
+Módulos 02 a 15 concluídos. Este módulo usa todos.
 
 ## O sistema
 
@@ -117,4 +117,4 @@ Os dois exercícios transformam as críticas do roteiro em trabalho prático:
 
 ---
 
-Anterior: [Módulo 09](../modulo-09-refatoracao/) | Próximo: [Módulo 11 — Projeto integrador](../modulo-11-projeto-integrador/)
+Anterior: [Módulo 15](../modulo-15-refatoracao/) | Próximo: [Módulo 17 — Projeto integrador](../modulo-17-projeto-integrador/)

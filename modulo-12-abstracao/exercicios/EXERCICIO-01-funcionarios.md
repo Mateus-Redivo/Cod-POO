@@ -2,7 +2,7 @@
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 3 de 3 | 2h | classe abstrata, sobrecarga, sobrescrita, polimorfismo |
+| 1 de 1 | 2h | classe abstrata, sobrecarga, sobrescrita, polimorfismo |
 
 ## Objetivo
 

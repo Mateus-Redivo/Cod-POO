@@ -1,75 +1,77 @@
-# Exercício 01 — Produto (fixação)
+# Exercício 01 — Lâmpada inteligente (fixação)
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 1 de 3 | 30 min | classe, atributos, construtor, métodos, toString |
+| 1 de 1 | 30 min | classe, atributos, construtor, métodos que mudam o estado do objeto |
 
 ## Objetivo
 
-Criar sua primeira classe completa, sozinho, sem copiar do exemplo.
+Criar sua primeira classe completa, sozinho, sem copiar do exemplo. Ainda sem getters, sem setters, sem `toString()` — só atributos, construtor e métodos, exatamente como visto no exemplo guiado.
 
 ## Requisitos
 
-### Classe Produto (pacote `model`)
+### Classe Lampada (pacote `model`)
 
 Atributos:
 
-- `nome` (String)
-- `preco` (double)
-- `quantidade` (int)
+- `nome` (String) — ex.: "Sala", "Quarto"
+- `ligada` (boolean) — inicia `false`
+- `intensidade` (int) — de 0 a 100, inicia em 0
 
 Construtor:
 
-- Receba os três valores como parâmetros.
+- Receba só o `nome`. `ligada` e `intensidade` sempre começam em `false` e `0`.
 
-Métodos:
+Métodos (nenhum getter — quem quiser saber o estado da lâmpada chama `exibirEstado()`):
 
-- `calcularValorTotal()` — retorna `preco * quantidade`
-- `vender(int qtd)` — diminui a quantidade em estoque e imprime mensagem; se não houver quantidade suficiente, imprime aviso e não altera nada
-- `toString()` — sobrescrito, devolvendo os dados formatados
-- Getters para todos os atributos
+- `ligar()` — muda `ligada` para `true` e `intensidade` para 100; imprime confirmação
+- `desligar()` — muda `ligada` para `false` e `intensidade` para 0; imprime confirmação
+- `ajustarIntensidade(int valor)` — só funciona se a lâmpada estiver ligada; troca `intensidade` pelo valor recebido; se a lâmpada estiver desligada, avisa que não dá para ajustar
+- `exibirEstado()` — imprime nome, se está ligada e a intensidade atual, tudo numa linha
 
-### Classe TesteProduto (pacote `app`)
+### Classe TesteLampada (pacote `app`)
 
-1. Crie 2 produtos diferentes.
-2. Imprima os dois com `System.out.println(produto)` (via `toString`).
-3. Venda unidades de um deles e imprima o produto de novo.
-4. Tente vender mais do que existe e mostre que o estoque não fica negativo.
-5. Imprima o valor total em estoque de cada produto.
+1. Crie 2 lâmpadas diferentes (ex.: "Sala" e "Quarto").
+2. Ligue uma delas e exiba o estado das duas — prove que ligar uma não afeta a outra.
+3. Ajuste a intensidade da lâmpada ligada.
+4. Tente ajustar a intensidade da lâmpada que ainda está desligada.
+5. Desligue as duas e exiba o estado final de ambas.
 
 ## Estrutura de pastas
 
 ```text
 model/
-  Produto.java
+  Lampada.java
 app/
-  TesteProduto.java
+  TesteLampada.java
 ```
 
 ## Exemplo de saída
 
 ```text
-=== LOJA ===
-Produto [nome=Caderno, preco=25.9, quantidade=10]
-Produto [nome=Caneta, preco=3.5, quantidade=100]
+Sala ligada. Intensidade: 100.
+--- Estado apos ligar Sala ---
+Lampada Sala: ligada, intensidade 100
+Lampada Quarto: desligada, intensidade 0
 
-Vendidas 4 unidades de Caderno.
-Produto [nome=Caderno, preco=25.9, quantidade=6]
+Sala: intensidade ajustada para 40.
+Quarto esta desligada, nao da para ajustar intensidade.
 
-Nao ha estoque suficiente de Caderno (disponivel: 6, pedido: 50).
-
-Valor total em estoque de Caderno: R$ 155.40
-Valor total em estoque de Caneta: R$ 350.00
+Sala desligada.
+Quarto ja estava desligada.
+--- Estado final ---
+Lampada Sala: desligada, intensidade 0
+Lampada Quarto: desligada, intensidade 0
 ```
 
 ## Critérios de aceitação
 
 - [ ] Compila sem erros e a saída cobre os 5 passos do teste
-- [ ] Atributos privados (vamos reforçar o porquê no módulo 03)
-- [ ] `vender` não deixa a quantidade ficar negativa
-- [ ] `toString` sobrescrito com `@Override`
+- [ ] `ajustarIntensidade` recusa agir quando a lâmpada está desligada
+- [ ] As duas lâmpadas nunca compartilham estado (mudar uma não muda a outra)
+- [ ] Nenhum getter, setter ou `toString()` foi usado — ainda não é o momento (vem no [módulo 04](../../modulo-04-encapsulamento/))
 - [ ] Estrutura de pacotes `model`/`app` respeitada
 
 ## Dica
 
-Trave no `vender`? Pense em português antes do Java: "SE a quantidade pedida for menor ou igual ao estoque, vende; SENÃO, avisa".
+Se travar no `ajustarIntensidade`, pense em português antes do Java: "SE a lampada estiver ligada, troca a intensidade; SENAO, avisa que nao da".

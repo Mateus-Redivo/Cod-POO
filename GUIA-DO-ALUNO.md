@@ -44,7 +44,7 @@ Regras gerais:
 - Compile **a partir da pasta `exemplo/`** do módulo, nunca de dentro de `model/` ou `app/`.
 - Se o módulo tiver `util/` ou `exception/`, inclua no `javac`: `javac -d bin model/*.java util/*.java app/*.java`
 - A classe executável (a que tem `main`) está sempre no pacote `app`.
-- Nos módulos 00, 01 e 09 (versão "antes") os arquivos não têm pacote: basta `javac Arquivo.java` e `java Arquivo`.
+- Nos módulos 00, 01 e 15 (versão "antes") os arquivos não têm pacote: basta `javac Arquivo.java` e `java Arquivo`.
 
 Pelo VS Code é ainda mais simples: abra o arquivo da pasta `app/` e clique em "Run" sobre o método `main`.
 

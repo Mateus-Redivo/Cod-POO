@@ -2,7 +2,7 @@
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 2 de 3 | 1h | classes, objetos, construtores, estado do objeto, getters/setters |
+| 2 de 2 | 1h | classes, objetos, construtores, estado do objeto, getters/setters |
 
 ## Objetivo
 

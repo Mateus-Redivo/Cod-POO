@@ -1,4 +1,4 @@
-# Módulo 08 — Exceções
+# Módulo 14 — Exceções
 
 O que uma conta bancária deve fazer quando alguém tenta sacar mais do que o saldo? Até agora, nossos objetos simplesmente ignoravam a operação em silêncio — e quem chamou fica sem saber que falhou. Neste módulo os objetos aprendem a **avisar que algo deu errado**, do jeito Java: lançando exceções.
 
@@ -13,7 +13,7 @@ Ao final deste módulo você será capaz de:
 
 ## Pré-requisitos
 
-[Módulo 07](../modulo-07-interfaces/) concluído. (Exceções também usam herança: toda exceção estende `Exception` ou `RuntimeException`.)
+[Módulo 13](../modulo-13-interfaces/) concluído. (Exceções também usam herança: toda exceção estende `Exception` ou `RuntimeException`.)
 
 ## Conceito
 
@@ -123,4 +123,4 @@ Experimento: no `TesteExcecoes`, remova o try/catch do TESTE 2 e compile. O comp
 
 ---
 
-Anterior: [Módulo 07](../modulo-07-interfaces/) | Próximo: [Módulo 09 — Refatoração](../modulo-09-refatoracao/)
+Anterior: [Módulo 13](../modulo-13-interfaces/) | Próximo: [Módulo 15 — Refatoração](../modulo-15-refatoracao/)

@@ -20,28 +20,28 @@ Sua solução pode ser diferente do gabarito e ainda assim estar correta (às ve
 
 | Gabarito | Exercício correspondente |
 | --- | --- |
-| [modulo-02-produto/](modulo-02-produto/) | [Módulo 02, Exercício 01 — Produto](../modulo-02-classes-e-objetos/exercicios/EXERCICIO-01-produto.md) |
-| [modulo-02-biblioteca/](modulo-02-biblioteca/) | [Módulo 02, Exercício 02 — Biblioteca](../modulo-02-classes-e-objetos/exercicios/EXERCICIO-02-biblioteca.md) |
-| [modulo-03-conta-de-jogador/](modulo-03-conta-de-jogador/) | [Módulo 03, Exercício 01 — Conta de jogador](../modulo-03-encapsulamento-e-validacao/exercicios/EXERCICIO-01-conta-de-jogador.md) |
-| [modulo-03-termostato/](modulo-03-termostato/) | [Módulo 03, Exercício 02 — Termostato](../modulo-03-encapsulamento-e-validacao/exercicios/EXERCICIO-02-termostato.md) |
-| [modulo-04-agenda-de-contatos/](modulo-04-agenda-de-contatos/) | [Módulo 04, Exercício 01 — Agenda de contatos](../modulo-04-colecoes-e-menus/exercicios/EXERCICIO-01-agenda-de-contatos.md) |
-| [modulo-05-moto/](modulo-05-moto/) | [Módulo 05, Exercício 01 — Moto](../modulo-05-heranca/exercicios/EXERCICIO-01-moto.md) |
-| [modulo-05-rpg/](modulo-05-rpg/) | [Módulo 05, Exercício 02 — RPG](../modulo-05-heranca/exercicios/EXERCICIO-02-rpg.md) |
-| [modulo-06-funcionarios/](modulo-06-funcionarios/) | [Módulo 06, Exercício 01 — Funcionários](../modulo-06-abstracao-e-polimorfismo/exercicios/EXERCICIO-01-funcionarios.md) |
-| [modulo-07-dispositivos/](modulo-07-dispositivos/) | [Módulo 07, Exercício 01 — Dispositivos inteligentes](../modulo-07-interfaces/exercicios/EXERCICIO-01-dispositivos.md) |
-| [modulo-08-caixa-eletronico/](modulo-08-caixa-eletronico/) | [Módulo 08, Exercício 01 — Caixa eletrônico](../modulo-08-excecoes/exercicios/EXERCICIO-01-caixa-eletronico.md) |
-| [modulo-09-farmacia/](modulo-09-farmacia/) | [Módulo 09, Exercício 01 — Refatorar a farmácia](../modulo-09-refatoracao/exercicios/EXERCICIO-01-refatorar-farmacia.md) |
-| [modulo-10-ex01-polimorfismo/](modulo-10-ex01-polimorfismo/) | [Módulo 10, Exercício 01 — Polimorfismo no banco](../modulo-10-estudo-de-caso-banco/exercicios/EXERCICIO-01-polimorfismo-no-banco.md) |
-| [modulo-10-ex02-excecoes/](modulo-10-ex02-excecoes/) | [Módulo 10, Exercício 02 — Exceções no banco](../modulo-10-estudo-de-caso-banco/exercicios/EXERCICIO-02-excecoes-no-banco.md) |
+| [modulo-04-produto/](modulo-04-produto/) | [Módulo 04, Exercício 01 — Produto](../modulo-04-encapsulamento/exercicios/EXERCICIO-01-produto.md) |
+| [modulo-04-biblioteca/](modulo-04-biblioteca/) | [Módulo 04, Exercício 02 — Biblioteca](../modulo-04-encapsulamento/exercicios/EXERCICIO-02-biblioteca.md) |
+| [modulo-05-conta-de-jogador/](modulo-05-conta-de-jogador/) | [Módulo 05, Exercício 01 — Conta de jogador](../modulo-05-validacao-e-integridade/exercicios/EXERCICIO-01-conta-de-jogador.md) |
+| [modulo-06-termostato/](modulo-06-termostato/) | [Módulo 06, Exercício 01 — Termostato](../modulo-06-static-e-classes-utilitarias/exercicios/EXERCICIO-01-termostato.md) |
+| [modulo-08-agenda-de-contatos/](modulo-08-agenda-de-contatos/) | [Módulo 08, Exercício 01 — Agenda de contatos](../modulo-08-scanner-e-menus/exercicios/EXERCICIO-01-agenda-de-contatos.md) |
+| [modulo-10-moto/](modulo-10-moto/) | [Módulo 10, Exercício 01 — Moto](../modulo-10-heranca/exercicios/EXERCICIO-01-moto.md) |
+| [modulo-10-rpg/](modulo-10-rpg/) | [Módulo 10, Exercício 02 — RPG](../modulo-10-heranca/exercicios/EXERCICIO-02-rpg.md) |
+| [modulo-12-funcionarios/](modulo-12-funcionarios/) | [Módulo 12, Exercício 01 — Funcionários](../modulo-12-abstracao/exercicios/EXERCICIO-01-funcionarios.md) |
+| [modulo-13-dispositivos/](modulo-13-dispositivos/) | [Módulo 13, Exercício 01 — Dispositivos inteligentes](../modulo-13-interfaces/exercicios/EXERCICIO-01-dispositivos.md) |
+| [modulo-14-caixa-eletronico/](modulo-14-caixa-eletronico/) | [Módulo 14, Exercício 01 — Caixa eletrônico](../modulo-14-excecoes/exercicios/EXERCICIO-01-caixa-eletronico.md) |
+| [modulo-15-farmacia/](modulo-15-farmacia/) | [Módulo 15, Exercício 01 — Refatorar a farmácia](../modulo-15-refatoracao/exercicios/EXERCICIO-01-refatorar-farmacia.md) |
+| [modulo-16-ex01-polimorfismo/](modulo-16-ex01-polimorfismo/) | [Módulo 16, Exercício 01 — Polimorfismo no banco](../modulo-16-estudo-de-caso-banco/exercicios/EXERCICIO-01-polimorfismo-no-banco.md) |
+| [modulo-16-ex02-excecoes/](modulo-16-ex02-excecoes/) | [Módulo 16, Exercício 02 — Exceções no banco](../modulo-16-estudo-de-caso-banco/exercicios/EXERCICIO-02-excecoes-no-banco.md) |
 
-Todos os exercícios dos módulos têm gabarito. A única exceção é o projeto integrador (módulo 11) — ali é a sua vez de criar do zero, sem resposta pronta.
+Os exercícios dos módulos 02, 03, 07, 09 e 11 ainda não têm gabarito publicado — são exercícios novos de uma revisão recente do material. A única exceção intencional é o projeto integrador (módulo 17) — ali é a sua vez de criar do zero, sem resposta pronta.
 
 ## Como executar um gabarito
 
 Mesmo padrão de todos os módulos:
 
 ```bash
-cd gabaritos/modulo-05-rpg
+cd gabaritos/modulo-10-rpg
 javac -d bin model/*.java app/*.java
 java -cp bin app.TestePersonagens
 ```

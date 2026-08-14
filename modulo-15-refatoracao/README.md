@@ -1,4 +1,4 @@
-# Módulo 09 — Refatoração: de código que funciona para código bom
+# Módulo 15 — Refatoração: de código que funciona para código bom
 
 Você já sabe todos os conceitos de POO dos módulos anteriores. Este módulo ensina uma habilidade diferente — e talvez a mais usada na vida profissional: **melhorar código existente sem mudar o que ele faz**. É aqui que a POO deixa de ser sintaxe e vira ferramenta de pensamento.
 
@@ -14,7 +14,7 @@ Ao final deste módulo você será capaz de:
 
 ## Pré-requisitos
 
-[Módulo 08](../modulo-08-excecoes/) concluído.
+[Módulo 14](../modulo-14-excecoes/) concluído.
 
 ## Conceito
 
@@ -115,4 +115,4 @@ A prova de que a refatoração valeu a pena é perguntar "e se...":
 
 ---
 
-Anterior: [Módulo 08](../modulo-08-excecoes/) | Próximo: [Módulo 10 — Estudo de caso: banco](../modulo-10-estudo-de-caso-banco/)
+Anterior: [Módulo 14](../modulo-14-excecoes/) | Próximo: [Módulo 16 — Estudo de caso: banco](../modulo-16-estudo-de-caso-banco/)

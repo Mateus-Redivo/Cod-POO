@@ -1,27 +1,12 @@
 package model;
 
 public class Pessoa {
-    
-    private String nome;  // Atributo privado, acessível somente dentro da classe Pessoa
-    private int idade;  // Atributo privado, acessível somente dentro da classe Pessoa
-    private double altura; // Altura em metros
 
-    // Construtor que recebe nome e idade como parâmetros
-    public Pessoa(String nome, int idade) {
-        this.nome = nome;
-        this.idade = idade;
-        this.altura = 0.0;
-    }
+    private String nome;
+    private int idade;
+    private double altura;
 
-    // Construtor sobrecarregado que recebe apenas o nome
-    // Inicializa com valores padrão: nome="Carlos" e idade=20
-    public Pessoa() {
-        this.nome = "Carlos";
-        this.idade = 20;
-        this.altura = 1.75;
-    }
-
-    // Construtor que inclui altura
+    // Um único construtor por enquanto: recebe os três dados de uma vez
     public Pessoa(String nome, int idade, double altura) {
         this.nome = nome;
         this.idade = idade;
@@ -30,44 +15,17 @@ public class Pessoa {
 
     // Método que exibe uma mensagem de saudação com o nome e idade da pessoa
     public void saudacao() {
-        System.out.println("Ola, " + nome + "!" + " Voce tem " + idade + " anos.");
+        System.out.println("Ola, " + nome + "! Voce tem " + idade + " anos.");
     }
 
-    // Métodos Getters e Setters para acesso controlado aos atributos privados
-    
-    // Retorna o nome da pessoa
-    public String getNome() {
-        return nome;
+    // Mostra todos os dados da pessoa numa linha só
+    public void exibirDados() {
+        System.out.println("Nome: " + nome + " | Idade: " + idade + " | Altura: " + altura + "m");
     }
 
-    // Retorna a idade da pessoa
-    public int getIdade() {
-        return idade;
-    }
-
-    // Retorna a altura da pessoa
-    public double getAltura() {
-        return altura;
-    }
-
-    // Define um novo nome para a pessoa
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    // Define uma nova idade para a pessoa
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
-
-    // Define uma nova altura para a pessoa (em metros)
-    public void setAltura(double altura) {
-        this.altura = altura;
-    }
-
-    // Sobrescrita do método toString para uma representação textual do objeto
-    @Override
-    public String toString() {
-        return "Pessoa [nome=" + nome + ", idade=" + idade + ", altura=" + altura + "]";
+    // Exemplo de método que MUDA o estado do objeto: um ano se passou
+    public void fazerAniversario() {
+        idade = idade + 1;
+        System.out.println(nome + " fez aniversario! Nova idade: " + idade);
     }
 }

@@ -16,15 +16,21 @@ Bem-vindo! Este repositório é a trilha oficial da disciplina de POO. Ele foi o
 flowchart TD
     M0["00 - Preparação do ambiente"] --> M1["01 - Por que POO?"]
     M1 --> M2["02 - Classes e objetos"]
-    M2 --> M3["03 - Encapsulamento e validação"]
-    M3 --> M4["04 - Coleções e menus"]
-    M4 --> M5["05 - Herança"]
-    M5 --> M6["06 - Abstração e polimorfismo"]
-    M6 --> M7["07 - Interfaces"]
-    M7 --> M8["08 - Exceções"]
-    M8 --> M9["09 - Refatoração"]
-    M9 --> M10["10 - Estudo de caso: banco"]
-    M10 --> M11["11 - Projeto integrador"]
+    M2 --> M3["03 - Construtores e sobrecarga"]
+    M3 --> M4["04 - Encapsulamento"]
+    M4 --> M5["05 - Validação e integridade"]
+    M5 --> M6["06 - static e classes utilitárias"]
+    M6 --> M7["07 - Coleções"]
+    M7 --> M8["08 - Scanner e menus"]
+    M8 --> M9["09 - Igualdade de objetos"]
+    M9 --> M10["10 - Herança"]
+    M10 --> M11["11 - Sobrescrita e polimorfismo"]
+    M11 --> M12["12 - Abstração"]
+    M12 --> M13["13 - Interfaces"]
+    M13 --> M14["14 - Exceções"]
+    M14 --> M15["15 - Refatoração"]
+    M15 --> M16["16 - Estudo de caso: banco"]
+    M16 --> M17["17 - Projeto integrador"]
 ```
 
 | Módulo | Tema | O que você vai aprender |
@@ -32,15 +38,21 @@ flowchart TD
 | [00](modulo-00-preparacao/) | Preparação do ambiente | Instalar o JDK, compilar e executar seu primeiro programa |
 | [01](modulo-01-por-que-poo/) | Por que POO? | O problema que a orientação a objetos resolve, comparando o mesmo programa em duas versões |
 | [02](modulo-02-classes-e-objetos/) | Classes e objetos | Classe, objeto, atributo, método, construtor, `this` |
-| [03](modulo-03-encapsulamento-e-validacao/) | Encapsulamento e validação | `private`, getters e setters, proteção dos dados do objeto |
-| [04](modulo-04-colecoes-e-menus/) | Coleções e menus | `ArrayList`, `Scanner`, menus interativos, CRUD em memória |
-| [05](modulo-05-heranca/) | Herança | `extends`, `super`, `@Override`, reaproveitamento de código |
-| [06](modulo-06-abstracao-e-polimorfismo/) | Abstração e polimorfismo | Classes e métodos abstratos, sobrecarga, sobrescrita, polimorfismo |
-| [07](modulo-07-interfaces/) | Interfaces | Contratos entre classes, `implements`, múltiplas interfaces |
-| [08](modulo-08-excecoes/) | Exceções | `try/catch/finally`, `throw`, `throws`, exceções personalizadas |
-| [09](modulo-09-refatoracao/) | Refatoração | Extrair métodos e classes, eliminar repetição, melhorar nomes |
-| [10](modulo-10-estudo-de-caso-banco/) | Estudo de caso: banco | Um sistema completo que integra tudo que foi visto |
-| [11](modulo-11-projeto-integrador/) | Projeto integrador | Você constrói seu próprio sistema, do zero |
+| [03](modulo-03-construtores-e-sobrecarga/) | Construtores e sobrecarga | Mais de um construtor, a regra da sobrecarga |
+| [04](modulo-04-encapsulamento/) | Encapsulamento | `private`, getters e setters, `toString()` |
+| [05](modulo-05-validacao-e-integridade/) | Validação e integridade | Setters que recusam valores inválidos, construtor que valida |
+| [06](modulo-06-static-e-classes-utilitarias/) | static e classes utilitárias | Métodos `static`, `static final`, `this(...)` encadeado |
+| [07](modulo-07-colecoes/) | Coleções | `ArrayList`, for-each |
+| [08](modulo-08-scanner-e-menus/) | Scanner e menus | `Scanner`, menus interativos, CRUD em memória |
+| [09](modulo-09-igualdade-de-objetos/) | Igualdade de objetos | `==` vs `equals`, contrato `equals`/`hashCode` |
+| [10](modulo-10-heranca/) | Herança | `extends`, `super`, `@Override`, reaproveitamento de código |
+| [11](modulo-11-sobrescrita-e-polimorfismo/) | Sobrescrita e polimorfismo | Sobrecarga × sobrescrita, ligação dinâmica, polimorfismo |
+| [12](modulo-12-abstracao/) | Abstração | Classes e métodos abstratos |
+| [13](modulo-13-interfaces/) | Interfaces | Contratos entre classes, `implements`, múltiplas interfaces |
+| [14](modulo-14-excecoes/) | Exceções | `try/catch/finally`, `throw`, `throws`, exceções personalizadas |
+| [15](modulo-15-refatoracao/) | Refatoração | Extrair métodos e classes, eliminar repetição, melhorar nomes |
+| [16](modulo-16-estudo-de-caso-banco/) | Estudo de caso: banco | Um sistema completo que integra tudo que foi visto |
+| [17](modulo-17-projeto-integrador/) | Projeto integrador | Você constrói seu próprio sistema, do zero |
 
 ## Os 4 pilares da POO e onde eles aparecem
 
@@ -48,10 +60,10 @@ A orientação a objetos se apoia em quatro ideias centrais. Elas são apresenta
 
 | Pilar | Em uma frase | Módulos |
 | --- | --- | --- |
-| Encapsulamento | Cada objeto protege seus dados e só expõe o necessário | 03, 04 |
-| Herança | Classes podem reaproveitar e especializar outras classes | 05 |
-| Polimorfismo | O mesmo comando se comporta diferente conforme o objeto real | 06, 07 |
-| Abstração | Modelar só o que importa do problema, escondendo detalhes | 01, 06, 07 |
+| Encapsulamento | Cada objeto protege seus dados e só expõe o necessário | 04, 05, 06 |
+| Herança | Classes podem reaproveitar e especializar outras classes | 10 |
+| Polimorfismo | O mesmo comando se comporta diferente conforme o objeto real | 11, 13 |
+| Abstração | Modelar só o que importa do problema, escondendo detalhes | 01, 12, 13 |
 
 ## Estrutura de cada módulo
 

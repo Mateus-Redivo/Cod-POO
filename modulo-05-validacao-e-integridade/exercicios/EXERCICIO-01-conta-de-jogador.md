@@ -2,7 +2,7 @@
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 2 de 3 | 1h | encapsulamento, validação em setters e construtor, classe utilitária static |
+| 1 de 1 | 1h | validação em setters e construtor |
 
 ## Objetivo
 
@@ -21,20 +21,15 @@ Atributos (todos privados):
 Construtor:
 
 - Recebe `apelido` e `nivel`; `pontuacao` começa em 0.
-- Deve validar os parâmetros (reutilize os setters ou a classe de validações).
+- Deve validar os parâmetros chamando os próprios setters (mesmo padrão do exemplo guiado do módulo).
 
 Métodos:
 
-- Getters para tudo; setters com validação para `apelido` e `nivel`
+- Getters para tudo; setters com validação para `apelido` e `nivel` (a regra fica dentro do próprio setter, como no exemplo do módulo)
 - `ganharPontos(int pontos)` — só aceita valores positivos
 - `perderPontos(int pontos)` — só aceita positivos e não deixa a pontuação ficar negativa (trava em 0)
 - `subirNivel()` — incrementa o nível, respeitando o máximo de 100
 - `toString()` sobrescrito
-
-### Classe Validacoes (pacote `util`)
-
-- Métodos `static` com as regras de apelido e nível, retornando `boolean` e imprimindo o motivo quando inválido.
-- As regras devem existir SÓ AQUI: setters e construtor chamam esses métodos (nada de repetir o mesmo `if` em três lugares).
 
 ### Classe TesteJogador (pacote `app`)
 
@@ -51,8 +46,6 @@ Roteiro de ataque — tente corromper o objeto de todas as formas:
 ```text
 model/
   Jogador.java
-util/
-  Validacoes.java
 app/
   TesteJogador.java
 ```
@@ -72,6 +65,5 @@ Jogador [apelido=Shadow, nivel=5, pontuacao=0]
 ## Critérios de aceitação
 
 - [ ] NENHUMA sequência de chamadas deixa o objeto com dado inválido (teste de verdade)
-- [ ] Cada regra de validação existe em um único lugar do código
-- [ ] O construtor também valida (objeto não nasce inválido)
-- [ ] Métodos de `Validacoes` são `static` e a classe não guarda estado
+- [ ] Cada regra de validação existe em um único lugar do código (dentro do setter correspondente)
+- [ ] O construtor também valida, chamando os setters em vez de atribuir direto

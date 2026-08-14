@@ -1,4 +1,4 @@
-# Módulo 07 — Interfaces
+# Módulo 13 — Interfaces
 
 A classe abstrata do módulo anterior tem uma limitação: cada classe só pode estender UMA mãe. E quando dois tipos completamente diferentes — que não têm parentesco nenhum — precisam ser tratados do mesmo jeito? A resposta é a interface: um contrato puro.
 
@@ -13,7 +13,7 @@ Ao final deste módulo você será capaz de:
 
 ## Pré-requisitos
 
-[Módulo 06](../modulo-06-abstracao-e-polimorfismo/) concluído — interfaces são o segundo capítulo da história do polimorfismo.
+[Módulo 12](../modulo-12-abstracao/) concluído — interfaces são o segundo capítulo da história do polimorfismo.
 
 ## Conceito
 
@@ -118,4 +118,4 @@ Observe no teste a linha `List<Pagavel> folhaDePagamento` — o mesmo padrão do
 
 ---
 
-Anterior: [Módulo 06](../modulo-06-abstracao-e-polimorfismo/) | Próximo: [Módulo 08 — Exceções](../modulo-08-excecoes/)
+Anterior: [Módulo 12](../modulo-12-abstracao/) | Próximo: [Módulo 14 — Exceções](../modulo-14-excecoes/)

@@ -18,7 +18,7 @@ Critérios usados na correção dos exercícios e do projeto integrador. Use com
 | Requisitos técnicos | 35% | Os 9 requisitos obrigatórios do enunciado, verificados um a um |
 | Qualidade do modelo | 30% | Classes coesas e coerentes com o domínio; herança usada onde faz sentido (relação "é um" real); polimorfismo resolvendo problema de verdade; encapsulamento sem furos |
 | Robustez | 20% | Validações de entrada; exceções tratadas com mensagens úteis; nenhum caminho derruba o programa |
-| Documentação e organização | 15% | README do projeto com diagrama e mapa dos requisitos; pacotes organizados; código limpo (módulo 09 aplicado) |
+| Documentação e organização | 15% | README do projeto com diagrama e mapa dos requisitos; pacotes organizados; código limpo (módulo 15 aplicado) |
 
 ## O que derruba nota (em qualquer entrega)
 

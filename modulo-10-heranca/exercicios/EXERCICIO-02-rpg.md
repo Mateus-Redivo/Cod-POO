@@ -118,4 +118,4 @@ O guerreiro esta berrando de raiva!
 
 - Use `super()` no construtor da classe filha.
 - Use `super.metodo()` para chamar métodos da classe mãe.
-- O gabarito comentado está em [gabaritos/modulo-05-rpg](../../gabaritos/modulo-05-rpg/) — só depois de tentar.
+- O gabarito comentado está em [gabaritos/modulo-10-rpg](../../gabaritos/modulo-10-rpg/) — só depois de tentar.

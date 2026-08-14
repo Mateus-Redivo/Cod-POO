@@ -1,15 +1,16 @@
-# Exercício 02 — Termostato (desafio)
+# Exercício 01 — Termostato (aplicação)
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 3 de 3 | 1h | invariante de classe, validação que depende de outro atributo, `static final` |
+| 1 de 1 | 1h | classe utilitária `static`, `static final`, invariante de classe, validação que depende de outro atributo |
 
 ## Objetivo
 
-No exercício anterior, cada regra olhava para **um** atributo de cada vez: apelido tem tamanho,
-nível tem faixa, pontuação não fica negativa. Aqui a coisa muda de patamar: a regra depende de
-**dois atributos ao mesmo tempo**. A temperatura mínima só é válida em relação à máxima, e a
-máxima só é válida em relação à mínima.
+Até agora cada regra de validação que você escreveu olhava para **um** atributo de cada vez: idade
+tem faixa, nome não pode ser vazio. Aqui a coisa muda de patamar: a regra depende de **dois
+atributos ao mesmo tempo**. A temperatura mínima só é válida em relação à máxima, e a
+máxima só é válida em relação à mínima. E, como vimos no exemplo guiado deste módulo, essas regras
+vão morar numa classe `Validacoes` separada, com métodos `static`.
 
 Essa relação que precisa valer sempre tem nome: **invariante da classe**. É a promessa que o
 objeto faz sobre si mesmo e nunca pode quebrar — nem no construtor, nem em nenhum setter, nem
@@ -120,4 +121,4 @@ O construtor recebeu dados impossíveis e você o obrigou a produzir um objeto v
 inventando valores de partida. Isso é honesto? Um programa que pede 40 de mínima e recebe 16
 calado pode enganar quem o usa. A alternativa seria **recusar a criação do objeto** — mas para isso
 precisamos de uma ferramenta que ainda não temos. Ela chega no
-[módulo 08 — Exceções](../../modulo-08-excecoes/).
+[módulo 14 — Exceções](../../modulo-14-excecoes/).

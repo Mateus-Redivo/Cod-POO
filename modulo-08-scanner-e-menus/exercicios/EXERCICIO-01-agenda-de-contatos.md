@@ -2,7 +2,7 @@
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 2 de 3 | 1h30 | ArrayList, Scanner, menu do/while + switch, CRUD |
+| 1 de 1 | 1h30 | ArrayList, Scanner, menu + switch, CRUD |
 
 ## Objetivo
 

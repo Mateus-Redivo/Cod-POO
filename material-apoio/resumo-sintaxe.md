@@ -2,7 +2,7 @@
 
 Consulta rápida da sintaxe usada nos módulos, na ordem em que aparece. Para os conceitos, veja o [GLOSSARIO](../GLOSSARIO.md); aqui é só o "como se escreve".
 
-## Classe, atributos, construtor (módulo 02)
+## Classe, atributos, construtor (módulos 02 e 03)
 
 ```java
 package model;
@@ -37,7 +37,7 @@ Pessoa p = new Pessoa("Ana", 30);        // instanciar
 System.out.println(p);                   // imprime via toString()
 ```
 
-## Validação em setter (módulo 03)
+## Validação em setter (módulo 05)
 
 ```java
 public void setIdade(int idade) {
@@ -49,7 +49,7 @@ public void setIdade(int idade) {
 }
 ```
 
-## Método e classe utilitária static (módulo 03)
+## Método e classe utilitária static (módulo 06)
 
 ```java
 public class Validacoes {
@@ -61,7 +61,7 @@ public class Validacoes {
 if (Validacoes.validarIdade(20)) { ... }
 ```
 
-## ArrayList e Scanner (módulo 04)
+## ArrayList e Scanner (módulos 07 e 08)
 
 ```java
 import java.util.ArrayList;
@@ -84,7 +84,7 @@ sc.nextLine();                           // limpa o Enter do buffer!
 String nome = sc.nextLine();
 ```
 
-## equals e hashCode (módulo 04)
+## equals e hashCode (módulo 09)
 
 ```java
 @Override
@@ -107,7 +107,7 @@ a.equals(b)     // compara CONTEUDO (se sobrescrito)
 lista.contains(x)   // usa equals por baixo dos panos
 ```
 
-## Menu padrão (módulo 04)
+## Menu padrão (módulo 08)
 
 ```java
 int op;
@@ -123,7 +123,7 @@ do {
 } while (op != 0);
 ```
 
-## Herança (módulo 05)
+## Herança (módulo 10)
 
 ```java
 public class Carro extends Veiculo {                 // Carro E UM Veiculo
@@ -142,7 +142,7 @@ public class Carro extends Veiculo {                 // Carro E UM Veiculo
 
 Visibilidade: `private` (só a classe) | `protected` (classe + filhas) | `public` (todos).
 
-## Classe abstrata (módulo 06)
+## Classe abstrata (módulo 12)
 
 ```java
 public abstract class Forma {                        // new Forma() NAO compila
@@ -154,7 +154,7 @@ public abstract class Forma {                        // new Forma() NAO compila
 }
 ```
 
-## Sobrecarga × sobrescrita (módulo 06)
+## Sobrecarga × sobrescrita (módulos 03 e 11)
 
 ```java
 // SOBRECARGA: mesma classe, mesmo nome, parametros diferentes
@@ -166,7 +166,7 @@ public void pintar(String cor) { ... }
 public double calcularArea() { ... }
 ```
 
-## Polimorfismo (módulos 06 e 07)
+## Polimorfismo (módulos 11 e 13)
 
 ```java
 List<Forma> formas = new ArrayList<>();
@@ -177,7 +177,7 @@ for (Forma f : formas) {
 }
 ```
 
-## Interface (módulo 07)
+## Interface (módulo 13)
 
 ```java
 public interface Pagavel {
@@ -191,7 +191,7 @@ public class Freelancer implements Pagavel, Avaliavel {   // varias de uma vez
 }
 ```
 
-## Exceções (módulo 08)
+## Exceções (módulo 14)
 
 ```java
 // personalizada checked (obriga tratamento)
