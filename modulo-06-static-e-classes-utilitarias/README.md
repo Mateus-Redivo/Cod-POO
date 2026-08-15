@@ -1,6 +1,6 @@
 # Módulo 06 — static e classes utilitárias
 
-As regras de validação do módulo anterior estavam repetidas dentro de cada setter. Se dez classes do sistema validassem idade, a regra "entre 0 e 150" apareceria dez vezes — e corrigi-la exigiria lembrar dos dez lugares. Neste módulo essa regra ganha um endereço único.
+As regras de validação do módulo anterior estavam repetidas dentro de cada setter. Se dez classes do sistema validassem idade, a regra "entre 0 e 150" apareceria dez vezes, e corrigi-la exigiria lembrar dos dez lugares. Neste módulo essa regra ganha um endereço único.
 
 ## Objetivos de aprendizagem
 
@@ -25,13 +25,13 @@ Repare no exemplo que as regras de validação agora moram em [util/Validacoes.j
 if (Validacoes.idadeValida(idade)) { ... }   // sem new
 ```
 
-`static` significa que o método pertence à **classe**, não a um objeto. Faz sentido aqui: validar uma idade não depende de nenhum estado — é uma função pura de apoio. Também evita repetir a mesma regra em todo setter do sistema.
+`static` significa que o método pertence à **classe**, não a um objeto. Faz sentido aqui: validar uma idade não depende de nenhum estado, é uma função pura de apoio. Também evita repetir a mesma regra em todo setter do sistema.
 
 Cuidado com a tentação: se TUDO no seu programa é `static`, você volta ao estilo procedural do módulo 01.
 
 ### Por que o construtor de Validacoes é privado
 
-`Validacoes` não guarda nenhum dado — não faz sentido criar um objeto dela. O construtor privado impede `new Validacoes()` fora da própria classe; isso é chamado de padrão de **classe utilitária**.
+`Validacoes` não guarda nenhum dado, então não faz sentido criar um objeto dela. O construtor privado impede `new Validacoes()` fora da própria classe; isso é chamado de padrão de **classe utilitária**.
 
 ### static final: uma constante que pertence à classe
 
@@ -39,7 +39,7 @@ Cuidado com a tentação: se TUDO no seu programa é `static`, você volta ao es
 private static final double ALTURA_PADRAO = 1.70;
 ```
 
-- `static`: existe uma cópia só, compartilhada por todos os objetos de `Pessoa` — não uma cópia por objeto.
+- `static`: existe uma cópia só, compartilhada por todos os objetos de `Pessoa`, não uma cópia por objeto.
 - `final`: depois de atribuído, o valor nunca muda.
 - Convenção: nome em MAIÚSCULAS, porque é uma constante.
 
@@ -59,9 +59,9 @@ A regra em si (`idade entre 0 e 150`) está escrita **uma vez só**, dentro de `
 
 ## Exemplo guiado
 
-- [model/Pessoa.java](exemplo/model/Pessoa.java) — agora com `static final ALTURA_PADRAO`, um construtor que chama o outro com `this(...)`, e setters que perguntam a `Validacoes`.
-- [util/Validacoes.java](exemplo/util/Validacoes.java) — validações de nome, idade e altura, todas `static`, com construtor privado.
-- [app/TesteValidacoes.java](exemplo/app/TesteValidacoes.java) — usa `Pessoa` e chama `Validacoes` diretamente, sem `new`.
+- [model/Pessoa.java](exemplo/model/Pessoa.java): agora com `static final ALTURA_PADRAO`, um construtor que chama o outro com `this(...)`, e setters que perguntam a `Validacoes`.
+- [util/Validacoes.java](exemplo/util/Validacoes.java): validações de nome, idade e altura, todas `static`, com construtor privado.
+- [app/TesteValidacoes.java](exemplo/app/TesteValidacoes.java): usa `Pessoa` e chama `Validacoes` diretamente, sem `new`.
 
 ```bash
 cd exemplo
@@ -73,7 +73,7 @@ Experimente: tente escrever `new Validacoes()` em algum lugar do código. Leia a
 
 ## Exercícios
 
-1. [EXERCICIO-01-termostato.md](exercicios/EXERCICIO-01-termostato.md) — desafio: quando a regra depende de dois atributos ao mesmo tempo.
+1. [EXERCICIO-01-termostato.md](exercicios/EXERCICIO-01-termostato.md) (desafio): quando a regra depende de dois atributos ao mesmo tempo.
 
 > Este módulo ainda vai ganhar um exercício de fixação numa próxima revisão do material.
 

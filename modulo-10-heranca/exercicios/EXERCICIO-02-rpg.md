@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Construir uma hierarquia de personagens de RPG exercitando todas as ferramentas da herança — e terminar com uma demonstração de polimorfismo que prepara o módulo 06.
+Construir uma hierarquia de personagens de RPG exercitando todas as ferramentas da herança, terminando com uma demonstração de polimorfismo que prepara o módulo 11.
 
 ## Requisitos
 
@@ -17,7 +17,7 @@ Atributos:
 - `nome` (String)
 - `classe` (String)
 - `nivel` (int)
-- `vida` (double) — valor inicial 100.0
+- `vida` (double), valor inicial 100.0
 
 Construtor:
 
@@ -25,10 +25,10 @@ Construtor:
 
 Métodos:
 
-- `atacar(double dano)` — reduz a vida do personagem e imprime a vida atual
-- `descansar(int horas)` — aumenta a vida em `horas * 5`
-- `usarHabilidade()` — imprime "O personagem esta usando uma habilidade!"
-- `exibirInfo()` — mostra as informações básicas
+- `atacar(double dano)`: reduz a vida do personagem e imprime a vida atual
+- `descansar(int horas)`: aumenta a vida em `horas * 5`
+- `usarHabilidade()`: imprime "O personagem esta usando uma habilidade!"
+- `exibirInfo()`: mostra as informações básicas
 - Getters para todos os atributos
 
 ### Classe filha Guerreiro (pacote `model`)
@@ -44,14 +44,14 @@ Construtor:
 
 Métodos sobrescritos:
 
-- `usarHabilidade()` — imprime "Golpe devastador!"
-- `atacar(double dano)` — imprime uma mensagem específica ANTES de chamar o método da classe mãe
-- `exibirInfo()` — chama a versão da mãe e acrescenta arma e armadura
+- `usarHabilidade()`: imprime "Golpe devastador!"
+- `atacar(double dano)`: imprime uma mensagem específica ANTES de chamar o método da classe mãe
+- `exibirInfo()`: chama a versão da mãe e acrescenta arma e armadura
 
 Métodos específicos:
 
-- `defender()` — reduz a vida em 10 e imprime mensagem
-- `berrar()` — imprime "O guerreiro esta berrando de raiva!"
+- `defender()`: reduz a vida em 10 e imprime mensagem
+- `berrar()`: imprime "O guerreiro esta berrando de raiva!"
 
 ### Classe TestePersonagens (pacote `app`)
 
@@ -112,10 +112,10 @@ O guerreiro esta berrando de raiva!
 - [ ] `atacar` do guerreiro NÃO duplica a lógica de reduzir vida (usa `super.atacar(dano)`)
 - [ ] Todas as sobrescritas com `@Override`
 - [ ] O item 4 do teste está feito e o comentário explica qual versão rodou e por quê
-- [ ] A vida nunca fica negativa (decida onde essa regra deve morar — dica: na mãe, uma vez só)
+- [ ] A vida nunca fica negativa (decida onde essa regra deve morar; dica: na mãe, uma vez só)
 
 ## Dicas
 
 - Use `super()` no construtor da classe filha.
 - Use `super.metodo()` para chamar métodos da classe mãe.
-- O gabarito comentado está em [gabaritos/modulo-10-rpg](../../gabaritos/modulo-10-rpg/) — só depois de tentar.
+- O gabarito comentado está em [gabaritos/modulo-10-rpg](../../gabaritos/modulo-10-rpg/), só depois de tentar.

@@ -31,27 +31,27 @@ O domínio é livre; os requisitos técnicos, não.
 
 ## Requisitos obrigatórios
 
-Seu sistema deve conter, no mínimo — **marque cada linha antes de entregar**:
+Seu sistema deve conter, no mínimo (**marque cada linha antes de entregar**):
 
 | ✔ | # | Requisito | Módulo |
 | --- | --- | --- | --- |
 | [ ] | 1 | Pelo menos 4 classes de domínio no pacote `model` | 02 |
-| [ ] | 2 | Todos os atributos privados, com validação nos setters ou construtor | 03 |
-| [ ] | 3 | Menu interativo com `Scanner` e CRUD de pelo menos uma entidade (`ArrayList`) | 04 |
-| [ ] | 4 | Uma hierarquia de herança com classe abstrata e pelo menos 2 filhas concretas | 05, 06 |
-| [ ] | 5 | Pelo menos um uso REAL de polimorfismo (laço sobre o tipo abstrato ou interface) | 06, 07 |
-| [ ] | 6 | Pelo menos 1 interface implementada por classes de árvores diferentes | 07 |
-| [ ] | 7 | Pelo menos 1 exceção personalizada no pacote `exception`, lançada e tratada | 08 |
+| [ ] | 2 | Todos os atributos privados, com validação nos setters ou construtor | 04, 05 |
+| [ ] | 3 | Menu interativo com `Scanner` e CRUD de pelo menos uma entidade (`ArrayList`) | 07, 08 |
+| [ ] | 4 | Uma hierarquia de herança com classe abstrata e pelo menos 2 filhas concretas | 10, 12 |
+| [ ] | 5 | Pelo menos um uso REAL de polimorfismo (laço sobre o tipo abstrato ou interface) | 11, 13 |
+| [ ] | 6 | Pelo menos 1 interface implementada por classes de árvores diferentes | 13 |
+| [ ] | 7 | Pelo menos 1 exceção personalizada no pacote `exception`, lançada e tratada | 14 |
 | [ ] | 8 | Pacotes organizados: `model`, `app`, `util` (se precisar) e `exception` | todos |
-| [ ] | 9 | Nenhum código duplicado evidente (aplique o módulo 09 antes de entregar) | 09 |
+| [ ] | 9 | Nenhum código duplicado evidente (aplique o módulo 15 antes de entregar) | 15 |
 
 Atenção ao requisito 5: "uso real" significa que o polimorfismo resolve um problema do seu sistema (ex.: calcular o preço de itens diferentes num mesmo laço), não um trecho decorativo para marcar o item.
 
 ## Um exemplo de escopo: o Sistema de Estoque
 
-Em [exemplo-referencia/](exemplo-referencia/) você encontra um sistema de estoque completo (produtos com cadastro, busca, atualização e remoção). Ele mostra o TAMANHO esperado de um projeto — nem trivial, nem gigante.
+Em [exemplo-referencia/](exemplo-referencia/) você encontra um sistema de estoque completo (produtos com cadastro, busca, atualização e remoção). Ele mostra o TAMANHO esperado de um projeto: nem trivial, nem gigante.
 
-Importante: ele foi escrito antes dos módulos finais e **não atende a todos os requisitos** da tabela (não tem herança, interface nem exceções personalizadas). Um bom exercício preparatório é identificar exatamente quais requisitos ele descumpre — e como você os atenderia.
+Importante: ele foi escrito antes dos módulos finais e **não atende a todos os requisitos** da tabela (não tem herança, interface nem exceções personalizadas). Um bom exercício preparatório é identificar exatamente quais requisitos ele descumpre, e como você os atenderia.
 
 ```bash
 cd exemplo-referencia
@@ -99,7 +99,7 @@ Antes de entregar, responda com honestidade:
 | Erro | O que está acontecendo |
 | --- | --- |
 | Começar pelo código, sem modelar | A causa nº 1 de projeto refeito na última semana. Faça a fase 2 do roteiro |
-| Forçar herança onde não há relação "é um" | `Cliente extends Endereco` não existe. Cliente **tem** endereço — isso é atributo, não herança |
+| Forçar herança onde não há relação "é um" | `Cliente extends Endereco` não existe. Cliente **tem** endereço: isso é atributo, não herança |
 | Interface com um método só, implementada por uma classe só | Requisito marcado no papel, sem ganho real. Interface serve para unir classes de árvores diferentes |
 | `main` gigante com toda a lógica dentro | Os pacotes existem, mas o modelo não. É o módulo 01 de volta, disfarçado |
 | Exceção personalizada criada e nunca lançada | Ou criada, lançada e engolida num `catch` vazio, que é pior |
@@ -107,8 +107,8 @@ Antes de entregar, responda com honestidade:
 
 ## Avaliação
 
-A correção segue a [rubrica de avaliação](../material-apoio/rubrica-avaliacao.md) — leia antes de começar e use como checklist final. Em resumo: funcionar é o mínimo; a qualidade do MODELO (classes coerentes, responsabilidades bem distribuídas) é o que diferencia as notas altas.
+A correção segue a [rubrica de avaliação](../material-apoio/rubrica-avaliacao.md): leia antes de começar e use como checklist final. Em resumo: funcionar é o mínimo; a qualidade do MODELO (classes coerentes, responsabilidades bem distribuídas) é o que diferencia as notas altas.
 
 ---
 
-Anterior: [Módulo 16](../modulo-16-estudo-de-caso-banco/) | Fim da trilha — parabéns por chegar aqui.
+Anterior: [Módulo 16](../modulo-16-estudo-de-caso-banco/) | Fim da trilha. Parabéns por chegar aqui.

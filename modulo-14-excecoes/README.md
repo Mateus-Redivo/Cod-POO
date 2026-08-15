@@ -1,6 +1,6 @@
 # Módulo 14 — Exceções
 
-O que uma conta bancária deve fazer quando alguém tenta sacar mais do que o saldo? Até agora, nossos objetos simplesmente ignoravam a operação em silêncio — e quem chamou fica sem saber que falhou. Neste módulo os objetos aprendem a **avisar que algo deu errado**, do jeito Java: lançando exceções.
+O que uma conta bancária deve fazer quando alguém tenta sacar mais do que o saldo? Até agora, nossos objetos simplesmente ignoravam a operação em silêncio, e quem chamou fica sem saber que falhou. Neste módulo os objetos aprendem a **avisar que algo deu errado**, do jeito Java: lançando exceções.
 
 ## Objetivos de aprendizagem
 
@@ -19,7 +19,7 @@ Ao final deste módulo você será capaz de:
 
 ### O problema do silêncio
 
-Olhe a `Conta` que usaremos no módulo 10:
+Olhe a `Conta` que usaremos no módulo 16:
 
 ```java
 public void sacar(double valor) {
@@ -55,13 +55,13 @@ flowchart TD
 
 Três blocos, três papéis:
 
-- `try` — o código que PODE falhar.
-- `catch` — o plano B; recebe o objeto-exceção com os detalhes do erro.
-- `finally` — a arrumação final, executa COM ou SEM erro (fechar Scanner, arquivo, conexão).
+- `try`: o código que PODE falhar.
+- `catch`: o plano B; recebe o objeto-exceção com os detalhes do erro.
+- `finally`: a arrumação final, executa COM ou SEM erro (fechar Scanner, arquivo, conexão).
 
 ### Exceções são objetos (e isso é ótimo)
 
-Uma exceção personalizada é uma classe como outra qualquer — pode ter atributos, construtor e métodos:
+Uma exceção personalizada é uma classe como outra qualquer, pode ter atributos, construtor e métodos:
 
 ```java
 public class SaldoInsuficienteException extends Exception {
@@ -86,12 +86,12 @@ Você já conhece unchecked de vista: `NullPointerException` e `IndexOutOfBounds
 
 ## Exemplo guiado
 
-Repare no pacote novo, `exception/` — a partir de agora exceções personalizadas têm casa própria:
+Repare no pacote novo, `exception/`: a partir de agora exceções personalizadas têm casa própria.
 
-- [exception/SaldoInsuficienteException.java](exemplo/exception/SaldoInsuficienteException.java) — checked, com atributos úteis.
-- [exception/ValorInvalidoException.java](exemplo/exception/ValorInvalidoException.java) — unchecked.
-- [model/ContaSimples.java](exemplo/model/ContaSimples.java) — a conta que avisa em vez de silenciar.
-- [app/TesteExcecoes.java](exemplo/app/TesteExcecoes.java) — quatro cenários: sucesso, saldo insuficiente, valor inválido e o `finally`.
+- [exception/SaldoInsuficienteException.java](exemplo/exception/SaldoInsuficienteException.java): checked, com atributos úteis.
+- [exception/ValorInvalidoException.java](exemplo/exception/ValorInvalidoException.java): unchecked.
+- [model/ContaSimples.java](exemplo/model/ContaSimples.java): a conta que avisa em vez de silenciar.
+- [app/TesteExcecoes.java](exemplo/app/TesteExcecoes.java): quatro cenários: sucesso, saldo insuficiente, valor inválido e o `finally`.
 
 ```bash
 cd exemplo
@@ -99,11 +99,11 @@ javac -d bin exception/*.java model/*.java app/*.java
 java -cp bin app.TesteExcecoes
 ```
 
-Experimento: no `TesteExcecoes`, remova o try/catch do TESTE 2 e compile. O compilador vai recusar — essa é a exceção CHECKED trabalhando. Depois remova o do TESTE 3: compila normal (unchecked), mas o programa morre no meio ao executar. Sinta a diferença na prática.
+Experimento: no `TesteExcecoes`, remova o try/catch do TESTE 2 e compile. O compilador vai recusar: essa é a exceção CHECKED trabalhando. Depois remova o do TESTE 3: compila normal (unchecked), mas o programa morre no meio ao executar. Sinta a diferença na prática.
 
 ## Exercícios
 
-1. [EXERCICIO-01-caixa-eletronico.md](exercicios/EXERCICIO-01-caixa-eletronico.md) — um caixa eletrônico que trata todas as falhas com exceções personalizadas.
+1. [EXERCICIO-01-caixa-eletronico.md](exercicios/EXERCICIO-01-caixa-eletronico.md): um caixa eletrônico que trata todas as falhas com exceções personalizadas.
 
 ## Auto-avaliação
 
@@ -117,7 +117,7 @@ Experimento: no `TesteExcecoes`, remova o try/catch do TESTE 2 e compile. O comp
 | Erro | O que está acontecendo |
 | --- | --- |
 | `unreported exception ... must be caught or declared` | Método chama algo que lança checked exception: trate com try/catch ou declare `throws` |
-| `catch` vazio (`catch (Exception e) {}`) | Engolir erro é pior que não tratar: o programa falha em silêncio — exatamente o problema que viemos resolver |
+| `catch` vazio (`catch (Exception e) {}`) | Engolir erro é pior que não tratar: o programa falha em silêncio, exatamente o problema que viemos resolver |
 | Capturar `Exception` genérica sempre | Captura demais; prefira o tipo específico para tratar cada erro do seu jeito |
 | Usar exceção para fluxo normal (ex.: sair de um laço) | Exceção é para situação EXCEPCIONAL; para fluxo normal use if/return |
 

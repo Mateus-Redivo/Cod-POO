@@ -21,9 +21,9 @@ Construtor: recebe `nome` e `idade`.
 
 Métodos:
 
-- `emitirSom()` — imprime `"[nome] faz um som generico."`. Será sobrescrito pelas filhas.
-- `emitirSom(int vezes)` — SOBRECARGA: chama `emitirSom()` repetidas vezes.
-- `exibirInfo()` — imprime nome e idade.
+- `emitirSom()`: imprime `"[nome] faz um som generico."`. Será sobrescrito pelas filhas.
+- `emitirSom(int vezes)`: SOBRECARGA, chama `emitirSom()` repetidas vezes.
+- `exibirInfo()`: imprime nome e idade.
 
 ### Classe Cachorro (pacote `model`, herda de Animal)
 
@@ -46,7 +46,7 @@ Métodos:
 1. Teste `emitirSom()` e `emitirSom(3)` (a sobrecarga) num `Cachorro`.
 2. Crie uma `List<Animal>` com pelo menos um `Cachorro`, um `Gato` e um `Passaro`.
 3. Em UM único laço `for`, chame `emitirSom()` de cada animal da lista.
-4. Num comentário, explique como o Java escolheu qual `emitirSom()` executar em cada volta — sem usar `instanceof` em nenhum lugar do código.
+4. Num comentário, explique como o Java escolheu qual `emitirSom()` executar em cada volta, sem usar `instanceof` em nenhum lugar do código.
 
 ## Estrutura de pastas
 
@@ -77,7 +77,7 @@ Bibi diz: Piu piu!
 ## Critérios de aceitação
 
 - [ ] `emitirSom()` de cada subclasse imprime uma mensagem diferente
-- [ ] `emitirSom(3)` chama `emitirSom()` três vezes — é a sobrecarga em ação, não um método novo
+- [ ] `emitirSom(3)` chama `emitirSom()` três vezes: é a sobrecarga em ação, não um método novo
 - [ ] O laço da parte 3 usa só o tipo `Animal`, sem `instanceof` e sem cast
 - [ ] Cada `@Override` está presente e correto
 

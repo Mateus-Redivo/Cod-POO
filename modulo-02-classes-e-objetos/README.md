@@ -2,7 +2,7 @@
 
 Hora de construir suas primeiras classes de verdade. Este módulo é a fundação de todos os módulos seguintes: se estes conceitos ficarem sólidos, os próximos módulos serão muito mais fáceis.
 
-Este módulo é propositalmente pequeno. Você vai ver só o essencial — classe, objeto, atributo, método, `new`. Getters, setters, `toString()` e mais de um construtor ficam para os módulos seguintes: cada ideia nova merece sua própria aula, sem competir por atenção com as outras.
+Este módulo é propositalmente pequeno. Você vai ver só o essencial: classe, objeto, atributo, método, `new`. Getters, setters, `toString()` e mais de um construtor ficam para os módulos seguintes, porque cada ideia nova merece sua própria aula, sem competir por atenção com as outras.
 
 ## Objetivos de aprendizagem
 
@@ -21,7 +21,7 @@ Ao final deste módulo você será capaz de:
 
 ### Classe = molde; objeto = coisa feita no molde
 
-Pense em uma forma de bolo (classe) e nos bolos (objetos). A forma define o formato de todo bolo; cada bolo, porém, é um bolo — pode ter sabor diferente, ser comido sem afetar os outros.
+Pense em uma forma de bolo (classe) e nos bolos (objetos). A forma define o formato de todo bolo; cada bolo, porém, é um bolo que pode ter sabor diferente e ser comido sem afetar os outros.
 
 ```mermaid
 classDiagram
@@ -36,7 +36,7 @@ classDiagram
     }
 ```
 
-Este é um **diagrama de classes**, a "planta baixa" que usaremos em todos os módulos. O `-` indica privado, o `+` indica público — o porquê de `private` vem no [módulo 04](../modulo-04-encapsulamento/); por ora, saiba apenas que os atributos moram dentro do objeto e só os métodos dele mexem neles.
+Este é um **diagrama de classes**, a "planta baixa" que usaremos em todos os módulos. O `-` indica privado, o `+` indica público. O porquê de `private` vem no [módulo 04](../modulo-04-encapsulamento/); por ora, saiba apenas que os atributos moram dentro do objeto e só os métodos dele mexem neles.
 
 ### O construtor
 
@@ -59,18 +59,18 @@ public Pessoa(String nome, int idade, double altura) {
 }
 ```
 
-Sem o `this`, a linha `nome = nome;` atribuiria o parâmetro a ele mesmo e o atributo ficaria vazio — um erro clássico que o compilador NÃO acusa.
+Sem o `this`, a linha `nome = nome;` atribuiria o parâmetro a ele mesmo e o atributo ficaria vazio: um erro clássico que o compilador NÃO acusa.
 
 ### Métodos podem mudar o estado do objeto
 
-Um objeto não é só uma caixa de dados: seus métodos podem alterar os próprios atributos. Repare no `fazerAniversario()` do exemplo — ele muda `idade` sem precisar de nenhum mecanismo especial, só o método fazendo o que uma pessoa faria.
+Um objeto não é só uma caixa de dados: seus métodos podem alterar os próprios atributos. Repare no `fazerAniversario()` do exemplo: ele muda `idade` sem precisar de nenhum mecanismo especial, só o método fazendo o que uma pessoa faria.
 
 ## Exemplo guiado
 
 O código está em [exemplo/](exemplo/):
 
-- [model/Pessoa.java](exemplo/model/Pessoa.java) — a classe com um construtor, dois métodos de leitura e um método que muda o estado do objeto.
-- [app/TestePessoa.java](exemplo/app/TestePessoa.java) — cria objetos e exercita cada método.
+- [model/Pessoa.java](exemplo/model/Pessoa.java): a classe com um construtor, dois métodos de leitura e um método que muda o estado do objeto.
+- [app/TestePessoa.java](exemplo/app/TestePessoa.java): cria objetos e exercita cada método.
 
 Roteiro de leitura sugerido:
 
@@ -88,7 +88,7 @@ Roteiro de leitura sugerido:
 
 ## Exercícios
 
-1. [EXERCICIO-01-produto.md](exercicios/EXERCICIO-01-produto.md) — fixação: uma classe única, com um método que muda o estado do objeto.
+1. [EXERCICIO-01-produto.md](exercicios/EXERCICIO-01-produto.md) (fixação): uma classe única, com um método que muda o estado do objeto.
 
 > Este módulo ainda vai ganhar mais exercícios (aplicação e desafio) numa próxima revisão do material.
 
@@ -103,10 +103,10 @@ Roteiro de leitura sugerido:
 
 | Erro | O que está acontecendo |
 | --- | --- |
-| `nome = nome;` no construtor | Faltou `this.` — o atributo fica `null` e nada avisa |
+| `nome = nome;` no construtor | Faltou `this.`: o atributo fica `null` e nada avisa |
 | `Pessoa p; p.saudacao();` | Declarou mas não instanciou: `NullPointerException`. Falta o `new` |
 | Criar um construtor com retorno (`public void Pessoa(...)`) | Com `void` deixa de ser construtor e vira um método comum que nunca é chamado |
-| Imprimir o objeto com `System.out.println(pessoa)` | Aparece algo como `model.Pessoa@1b6d3586` — é o comportamento padrão do Java sem `toString()` sobrescrito, não um bug. Você resolve isso no [módulo 04](../modulo-04-encapsulamento/) |
+| Imprimir o objeto com `System.out.println(pessoa)` | Aparece algo como `model.Pessoa@1b6d3586`. É o comportamento padrão do Java sem `toString()` sobrescrito, não um bug. Você resolve isso no [módulo 04](../modulo-04-encapsulamento/) |
 
 ---
 

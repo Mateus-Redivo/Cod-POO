@@ -4,7 +4,7 @@ Termos usados nos módulos, explicados em linguagem simples e com um exemplo mí
 
 ## Classe
 
-O molde, a planta, a receita. Define quais dados e comportamentos os objetos daquele tipo terão. Uma classe `Pessoa` define que toda pessoa tem `nome` e `idade` — mas a classe sozinha não é nenhuma pessoa específica.
+O molde, a planta, a receita. Define quais dados e comportamentos os objetos daquele tipo terão. Uma classe `Pessoa` define que toda pessoa tem `nome` e `idade`, mas a classe sozinha não é nenhuma pessoa específica.
 
 ```java
 public class Pessoa {
@@ -75,7 +75,7 @@ Classe que não pode ser instanciada com `new`; existe para ser mãe de outras. 
 
 ## Abstração
 
-O pilar de "modelar só o que importa". Ao criar a classe `Aluno` para a academia, guardamos nome, idade e plano — e ignoramos cor dos olhos, time de futebol etc. Abstrair é decidir o que entra e o que fica de fora do modelo.
+O pilar de "modelar só o que importa". Ao criar a classe `Aluno` para a academia, guardamos nome, idade e plano, e ignoramos cor dos olhos, time de futebol etc. Abstrair é decidir o que entra e o que fica de fora do modelo.
 
 ## Polimorfismo
 
@@ -119,4 +119,4 @@ Método herdado de `Object` que responde "este objeto é igual àquele?". A vers
 
 ## hashCode()
 
-Par inseparável do `equals`: um "resumo numérico" do objeto, usado por coleções como `HashSet` e `HashMap` para localizar objetos rapidamente. Contrato: se dois objetos são `equals`, seus `hashCode` devem ser iguais — por isso os dois métodos são sempre sobrescritos juntos, com os mesmos campos. Visto no módulo 09.
+Par inseparável do `equals`: um "resumo numérico" do objeto, usado por coleções como `HashSet` e `HashMap` para localizar objetos rapidamente. Contrato: se dois objetos são `equals`, seus `hashCode` devem ser iguais. Por isso os dois métodos são sempre sobrescritos juntos, com os mesmos campos. Visto no módulo 09.

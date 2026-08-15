@@ -1,6 +1,6 @@
 # Módulo 15 — Refatoração: de código que funciona para código bom
 
-Você já sabe todos os conceitos de POO dos módulos anteriores. Este módulo ensina uma habilidade diferente — e talvez a mais usada na vida profissional: **melhorar código existente sem mudar o que ele faz**. É aqui que a POO deixa de ser sintaxe e vira ferramenta de pensamento.
+Você já sabe todos os conceitos de POO dos módulos anteriores. Este módulo ensina uma habilidade diferente, e talvez a mais usada na vida profissional: **melhorar código existente sem mudar o que ele faz**. É aqui que a POO deixa de ser sintaxe e vira ferramenta de pensamento.
 
 ## Objetivos de aprendizagem
 
@@ -9,7 +9,7 @@ Ao final deste módulo você será capaz de:
 - [ ] Identificar sinais de código com problema: duplicação, main gigante, variáveis numeradas
 - [ ] Extrair um trecho repetido para um método (extração de método)
 - [ ] Extrair dados + comportamento relacionados para uma classe (extração de classe)
-- [ ] Aplicar o princípio DRY (Don't Repeat Yourself — não se repita)
+- [ ] Aplicar o princípio DRY (Don't Repeat Yourself, não se repita)
 - [ ] Refatorar em passos pequenos, testando a cada passo
 
 ## Pré-requisitos
@@ -20,7 +20,7 @@ Ao final deste módulo você será capaz de:
 
 ### Refatorar não é reescrever
 
-Refatoração tem uma regra sagrada: **o comportamento observável não muda**. Antes e depois, o programa imprime as mesmas coisas para as mesmas entradas. O que muda é a estrutura interna — e portanto o custo de dar manutenção amanhã.
+Refatoração tem uma regra sagrada: **o comportamento observável não muda**. Antes e depois, o programa imprime as mesmas coisas para as mesmas entradas. O que muda é a estrutura interna, e portanto o custo de dar manutenção amanhã.
 
 ### Os "cheiros" de código (code smells)
 
@@ -29,9 +29,9 @@ Sinais de que um código pede refatoração. Aprenda a farejá-los:
 | Cheiro | Como reconhecer |
 | --- | --- |
 | Código duplicado | O mesmo bloco copiado e colado, com pequenas variações |
-| Variáveis numeradas | `nome1, nome2, nome3...` — implorando para virar objetos numa lista |
+| Variáveis numeradas | `nome1, nome2, nome3...`, implorando para virar objetos numa lista |
 | Main gigante | Um método que faz tudo: lê, calcula, valida, imprime |
-| Números mágicos | `if (media >= 6.0)` — o que é 6.0? Por que 6.0? |
+| Números mágicos | `if (media >= 6.0)`. O que é 6.0? Por que 6.0? |
 | Nomes vagos | `x`, `aux`, `dados2`, `metodo1` |
 
 ### O processo, passo a passo
@@ -52,7 +52,7 @@ flowchart LR
 
 Abra [exemplo/antes/SistemaNotas.java](exemplo/antes/SistemaNotas.java): um sistema de notas com três alunos, todo dentro do `main`, com o cálculo de média e a regra de aprovação **copiados três vezes**.
 
-**Ato 1 — Extração de método.** O bloco que calcula média e situação é idêntico nos três alunos; só mudam os valores. Primeiro passo natural:
+**Ato 1: Extração de método.** O bloco que calcula média e situação é idêntico nos três alunos; só mudam os valores. Primeiro passo natural:
 
 ```java
 static String calcularSituacao(double media) {
@@ -62,17 +62,17 @@ static String calcularSituacao(double media) {
 }
 ```
 
-Já elimina a duplicação da REGRA. Mas os dados (`nome1`, `prova1a`...) continuam soltos e numerados — o cheiro persiste.
+Já elimina a duplicação da REGRA. Mas os dados (`nome1`, `prova1a`...) continuam soltos e numerados: o cheiro persiste.
 
-**Ato 2 — Extração de classe.** A pergunta-chave da POO: *quais dados andam sempre juntos, e que comportamento pertence a eles?* Nome e notas andam juntos; média e situação são calculadas A PARTIR deles. Isso é uma classe pedindo para existir — [exemplo/depois/model/Aluno.java](exemplo/depois/model/Aluno.java):
+**Ato 2: Extração de classe.** A pergunta-chave da POO: *quais dados andam sempre juntos, e que comportamento pertence a eles?* Nome e notas andam juntos; média e situação são calculadas A PARTIR deles. Isso é uma classe pedindo para existir, em [exemplo/depois/model/Aluno.java](exemplo/depois/model/Aluno.java):
 
 - `nome1, prova1a, prova1b, trabalho1` viram `new Aluno("Ana")` + `adicionarNota(...)`
 - o cálculo repetido vira o método `calcularMedia()`
-- a regra de aprovação vira `getSituacao()` — escrita UMA vez, no único lugar lógico
+- a regra de aprovação vira `getSituacao()`, escrita UMA vez, no único lugar lógico
 
-**Ato 3 — Mais uma classe.** A média da turma era uma conta solta no fim do main. De quem é essa responsabilidade? Da [Turma](exemplo/depois/model/Turma.java). Resultado final em [exemplo/depois/app/SistemaNotas.java](exemplo/depois/app/SistemaNotas.java): um main que só monta objetos e delega.
+**Ato 3: Mais uma classe.** A média da turma era uma conta solta no fim do main. De quem é essa responsabilidade? Da [Turma](exemplo/depois/model/Turma.java). Resultado final em [exemplo/depois/app/SistemaNotas.java](exemplo/depois/app/SistemaNotas.java): um main que só monta objetos e delega.
 
-Execute os dois e compare as saídas — devem ser equivalentes:
+Execute os dois e compare as saídas, devem ser equivalentes:
 
 ```bash
 cd exemplo/antes
@@ -95,7 +95,7 @@ A prova de que a refatoração valeu a pena é perguntar "e se...":
 
 ## Exercícios
 
-1. [EXERCICIO-01-refatorar-farmacia.md](exercicios/EXERCICIO-01-refatorar-farmacia.md) — você recebe um código monolítico funcionando e o transforma em POO, nos mesmos três atos.
+1. [EXERCICIO-01-refatorar-farmacia.md](exercicios/EXERCICIO-01-refatorar-farmacia.md): você recebe um código monolítico funcionando e o transforma em POO, nos mesmos três atos.
 
 ## Auto-avaliação
 

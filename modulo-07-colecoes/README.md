@@ -1,6 +1,6 @@
 # Módulo 07 — Coleções
 
-Até agora criamos dois ou três objetos "na mão". Sistemas reais gerenciam **muitos** objetos. Neste módulo você aprende a guardar vários objetos numa lista e percorrê-la — a base de qualquer sistema de cadastro.
+Até agora criamos dois ou três objetos "na mão". Sistemas reais gerenciam **muitos** objetos. Neste módulo você aprende a guardar vários objetos numa lista e percorrê-la, a base de qualquer sistema de cadastro.
 
 ## Objetivos de aprendizagem
 
@@ -28,7 +28,7 @@ alunos.size();                          // quantos tem
 alunos.remove(0);                       // remove pelo indice
 ```
 
-O `<Aluno>` (generics) avisa ao compilador: "esta lista só aceita `Aluno`". Tentar adicionar outra coisa nem compila — mais um erro pego de graça, antes de executar.
+O `<Aluno>` (generics) avisa ao compilador: "esta lista só aceita `Aluno`". Tentar adicionar outra coisa nem compila: mais um erro pego de graça, antes de executar.
 
 Para percorrer, o for-each é o mais legível:
 
@@ -40,8 +40,8 @@ for (Aluno aluno : alunos) {
 
 ## Exemplo guiado
 
-- [model/Aluno.java](exemplo/model/Aluno.java) — nome, idade e plano, com `toString()`.
-- [app/TesteColecoes.java](exemplo/app/TesteColecoes.java) — cria uma lista, adiciona, percorre, acessa por índice e remove.
+- [model/Aluno.java](exemplo/model/Aluno.java): nome, idade e plano, com `toString()`.
+- [app/TesteColecoes.java](exemplo/app/TesteColecoes.java): cria uma lista, adiciona, percorre, acessa por índice e remove.
 
 ```bash
 cd exemplo
@@ -51,7 +51,7 @@ java -cp bin app.TesteColecoes
 
 ## Exercícios
 
-> Este módulo ainda vai ganhar exercícios próprios numa próxima revisão do material. Por ora, pratique alterando o `TesteColecoes.java`: adicione mais alunos, tente remover um índice que não existe e observe o erro.
+1. [EXERCICIO-01-playlist.md](exercicios/EXERCICIO-01-playlist.md) (fixação): uma lista de músicas com cálculo de duração total.
 
 ## Auto-avaliação
 
@@ -63,8 +63,8 @@ java -cp bin app.TesteColecoes
 
 | Erro | O que está acontecendo |
 | --- | --- |
-| `IndexOutOfBoundsException` ao acessar ou remover | Índice fora do tamanho da lista — valide contra `lista.size()` |
-| Modificar a lista dentro de um for-each | `ConcurrentModificationException` — remova por índice fora do laço, ou use um `Iterator` (fora do escopo deste módulo) |
+| `IndexOutOfBoundsException` ao acessar ou remover | Índice fora do tamanho da lista: valide contra `lista.size()` |
+| Modificar a lista dentro de um for-each | `ConcurrentModificationException`. Remova por índice fora do laço, ou use um `Iterator` (fora do escopo deste módulo) |
 | Esquecer o `import java.util.ArrayList;` | `ArrayList` não é reconhecido pelo compilador |
 
 ---

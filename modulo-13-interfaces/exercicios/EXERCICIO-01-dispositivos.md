@@ -19,15 +19,15 @@ Modelar capacidades (conectar, carregar) como interfaces e provar que classes se
 ### Interface Carregavel (pacote `model`)
 
 - `void carregar(int minutos)`
-- `int getNivelBateria()` — 0 a 100
+- `int getNivelBateria()`: 0 a 100
 
 ### Classes concretas (pacote `model`)
 
 Crie três classes SEM herança entre si:
 
-- `Smartphone` — implementa `Conectavel` E `Carregavel`. Atributos: `modelo`, `nivelBateria` (começa em 50), `conectado`, `redeAtual`. Carregar aumenta 1% por minuto, travando em 100.
-- `SmartTv` — implementa apenas `Conectavel`. Atributos: `polegadas`, `conectado`, `redeAtual`. (TV fica na tomada: carregar não faz sentido para ela — e o modelo deve refletir isso.)
-- `FoneBluetooth` — implementa apenas `Carregavel`. Atributos: `marca`, `nivelBateria` (começa em 20). Carrega 2% por minuto.
+- `Smartphone`: implementa `Conectavel` E `Carregavel`. Atributos: `modelo`, `nivelBateria` (começa em 50), `conectado`, `redeAtual`. Carregar aumenta 1% por minuto, travando em 100.
+- `SmartTv`: implementa apenas `Conectavel`. Atributos: `polegadas`, `conectado`, `redeAtual`. (TV fica na tomada: carregar não faz sentido para ela, e o modelo deve refletir isso.)
+- `FoneBluetooth`: implementa apenas `Carregavel`. Atributos: `marca`, `nivelBateria` (começa em 20). Carrega 2% por minuto.
 
 Regras:
 
@@ -39,7 +39,7 @@ Regras:
 1. Crie um objeto de cada classe.
 2. Monte uma `List<Conectavel>` com quem pode conectar e conecte todos à rede "LabPOO" num único laço.
 3. Monte uma `List<Carregavel>` com quem pode carregar e carregue todos por 30 minutos num único laço, imprimindo a bateria de cada um.
-4. Observe que o `Smartphone` aparece NAS DUAS listas — escreva num comentário por que isso seria impossível só com herança.
+4. Observe que o `Smartphone` aparece NAS DUAS listas: escreva num comentário por que isso seria impossível só com herança.
 
 ## Estrutura de pastas
 
@@ -74,4 +74,4 @@ FoneBluetooth JBL: bateria 80%
 
 ## Desafio extra (opcional)
 
-Adicione um método `default` na interface `Conectavel` chamado `reconectar()`, que desconecta e conecta de novo na mesma rede. Pesquise "default method Java" — é um recurso das interfaces modernas que os módulos não cobrem em aula.
+Adicione um método `default` na interface `Conectavel` chamado `reconectar()`, que desconecta e conecta de novo na mesma rede. Pesquise "default method Java": é um recurso das interfaces modernas que os módulos não cobrem em aula.

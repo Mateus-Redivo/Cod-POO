@@ -1,6 +1,6 @@
 # Módulo 12 — Abstração
 
-Pergunta: o que é "uma forma geométrica" de área...? Área de quê? A pergunta não faz sentido sem saber SE é círculo ou retângulo. `Forma` é um conceito, não uma coisa completa — e o Java tem um recurso exatamente para isso: classes e métodos abstratos.
+Pergunta: o que é "uma forma geométrica" de área...? Área de quê? A pergunta não faz sentido sem saber SE é círculo ou retângulo. `Forma` é um conceito, não uma coisa completa, e o Java tem um recurso exatamente para isso: classes e métodos abstratos.
 
 ## Objetivos de aprendizagem
 
@@ -56,7 +56,7 @@ classDiagram
 
 ### Por que não deixar Forma concreta, com calcularArea() retornando 0?
 
-Você poderia escrever uma `Forma` normal, com `calcularArea()` retornando `0` por padrão, e deixar cada filha sobrescrever se quiser. O problema: se uma filha nova **esquecer** de sobrescrever, o programa compila e roda — só que devolve uma área errada, silenciosamente. Com `abstract`, esse erro vira um erro de **compilação**, pego antes de qualquer execução. Errar cedo é sempre mais barato.
+Você poderia escrever uma `Forma` normal, com `calcularArea()` retornando `0` por padrão, e deixar cada filha sobrescrever se quiser. O problema é que, se uma filha nova **esquecer** de sobrescrever, o programa compila e roda, só que devolve uma área errada, silenciosamente. Com `abstract`, esse erro vira um erro de **compilação**, pego antes de qualquer execução. Errar cedo é sempre mais barato.
 
 ### Abstração, de novo (agora com código)
 
@@ -64,9 +64,9 @@ Você já viu "abstrair é decidir o que entra no modelo" no [módulo 01](../mod
 
 ## Exemplo guiado
 
-- [model/Forma.java](exemplo/model/Forma.java) — abstrata, com dois métodos abstratos e dois concretos.
-- [model/Circulo.java](exemplo/model/Circulo.java) e [model/Retangulo.java](exemplo/model/Retangulo.java) — implementam os métodos abstratos, cada uma com sua fórmula.
-- [app/TesteFormas.java](exemplo/app/TesteFormas.java) — array de `Forma` misturando os dois tipos.
+- [model/Forma.java](exemplo/model/Forma.java): abstrata, com dois métodos abstratos e dois concretos.
+- [model/Circulo.java](exemplo/model/Circulo.java) e [model/Retangulo.java](exemplo/model/Retangulo.java): implementam os métodos abstratos, cada uma com sua fórmula.
+- [app/TesteFormas.java](exemplo/app/TesteFormas.java): array de `Forma` misturando os dois tipos.
 
 ```bash
 cd exemplo
@@ -78,7 +78,7 @@ Experimente: tente `new Forma("X", "Azul")` em algum lugar do teste. Leia a mens
 
 ## Exercícios
 
-1. [EXERCICIO-01-funcionarios.md](exercicios/EXERCICIO-01-funcionarios.md) — o grande exercício final do bloco: classe abstrata, sobrecarga, sobrescrita e polimorfismo juntos, numa folha de pagamento.
+1. [EXERCICIO-01-funcionarios.md](exercicios/EXERCICIO-01-funcionarios.md): o grande exercício final do bloco, com classe abstrata, sobrecarga, sobrescrita e polimorfismo juntos, numa folha de pagamento.
 
 ## Auto-avaliação
 
@@ -90,9 +90,9 @@ Experimente: tente `new Forma("X", "Azul")` em algum lugar do teste. Leia a mens
 
 | Erro | O que está acontecendo |
 | --- | --- |
-| `Forma is abstract; cannot be instantiated` | Tentou `new Forma(...)` — instancie uma filha concreta |
+| `Forma is abstract; cannot be instantiated` | Tentou `new Forma(...)`. Instancie uma filha concreta |
 | `... is not abstract and does not override abstract method...` | A filha esqueceu de implementar um método abstrato |
-| Achar que uma classe abstrata não pode ter métodos com corpo | Pode — só os métodos marcados `abstract` ficam sem corpo |
+| Achar que uma classe abstrata não pode ter métodos com corpo | Pode: só os métodos marcados `abstract` ficam sem corpo |
 
 ---
 

@@ -17,13 +17,13 @@ java -version
 javac -version
 ```
 
-Se os dois comandos mostrarem a versão, está tudo certo. Se aparecer "comando não encontrado", o JDK não está no PATH — peça ajuda ao professor ou procure "adicionar JDK ao PATH" para seu sistema.
+Se os dois comandos mostrarem a versão, está tudo certo. Se aparecer "comando não encontrado", o JDK não está no PATH: peça ajuda ao professor ou procure "adicionar JDK ao PATH" para seu sistema.
 
 ### Editor: VS Code
 
 1. Instale o [Visual Studio Code](https://code.visualstudio.com/).
 2. Dentro dele, instale a extensão **Extension Pack for Java** (da Microsoft).
-3. Com essa extensão, um botão "Run" aparece em cima de todo método `main` — é o jeito mais fácil de executar os exemplos.
+3. Com essa extensão, um botão "Run" aparece em cima de todo método `main`, o jeito mais fácil de executar os exemplos.
 
 ## 2. Como compilar e executar os exemplos
 
@@ -69,7 +69,7 @@ public void setIdade(int idade) {
 }
 ```
 
-Parece um detalhe bobo, mas resolve um problema real: no Windows, o terminal e o Java nem sempre combinam sobre a tabela de caracteres, e um `System.out.println("Olá")` pode aparecer como `Ol�`. Sem acento na string, **seu programa sai igual em qualquer computador do laboratório** — e você não perde meia aula caçando um erro que não é seu.
+Parece um detalhe bobo, mas resolve um problema real: no Windows, o terminal e o Java nem sempre combinam sobre a tabela de caracteres, e um `System.out.println("Olá")` pode aparecer como `Ol�`. Sem acento na string, **seu programa sai igual em qualquer computador do laboratório**, e você não perde meia aula caçando um erro que não é seu.
 
 Se ainda assim você quiser acentos nas mensagens (no seu projeto final, por exemplo), use:
 
@@ -83,7 +83,7 @@ Pelo botão "Run" do VS Code isso normalmente já vem resolvido.
 ## 4. Como fazer os exercícios
 
 1. Leia o enunciado em `modulo-XX/exercicios/`.
-2. Crie uma pasta para a sua solução **fora** das pastas de exemplo (sugestão: `minhas-solucoes/modulo-XX/` na raiz do repositório — essa pasta é sua).
+2. Crie uma pasta para a sua solução **fora** das pastas de exemplo (sugestão: `minhas-solucoes/modulo-XX/` na raiz do repositório, essa pasta é sua).
 3. Siga a estrutura de pacotes pedida no enunciado (geralmente `model/` e `app/`).
 4. Compare a saída do seu programa com o "Exemplo de saída" do enunciado.
 5. Passe pelos "Critérios de aceitação" do enunciado, um por um.
@@ -105,6 +105,6 @@ O passo C é sério: altere valores, remova um `private`, apague um `@Override`,
 
 ## 6. Onde pedir ajuda
 
-- Releia a seção "Erros comuns" do módulo — provavelmente seu problema está lá.
+- Releia a seção "Erros comuns" do módulo: provavelmente seu problema está lá.
 - Consulte o [GLOSSARIO.md](GLOSSARIO.md) quando um termo não fizer sentido.
 - Traga a dúvida para a aula: erro de compilação é assunto de aula, não motivo de vergonha.

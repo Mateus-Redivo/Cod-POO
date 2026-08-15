@@ -27,12 +27,12 @@ flowchart LR
     B -->|"java"| C["JVM executa<br>(qualquer sistema operacional)"]
 ```
 
-- `javac` é o **compilador**: traduz seu código para bytecode e, de quebra, aponta seus erros de escrita antes de o programa existir.
+- `javac` é o **compilador**, traduz seu código para bytecode e, de quebra, aponta seus erros de escrita antes de o programa existir.
 - `java` inicia a **JVM** (máquina virtual), que executa o bytecode. É ela que torna o Java portátil: o mesmo `.class` roda em Windows, Linux e Mac.
 
 ## Seu primeiro programa
 
-Crie um arquivo chamado `OlaTurma.java` (o nome do arquivo DEVE ser igual ao nome da classe) com este conteúdo — digite, não copie, para começar a criar memória muscular:
+Crie um arquivo chamado `OlaTurma.java` (o nome do arquivo DEVE ser igual ao nome da classe) com este conteúdo. Digite, não copie, para começar a criar memória muscular:
 
 ```java
 public class OlaTurma {
@@ -53,7 +53,7 @@ java OlaTurma
 
 Se as duas mensagens apareceram, parabéns: seu ambiente está pronto.
 
-Sobre o `public static void main(String[] args)`: por enquanto, aceite-o como "a porta de entrada do programa" — é onde a JVM começa a executar. Cada palavra dessa assinatura vai fazer sentido ao longo dos módulos.
+Sobre o `public static void main(String[] args)`: por enquanto, aceite-o como "a porta de entrada do programa", onde a JVM começa a executar. Cada palavra dessa assinatura vai fazer sentido ao longo dos módulos.
 
 ## Experimente quebrar
 
@@ -80,7 +80,7 @@ Antes de ir ao módulo 01, confirme:
 | --- | --- |
 | `'javac' não é reconhecido...` | JDK não instalado ou fora do PATH |
 | `class OlaTurma is public, should be declared in a file named...` | Nome do arquivo diferente do nome da classe |
-| `Could not find or load main class` | Você digitou `java OlaTurma.class` ou `java olaturma` — o certo é `java OlaTurma` |
+| `Could not find or load main class` | Você digitou `java OlaTurma.class` ou `java olaturma`. O certo é `java OlaTurma` |
 | O terminal "não acha" o arquivo | Você está em outra pasta; use `cd` até a pasta do arquivo |
 
 ---

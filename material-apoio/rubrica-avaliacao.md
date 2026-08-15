@@ -26,7 +26,7 @@ Critérios usados na correção dos exercícios e do projeto integrador. Use com
 - Cópia de colega ou gabarito. Solução idêntica = conversa com os envolvidos; o objetivo aqui é aprender, e a cópia só adia o problema para a prova.
 - `catch` vazio engolindo erro.
 - Atributos públicos sem justificativa.
-- Uso de recursos claramente colados de fora do escopo dos módulos sem saber explicar. Regra simples: **você precisa saber explicar cada linha do que entregar** — explicou, valeu.
+- Uso de recursos claramente colados de fora do escopo dos módulos sem saber explicar. Regra simples: **você precisa saber explicar cada linha do que entregar**. Explicou, valeu.
 
 ## O que impressiona (além do pedido)
 

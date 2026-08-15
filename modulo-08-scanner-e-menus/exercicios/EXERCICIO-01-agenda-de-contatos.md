@@ -14,10 +14,10 @@ Construir, sozinho, um sistema de console completo com o esqueleto aprendido no 
 
 Atributos privados:
 
-- `nome` (String) — não vazio
-- `telefone` (String) — não vazio
-- `email` (String) — deve conter `@` (validação simples mesmo)
-- `favorito` (boolean) — começa `false`
+- `nome` (String), não vazio
+- `telefone` (String), não vazio
+- `email` (String), deve conter `@` (validação simples mesmo)
+- `favorito` (boolean), começa `false`
 
 Com construtor, getters/setters validados e `toString()`.
 
@@ -68,4 +68,4 @@ app/
 
 ## Desafio extra (opcional)
 
-Impeça o cadastro de dois contatos com o mesmo telefone. Dica: antes de adicionar, percorra a lista comparando — e pense em qual método da classe `Contato` ajudaria (`equals`?).
+Impeça o cadastro de dois contatos com o mesmo telefone. Dica: antes de adicionar, percorra a lista comparando, e pense em qual método da classe `Contato` ajudaria (`equals`?).

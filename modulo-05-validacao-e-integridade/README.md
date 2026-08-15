@@ -1,6 +1,6 @@
 # Módulo 05 — Validação e integridade
 
-No módulo anterior seus objetos já protegiam os atributos com `private` e getters/setters. Mas os setters só organizavam o acesso — não recusavam nada. Agora eles aprendem a **se proteger de verdade**: ninguém mais vai conseguir colocar uma idade de -50 anos numa `Pessoa`.
+No módulo anterior seus objetos já protegiam os atributos com `private` e getters/setters. Mas os setters só organizavam o acesso, sem recusar nada. Agora eles aprendem a **se proteger de verdade**: ninguém mais vai conseguir colocar uma idade de -50 anos numa `Pessoa`.
 
 ## Objetivos de aprendizagem
 
@@ -18,7 +18,7 @@ Ao final deste módulo você será capaz de:
 
 ### A receita da validação
 
-1. Atributos `private`, getters, setters — isso já está pronto desde o módulo 04.
+1. Atributos `private`, getters, setters: isso já está pronto desde o módulo 04.
 2. O setter passa a **recusar** valores fora da regra, em vez de só atribuir:
 
 ```java
@@ -42,7 +42,7 @@ Regra de ouro: **não existe caminho para o atributo que passe por fora da valid
 
 ### O construtor também precisa validar
 
-Se só o setter validasse, o construtor ainda poderia criar um objeto com dados inválidos direto — a validação viraria decoração. A solução: o construtor **não atribui os atributos diretamente**, ele chama os próprios setters:
+Se só o setter validasse, o construtor ainda poderia criar um objeto com dados inválidos direto, e a validação viraria decoração. A solução: o construtor **não atribui os atributos diretamente**, ele chama os próprios setters:
 
 ```java
 public Pessoa(String nome, int idade, double altura) {
@@ -60,8 +60,8 @@ Assim a regra existe **num lugar só** (dentro de cada setter) e vale tanto para
 
 ## Exemplo guiado
 
-- [model/Pessoa.java](exemplo/model/Pessoa.java) — a Pessoa do módulo 04, agora com setters que validam e um construtor que delega para eles.
-- [app/TesteValidacoes.java](exemplo/app/TesteValidacoes.java) — ataca o objeto diretamente, tentando quebrá-lo de várias formas.
+- [model/Pessoa.java](exemplo/model/Pessoa.java): a Pessoa do módulo 04, agora com setters que validam e um construtor que delega para eles.
+- [app/TesteValidacoes.java](exemplo/app/TesteValidacoes.java): ataca o objeto diretamente, tentando quebrá-lo de várias formas.
 
 ```bash
 cd exemplo
@@ -73,7 +73,7 @@ Leia a saída com atenção: toda vez que um valor inválido é recusado, o obje
 
 ## Exercícios
 
-1. [EXERCICIO-01-conta-de-jogador.md](exercicios/EXERCICIO-01-conta-de-jogador.md) — construa uma classe blindada por validações.
+1. [EXERCICIO-01-conta-de-jogador.md](exercicios/EXERCICIO-01-conta-de-jogador.md): construa uma classe blindada por validações.
 
 > Este módulo ainda vai ganhar mais exercícios (aplicação e desafio) numa próxima revisão do material.
 

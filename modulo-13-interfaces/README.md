@@ -1,6 +1,6 @@
 # Módulo 13 — Interfaces
 
-A classe abstrata do módulo anterior tem uma limitação: cada classe só pode estender UMA mãe. E quando dois tipos completamente diferentes — que não têm parentesco nenhum — precisam ser tratados do mesmo jeito? A resposta é a interface: um contrato puro.
+A classe abstrata do módulo anterior tem uma limitação: cada classe só pode estender UMA mãe. E quando dois tipos completamente diferentes, sem parentesco nenhum, precisam ser tratados do mesmo jeito? A resposta é a interface: um contrato puro.
 
 ## Objetivos de aprendizagem
 
@@ -13,7 +13,7 @@ Ao final deste módulo você será capaz de:
 
 ## Pré-requisitos
 
-[Módulo 12](../modulo-12-abstracao/) concluído — interfaces são o segundo capítulo da história do polimorfismo.
+[Módulo 12](../modulo-12-abstracao/) concluído. Interfaces são o segundo capítulo da história do polimorfismo.
 
 ## Conceito
 
@@ -38,7 +38,7 @@ public class FuncionarioClt implements Pagavel {
 
 ### O problema que a interface resolve
 
-Pense num sistema de pagamentos. Um funcionário CLT recebe salário fixo; um freelancer recebe por hora. As classes não têm parentesco — forçar uma herança comum (`Trabalhador`?) seria artificial. Mas a folha de pagamento precisa tratar todos igualmente:
+Pense num sistema de pagamentos. Um funcionário CLT recebe salário fixo; um freelancer recebe por hora. As classes não têm parentesco, e forçar uma herança comum (`Trabalhador`?) seria artificial. Mas a folha de pagamento precisa tratar todos igualmente:
 
 ```mermaid
 classDiagram
@@ -67,7 +67,7 @@ classDiagram
     Avaliavel <|.. Freelancer
 ```
 
-Repare no `Freelancer`: implementa DUAS interfaces. Ele é Pagável E Avaliável ao mesmo tempo — impossível com herança de classes, natural com interfaces.
+Repare no `Freelancer`: implementa DUAS interfaces. Ele é Pagável E Avaliável ao mesmo tempo, impossível com herança de classes, natural com interfaces.
 
 ### Classe abstrata ou interface?
 
@@ -79,14 +79,14 @@ Repare no `Freelancer`: implementa DUAS interfaces. Ele é Pagável E Avaliável
 | Tipos sem parentesco precisam da mesma capacidade? | Interface |
 | Preciso de mais de um "contrato" na mesma classe? | Interface (única opção) |
 
-Uma dica de leitura: interfaces costumam nomear **capacidades** — Pagavel, Avaliavel, `Comparable` (comparável), `Runnable` (executável). Se você consegue dizer "essa classe é ___vel", provavelmente é uma interface.
+Uma dica de leitura: interfaces costumam nomear **capacidades**, como Pagavel, Avaliavel, `Comparable` (comparável), `Runnable` (executável). Se você consegue dizer "essa classe é ___vel", provavelmente é uma interface.
 
 ## Exemplo guiado
 
-- [model/Pagavel.java](exemplo/model/Pagavel.java) e [model/Avaliavel.java](exemplo/model/Avaliavel.java) — os contratos.
-- [model/FuncionarioClt.java](exemplo/model/FuncionarioClt.java) — implementa um contrato.
-- [model/Freelancer.java](exemplo/model/Freelancer.java) — implementa dois.
-- [app/TestePagamentos.java](exemplo/app/TestePagamentos.java) — a folha de pagamento polimórfica.
+- [model/Pagavel.java](exemplo/model/Pagavel.java) e [model/Avaliavel.java](exemplo/model/Avaliavel.java): os contratos.
+- [model/FuncionarioClt.java](exemplo/model/FuncionarioClt.java): implementa um contrato.
+- [model/Freelancer.java](exemplo/model/Freelancer.java): implementa dois.
+- [app/TestePagamentos.java](exemplo/app/TestePagamentos.java): a folha de pagamento polimórfica.
 
 ```bash
 cd exemplo
@@ -94,11 +94,11 @@ javac -d bin model/*.java app/*.java
 java -cp bin app.TestePagamentos
 ```
 
-Observe no teste a linha `List<Pagavel> folhaDePagamento` — o mesmo padrão do `List<Forma>` do módulo 06, agora sem nenhuma herança envolvida.
+Observe no teste a linha `List<Pagavel> folhaDePagamento`, o mesmo padrão do `List<Forma>` do módulo 12, agora sem nenhuma herança envolvida.
 
 ## Exercícios
 
-1. [EXERCICIO-01-dispositivos.md](exercicios/EXERCICIO-01-dispositivos.md) — interfaces `Conectavel` e `Carregavel` com dispositivos variados.
+1. [EXERCICIO-01-dispositivos.md](exercicios/EXERCICIO-01-dispositivos.md): interfaces `Conectavel` e `Carregavel` com dispositivos variados.
 
 ## Auto-avaliação
 

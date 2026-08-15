@@ -12,22 +12,22 @@ Construir um caixa eletrônico onde NENHUMA falha passa em silêncio e nenhuma d
 
 ### Exceções personalizadas (pacote `exception`)
 
-- `SaldoInsuficienteException` — checked (estende `Exception`); guarda saldo atual e valor pedido; oferece `getValorFaltante()`
-- `ValorInvalidoException` — unchecked (estende `RuntimeException`); para valores zero ou negativos
-- `NotaIndisponivelException` — checked; lançada quando o valor não é múltiplo de 10 (o caixa só tem notas de 10)
+- `SaldoInsuficienteException`: checked (estende `Exception`); guarda saldo atual e valor pedido; oferece `getValorFaltante()`
+- `ValorInvalidoException`: unchecked (estende `RuntimeException`); para valores zero ou negativos
+- `NotaIndisponivelException`: checked; lançada quando o valor não é múltiplo de 10 (o caixa só tem notas de 10)
 
 ### Classe ContaCaixa (pacote `model`)
 
 - Atributos: `titular`, `saldo`.
-- `sacar(double valor)` — lança `ValorInvalidoException` (valor <= 0), `NotaIndisponivelException` (não múltiplo de 10) ou `SaldoInsuficienteException`, nessa ordem de verificação. Declare as checked com `throws`.
-- `depositar(double valor)` — lança `ValorInvalidoException` se valor <= 0.
+- `sacar(double valor)`: lança `ValorInvalidoException` (valor <= 0), `NotaIndisponivelException` (não múltiplo de 10) ou `SaldoInsuficienteException`, nessa ordem de verificação. Declare as checked com `throws`.
+- `depositar(double valor)`: lança `ValorInvalidoException` se valor <= 0.
 
 ### Classe Main (pacote `app`)
 
 Menu com Scanner: sacar, depositar, ver saldo, sair.
 
 - Cada operação envolvida em `try/catch`, com UMA mensagem amigável por tipo de exceção (use os dados da exceção: "Faltam R$ X para esse saque").
-- O programa NUNCA encerra por causa de erro do usuário — sempre volta ao menu.
+- O programa NUNCA encerra por causa de erro do usuário: sempre volta ao menu.
 - Use `finally` para imprimir uma linha de encerramento de operação (para você VER o finally rodando).
 - Feche o `Scanner` na saída do programa.
 

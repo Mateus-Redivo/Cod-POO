@@ -12,7 +12,7 @@ Ao final deste módulo você será capaz de:
 
 ## Pré-requisitos
 
-[Módulo 10](../modulo-10-heranca/) concluído — você já sabe `extends`, `super` e `@Override`.
+[Módulo 10](../modulo-10-heranca/) concluído. Você já sabe `extends`, `super` e `@Override`.
 
 ## Conceito
 
@@ -41,7 +41,7 @@ for (Veiculo v : veiculos) {
 }
 ```
 
-A MESMA linha `v.acelerar(10)` executa a versão de `Carro` na primeira volta e a de `Moto` na segunda. O Java olha o objeto REAL (não o tipo da variável) na hora de executar — isso se chama **ligação dinâmica**.
+A MESMA linha `v.acelerar(10)` executa a versão de `Carro` na primeira volta e a de `Moto` na segunda. O Java olha o objeto REAL (não o tipo da variável) na hora de executar: isso se chama **ligação dinâmica**.
 
 O ganho prático: amanhã alguém cria `Caminhao extends Veiculo` e este `for` continua funcionando **sem mudar uma linha**. Código que aceita extensão sem precisar de modificação é o que separa sistemas fáceis de manter dos difíceis.
 
@@ -53,7 +53,7 @@ flowchart TD
     B -->|"Veiculo"| E["executa Veiculo.acelerar"]
 ```
 
-> **Cheiro de código** — o oposto dessa linha mágica é a escada de `if`:
+> **Cheiro de código.** O oposto dessa linha mágica é a escada de `if`:
 > `if (v instanceof Carro) { ... } else if (v instanceof Moto) { ... }`.
 > Ela funciona, mas cresce a cada tipo novo e obriga a mexer em código que já estava pronto.
 > Sempre que escrever uma dessas, pergunte: "isso não deveria ser um método sobrescrito?".
@@ -62,9 +62,9 @@ flowchart TD
 
 ## Exemplo guiado
 
-- [model/Veiculo.java](exemplo/model/Veiculo.java) — agora com `buzinar()` sobrecarregado (revisão do módulo 03).
-- [model/Carro.java](exemplo/model/Carro.java) e [model/Moto.java](exemplo/model/Moto.java) — duas filhas, cada uma sobrescrevendo `acelerar` e `exibirInfo` do seu próprio jeito.
-- [app/TestePolimorfismo.java](exemplo/app/TestePolimorfismo.java) — uma `List<Veiculo>` misturando `Carro` e `Moto`.
+- [model/Veiculo.java](exemplo/model/Veiculo.java): agora com `buzinar()` sobrecarregado (revisão do módulo 03).
+- [model/Carro.java](exemplo/model/Carro.java) e [model/Moto.java](exemplo/model/Moto.java): duas filhas, cada uma sobrescrevendo `acelerar` e `exibirInfo` do seu próprio jeito.
+- [app/TestePolimorfismo.java](exemplo/app/TestePolimorfismo.java): uma `List<Veiculo>` misturando `Carro` e `Moto`.
 
 ```bash
 cd exemplo
@@ -76,7 +76,7 @@ Experimente: crie uma terceira classe filha de `Veiculo` (ex.: `Caminhao`), adic
 
 ## Exercícios
 
-1. [EXERCICIO-01-animais.md](exercicios/EXERCICIO-01-animais.md) — sobrescrita e polimorfismo com uma hierarquia de animais.
+1. [EXERCICIO-01-animais.md](exercicios/EXERCICIO-01-animais.md): sobrescrita e polimorfismo com uma hierarquia de animais.
 
 > Este módulo ainda vai ganhar mais exercícios (fixação e desafio) numa próxima revisão do material.
 

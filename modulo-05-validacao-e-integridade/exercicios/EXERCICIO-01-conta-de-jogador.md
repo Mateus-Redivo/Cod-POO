@@ -14,9 +14,9 @@ Construir uma classe impossível de corromper: não importa o que o código exte
 
 Atributos (todos privados):
 
-- `apelido` (String) — regras: não vazio, sem espaços, entre 3 e 16 caracteres
-- `nivel` (int) — regras: entre 1 e 100
-- `pontuacao` (int) — regras: nunca negativa
+- `apelido` (String), regras: não vazio, sem espaços, entre 3 e 16 caracteres
+- `nivel` (int), regras: entre 1 e 100
+- `pontuacao` (int), regras: nunca negativa
 
 Construtor:
 
@@ -26,14 +26,14 @@ Construtor:
 Métodos:
 
 - Getters para tudo; setters com validação para `apelido` e `nivel` (a regra fica dentro do próprio setter, como no exemplo do módulo)
-- `ganharPontos(int pontos)` — só aceita valores positivos
-- `perderPontos(int pontos)` — só aceita positivos e não deixa a pontuação ficar negativa (trava em 0)
-- `subirNivel()` — incrementa o nível, respeitando o máximo de 100
+- `ganharPontos(int pontos)`: só aceita valores positivos
+- `perderPontos(int pontos)`: só aceita positivos e não deixa a pontuação ficar negativa (trava em 0)
+- `subirNivel()`: incrementa o nível, respeitando o máximo de 100
 - `toString()` sobrescrito
 
 ### Classe TesteJogador (pacote `app`)
 
-Roteiro de ataque — tente corromper o objeto de todas as formas:
+Roteiro de ataque: tente corromper o objeto de todas as formas.
 
 1. Crie um jogador válido e imprima.
 2. Tente: apelido vazio, apelido com espaço, apelido de 2 letras.

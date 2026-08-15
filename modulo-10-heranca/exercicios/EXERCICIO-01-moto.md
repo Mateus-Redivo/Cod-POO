@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Criar mais uma filha para a hierarquia de veículos do exemplo — o aquecimento perfeito antes do exercício do RPG.
+Criar mais uma filha para a hierarquia de veículos do exemplo: o aquecimento perfeito antes do exercício do RPG.
 
 ## Requisitos
 
@@ -19,14 +19,14 @@ Partindo do código do exemplo (copie `Veiculo.java` e `Carro.java` para a sua p
 - Construtor recebendo tudo e repassando o que é de `Veiculo` via `super(...)`.
 - Sobrescreva `fazerBarulho()` imprimindo algo digno de uma moto.
 - Sobrescreva `exibirInfo()` chamando `super.exibirInfo()` e acrescentando os dados da moto.
-- Método próprio: `empinar()` — só imprime se a velocidade atual for maior que 20 km/h; caso contrário avisa que é preciso ganhar velocidade.
+- Método próprio: `empinar()`, só imprime se a velocidade atual for maior que 20 km/h; caso contrário avisa que é preciso ganhar velocidade.
 
 ### Classe TesteMoto (pacote `app`)
 
 1. Crie uma moto e exiba as informações completas.
 2. Tente `empinar()` parado (deve recusar).
 3. Acelere além de 20 km/h e `empinar()` de novo (deve funcionar).
-4. Chame `frear()` — método herdado, sem sobrescrever — para provar que veio de graça.
+4. Chame `frear()`, método herdado, sem sobrescrever, para provar que veio de graça.
 
 ## Estrutura de pastas
 

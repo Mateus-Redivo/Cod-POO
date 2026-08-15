@@ -24,9 +24,9 @@ Construtor:
 
 Métodos:
 
-- `calcularValorTotal()` — retorna `preco * quantidade`
-- `vender(int qtd)` — diminui a quantidade em estoque e imprime mensagem; se não houver quantidade suficiente, imprime aviso e não altera nada (ainda sem validação "de verdade" — isso vem no módulo 05)
-- `toString()` — sobrescrito, devolvendo os dados formatados
+- `calcularValorTotal()`: retorna `preco * quantidade`
+- `vender(int qtd)`: diminui a quantidade em estoque e imprime mensagem; se não houver quantidade suficiente, imprime aviso e não altera nada (ainda sem validação "de verdade", isso vem no módulo 05)
+- `toString()`: sobrescrito, devolvendo os dados formatados
 - Getters para todos os atributos
 - Setters para `preco` e `quantidade` (sem validação ainda)
 
@@ -66,7 +66,7 @@ Valor total em estoque de Caneta: R$ 350.00
 ## Critérios de aceitação
 
 - [ ] Compila sem erros e a saída cobre os 5 passos do teste
-- [ ] Atributos `private` — nenhum acesso direto de fora da classe
+- [ ] Atributos `private`: nenhum acesso direto de fora da classe
 - [ ] `vender` não deixa a quantidade ficar negativa
 - [ ] `toString` sobrescrito com `@Override`
 - [ ] Estrutura de pacotes `model`/`app` respeitada

@@ -8,7 +8,7 @@
 
 Você recebeu um programa que FUNCIONA: [codigo-inicial/Farmacia.java](codigo-inicial/Farmacia.java) calcula o total de uma venda com regras de desconto. Sua missão é transformá-lo em POO **sem alterar a saída**.
 
-## Passo 0 — obrigatório
+## Passo 0 (obrigatório)
 
 Compile e execute o código inicial. Copie a saída para um arquivo de texto (ou print). Essa é a sua referência: ao final, a saída da versão refatorada deve ser idêntica.
 
@@ -38,10 +38,10 @@ app/
 Requisitos da classe `ItemVenda`:
 
 - Atributos privados com construtor.
-- `calcularSubtotal()` — preço x quantidade.
-- `calcularDesconto()` — A REGRA (20% genérico; senão 10% acima de R$ 100; senão zero) escrita UMA única vez. Extraia os percentuais para constantes com nome (`DESCONTO_GENERICO = 0.20`).
-- `calcularTotal()` — subtotal menos desconto.
-- `exibirLinha()` — imprime a linha do item no MESMO formato do original.
+- `calcularSubtotal()`: preço x quantidade.
+- `calcularDesconto()`: A REGRA (20% genérico; senão 10% acima de R$ 100; senão zero) escrita UMA única vez. Extraia os percentuais para constantes com nome (`DESCONTO_GENERICO = 0.20`).
+- `calcularTotal()`: subtotal menos desconto.
+- `exibirLinha()`: imprime a linha do item no MESMO formato do original.
 
 Requisitos do novo `main`:
 
@@ -58,4 +58,4 @@ Requisitos do novo `main`:
 
 ## Desafio extra (opcional)
 
-Crie uma classe `Venda` que guarda uma `List<ItemVenda>` e sabe `calcularTotalVenda()` e `exibirCupom()` — o mesmo movimento do `Turma` no exemplo do módulo. Depois responda: se a farmácia criar um desconto novo para idosos, quantos arquivos você tocaria na sua versão? E na original?
+Crie uma classe `Venda` que guarda uma `List<ItemVenda>` e sabe `calcularTotalVenda()` e `exibirCupom()`, o mesmo movimento do `Turma` no exemplo do módulo. Depois responda: se a farmácia criar um desconto novo para idosos, quantos arquivos você tocaria na sua versão? E na original?

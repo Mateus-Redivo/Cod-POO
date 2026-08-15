@@ -17,7 +17,7 @@ Atributos:
 - `titulo` (String)
 - `autor` (String)
 - `numeroPaginas` (int)
-- `disponivel` (boolean) — valor inicial `true`
+- `disponivel` (boolean), valor inicial `true`
 
 Construtor:
 
@@ -26,9 +26,9 @@ Construtor:
 
 Métodos:
 
-- `emprestar()` — altera `disponivel` para `false` e imprime mensagem de sucesso; se o livro já estiver emprestado, apenas avisa
-- `devolver()` — altera `disponivel` para `true` e imprime mensagem
-- `exibirInfo()` — mostra todas as informações do livro em uma linha
+- `emprestar()`: altera `disponivel` para `false` e imprime mensagem de sucesso; se o livro já estiver emprestado, apenas avisa
+- `devolver()`: altera `disponivel` para `true` e imprime mensagem
+- `exibirInfo()`: mostra todas as informações do livro em uma linha
 - Getters e setters para todos os atributos
 
 ### Classe Usuario (pacote `model`)
@@ -45,7 +45,7 @@ Construtor:
 
 Métodos:
 
-- `exibirDados()` — mostra as informações do usuário
+- `exibirDados()`: mostra as informações do usuário
 - Getters e setters para todos os atributos
 
 ### Classe TesteBiblioteca (pacote `app`)
@@ -98,4 +98,4 @@ Nome: Joao Silva | Email: joao@email.com | Idade: 25
 
 ## Desafio extra (opcional)
 
-Adicione um atributo `Livro livroEmprestado` ao `Usuario` e métodos `pegarEmprestado(Livro l)` / `devolverLivro()`, fazendo o usuário só poder ter um livro por vez. É um gostinho de como objetos se relacionam — tema que cresce nos próximos módulos.
+Adicione um atributo `Livro livroEmprestado` ao `Usuario` e métodos `pegarEmprestado(Livro l)` / `devolverLivro()`, fazendo o usuário só poder ter um livro por vez. É um gostinho de como objetos se relacionam, tema que cresce nos próximos módulos.

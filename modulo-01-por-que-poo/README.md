@@ -75,7 +75,7 @@ flowchart TB
 
 ## Abstração: a primeira decisão de projeto
 
-Ao criar a classe `Pessoa` para uma calculadora de IMC, escolhemos guardar **nome, peso e altura** — e mais nada. Uma pessoa real tem CPF, endereço, cor preferida... mas nada disso importa para calcular IMC.
+Ao criar a classe `Pessoa` para uma calculadora de IMC, escolhemos guardar **nome, peso e altura**, e mais nada. Uma pessoa real tem CPF, endereço, cor preferida... mas nada disso importa para calcular IMC.
 
 **Abstrair é decidir o que entra no modelo e o que fica de fora**, guiado pelo problema que se quer resolver. A mesma "pessoa" seria modelada com outros atributos num sistema de RH (salário, cargo) ou num hospital (tipo sanguíneo, alergias). Não existe modelo certo universal: existe modelo adequado ao problema.
 
@@ -85,10 +85,10 @@ Você fará essa decisão em todos os exercícios dos próximos módulos.
 
 Guarde os nomes; cada um terá seu próprio módulo:
 
-1. **Abstração** — modelar só o que importa para o problema (você acabou de ver).
-2. **Encapsulamento** — o objeto protege seus dados e controla o acesso a eles (módulo 03).
-3. **Herança** — classes reaproveitam e especializam outras classes (módulo 05).
-4. **Polimorfismo** — o mesmo comando se comporta diferente conforme o objeto (módulos 06 e 07).
+1. **Abstração**: modelar só o que importa para o problema (você acabou de ver).
+2. **Encapsulamento**: o objeto protege seus dados e controla o acesso a eles (módulos 04 e 05).
+3. **Herança**: classes reaproveitam e especializam outras classes (módulo 10).
+4. **Polimorfismo**: o mesmo comando se comporta diferente conforme o objeto (módulos 11 e 13).
 
 ## Auto-avaliação
 
@@ -99,14 +99,14 @@ Guarde os nomes; cada um terá seu próprio módulo:
 
 ## Erros comuns
 
-Neste módulo os erros não são de compilação — são de entendimento. E eles atrapalham os oito
-módulos seguintes:
+Neste módulo os erros não são de compilação, são de entendimento. E eles atrapalham os módulos
+seguintes:
 
 | Erro | O que está acontecendo |
 | --- | --- |
 | Confundir classe com objeto | A classe é a **planta**; o objeto é a **casa construída**. Um `new` = uma casa. Duas casas com a mesma planta são objetos diferentes |
 | Achar que POO é sempre melhor | Para um script de 20 linhas, procedural é mais direto. POO paga o próprio custo quando o programa cresce e passa a ter muitas "coisas" iguais com dados diferentes |
-| Traduzir "objeto" por "coisa física" | Um objeto pode ser um `Pedido`, uma `Reserva`, um `Pagamento` — nada disso se pega com a mão |
+| Traduzir "objeto" por "coisa física" | Um objeto pode ser um `Pedido`, uma `Reserva`, um `Pagamento`. Nada disso se pega com a mão |
 | Achar que abstrair é "simplificar sempre" | Abstrair é escolher **em função do problema**. Tirar o CPF é acerto num app de IMC e erro grave num sistema bancário |
 | Passar direto para o módulo 02 sem rodar as duas versões | O resto da disciplina responde a uma pergunta que você não terá feito |
 

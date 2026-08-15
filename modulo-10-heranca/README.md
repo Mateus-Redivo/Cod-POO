@@ -46,7 +46,7 @@ classDiagram
 
 O `#` no diagrama indica `protected`: visível para a própria classe **e para as filhas**. É o meio-termo entre `private` (nem as filhas veem) e `public` (todo mundo vê).
 
-Teste antes de usar herança: diga a frase em voz alta. "Carro é um Veículo" soa bem. "Motor é um Carro" soa errado — motor é PARTE de um carro (isso é composição: o carro TEM UM motor como atributo).
+Teste antes de usar herança: diga a frase em voz alta. "Carro é um Veículo" soa bem. "Motor é um Carro" soa errado: motor é PARTE de um carro (isso é composição: o carro TEM UM motor como atributo).
 
 ### super: falando com a classe mãe
 
@@ -74,9 +74,9 @@ A anotação `@Override` pede ao compilador: "confira que estou mesmo sobrescrev
 
 ## Exemplo guiado
 
-- [model/Veiculo.java](exemplo/model/Veiculo.java) — a classe mãe.
-- [model/Carro.java](exemplo/model/Carro.java) — herda, sobrescreve `acelerar` e `exibirInfo`, adiciona `ligarAr` e `tocarBuzina`.
-- [app/TesteHeranca.java](exemplo/app/TesteHeranca.java) — exercita tudo.
+- [model/Veiculo.java](exemplo/model/Veiculo.java): a classe mãe.
+- [model/Carro.java](exemplo/model/Carro.java): herda, sobrescreve `acelerar` e `exibirInfo`, adiciona `ligarAr` e `tocarBuzina`.
+- [app/TesteHeranca.java](exemplo/app/TesteHeranca.java): exercita tudo.
 
 ```bash
 cd exemplo
@@ -88,12 +88,12 @@ Experimentos que valem a pena:
 
 1. Comente o `super(marca, modelo, ano)` no construtor de `Carro` e compile. Leia o erro: o Java EXIGE que a mãe seja construída.
 2. Remova o `@Override` de `acelerar` e renomeie para `acellerar`. Compila? Sim. Funciona como esperado? Não. Recoloque o `@Override` e veja o compilador salvar você.
-3. Crie uma classe `Moto` estendendo `Veiculo` com um método `empinar()` — cinco minutos, e é o aquecimento do exercício 1.
+3. Crie uma classe `Moto` estendendo `Veiculo` com um método `empinar()`. São cinco minutos, e é o aquecimento do exercício 1.
 
 ## Exercícios
 
-1. [EXERCICIO-01-moto.md](exercicios/EXERCICIO-01-moto.md) — fixação: mais uma filha para `Veiculo`.
-2. [EXERCICIO-02-rpg.md](exercicios/EXERCICIO-02-rpg.md) — aplicação: hierarquia de personagens de RPG com sobrescritas.
+1. [EXERCICIO-01-moto.md](exercicios/EXERCICIO-01-moto.md) (fixação): mais uma filha para `Veiculo`.
+2. [EXERCICIO-02-rpg.md](exercicios/EXERCICIO-02-rpg.md) (aplicação): hierarquia de personagens de RPG com sobrescritas.
 
 ## Auto-avaliação
 
@@ -107,7 +107,7 @@ Experimentos que valem a pena:
 | Erro | O que está acontecendo |
 | --- | --- |
 | `constructor Veiculo in class Veiculo cannot be applied...` | O construtor da filha não chamou `super(...)` e a mãe não tem construtor vazio |
-| Sobrescrita "não funciona" | Assinatura diferente da original (nome ou parâmetros) — sem `@Override` o compilador não avisa |
+| Sobrescrita "não funciona" | Assinatura diferente da original (nome ou parâmetros). Sem `@Override` o compilador não avisa |
 | Filha não enxerga atributo da mãe | O atributo é `private`; mude para `protected` ou use o getter |
 | Herdar só para reaproveitar um método útil | Se a frase "X é um Y" não faz sentido, herança é a ferramenta errada |
 

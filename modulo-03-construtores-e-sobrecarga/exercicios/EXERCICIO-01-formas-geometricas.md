@@ -17,17 +17,17 @@ Atributos:
 - `largura` (double)
 - `altura` (double)
 
-Construtores (todos sobrecarregados — preste atenção na assinatura de cada um):
+Construtores (todos sobrecarregados, preste atenção na assinatura de cada um):
 
-- `Retangulo(double largura, double altura)` — recebe os dois lados.
-- `Retangulo(double lado)` — recebe um valor só e usa o MESMO valor para largura e altura (ou seja, cria um quadrado).
-- `Retangulo()` — sem parâmetros: largura e altura viram `1.0`.
+- `Retangulo(double largura, double altura)`: recebe os dois lados.
+- `Retangulo(double lado)`: recebe um valor só e usa o MESMO valor para largura e altura (ou seja, cria um quadrado).
+- `Retangulo()`: sem parâmetros, largura e altura viram `1.0`.
 
 Métodos:
 
-- `calcularArea()` — retorna `largura * altura`
-- `calcularPerimetro()` — retorna `2 * (largura + altura)`
-- `exibirDados()` — imprime largura, altura, área e perímetro numa linha
+- `calcularArea()`: retorna `largura * altura`
+- `calcularPerimetro()`: retorna `2 * (largura + altura)`
+- `exibirDados()`: imprime largura, altura, área e perímetro numa linha
 
 ### Classe TesteRetangulo (pacote `app`)
 
@@ -62,4 +62,4 @@ Retangulo [largura=1.0, altura=1.0, area=1.0, perimetro=4.0]
 
 ## Dica
 
-Se dois construtores parecerem "iguais" e o compilador reclamar, olhe só para o tipo e a quantidade dos parênteses — nomes de parâmetro não contam para o Java.
+Se dois construtores parecerem "iguais" e o compilador reclamar, olhe só para o tipo e a quantidade dos parênteses: nomes de parâmetro não contam para o Java.

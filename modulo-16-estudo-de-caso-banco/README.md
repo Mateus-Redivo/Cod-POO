@@ -43,12 +43,12 @@ classDiagram
     Banco ..> Conta : usa
 ```
 
-- [model/Conta.java](exemplo/model/Conta.java) — a base: saldo encapsulado, depósito e saque com proteções.
-- [model/ContaCorrente.java](exemplo/model/ContaCorrente.java) — especializa com tarifa mensal.
-- [model/ContaPoupanca.java](exemplo/model/ContaPoupanca.java) — especializa com rendimento de juros.
-- [model/Banco.java](exemplo/model/Banco.java) — processa o fechamento mensal de qualquer conta.
-- [util/Validacoes.java](exemplo/util/Validacoes.java) — leitura validada de dados no console, a mesma auxiliar do módulo 04.
-- [app/Main.java](exemplo/app/Main.java) — menu interativo de operações.
+- [model/Conta.java](exemplo/model/Conta.java): a base: saldo encapsulado, depósito e saque com proteções.
+- [model/ContaCorrente.java](exemplo/model/ContaCorrente.java): especializa com tarifa mensal.
+- [model/ContaPoupanca.java](exemplo/model/ContaPoupanca.java): especializa com rendimento de juros.
+- [model/Banco.java](exemplo/model/Banco.java): processa o fechamento mensal de qualquer conta.
+- [util/Validacoes.java](exemplo/util/Validacoes.java): leitura validada de dados no console, a mesma auxiliar do módulo 08.
+- [app/Main.java](exemplo/app/Main.java): menu interativo de operações.
 
 ```bash
 cd exemplo
@@ -62,11 +62,11 @@ Siga nesta ordem, com o código aberto:
 
 ### 1. Conta: o encapsulamento protegendo dinheiro
 
-Repare que `saldo` é `private` e que `sacar` só executa se `valor > 0 && valor <= saldo`. Nenhum código externo consegue deixar o saldo negativo — a integridade mora DENTRO da classe (módulo 03 em ação).
+Repare que `saldo` é `private` e que `sacar` só executa se `valor > 0 && valor <= saldo`. Nenhum código externo consegue deixar o saldo negativo: a integridade mora DENTRO da classe (módulo 05 em ação).
 
 ### 2. As filhas: herança com propósito
 
-`ContaCorrente` e `ContaPoupanca` não repetem nada de `Conta`: herdam tudo e adicionam apenas sua especialidade. Repare como `renderJuros()` usa `getSaldo()` e `depositar()` — a filha respeita o encapsulamento da mãe em vez de mexer direto no saldo (módulos 03 e 05 juntos).
+`ContaCorrente` e `ContaPoupanca` não repetem nada de `Conta`: herdam tudo e adicionam apenas sua especialidade. Repare como `renderJuros()` usa `getSaldo()` e `depositar()`: a filha respeita o encapsulamento da mãe em vez de mexer direto no saldo (módulos 04 e 10 juntos).
 
 ### 3. Banco: um ponto para discussão
 
@@ -80,25 +80,25 @@ if (conta instanceof ContaCorrente cc) {
 }
 ```
 
-Funciona — mas depois do módulo 06, esse `instanceof` em cadeia deveria incomodar você. Se amanhã surgir uma `ContaSalario`, alguém PRECISA lembrar de alterar o `Banco`. Compare com o `for` de formas do módulo 06, que aceitava novas filhas sem mudar. Pergunta para a aula: **como o polimorfismo eliminaria esses `instanceof`?**
+Funciona, mas depois do módulo 12, esse `instanceof` em cadeia deveria incomodar você. Se amanhã surgir uma `ContaSalario`, alguém PRECISA lembrar de alterar o `Banco`. Compare com o `for` de formas do módulo 12, que aceitava novas filhas sem mudar. Pergunta para a aula: **como o polimorfismo eliminaria esses `instanceof`?**
 
 <details>
 <summary>Pense antes de abrir a resposta</summary>
 
-Criando um método comum — por exemplo, um abstrato `processarFimDeMes()` em `Conta` — que cada filha implementa do seu jeito (a corrente desconta tarifa, a poupança rende juros). O `Banco` viraria uma linha: `conta.processarFimDeMes();`. Essa melhoria é exatamente o exercício 1.
+Criando um método comum, por exemplo, um abstrato `processarFimDeMes()` em `Conta`, que cada filha implementa do seu jeito (a corrente desconta tarifa, a poupança rende juros). O `Banco` viraria uma linha: `conta.processarFimDeMes();`. Essa melhoria é exatamente o exercício 1.
 
 </details>
 
 ### 4. O silêncio do sacar
 
-`sacar(5000)` numa conta com R$ 100 simplesmente... não faz nada. Depois do módulo 08 você sabe que isso é um problema — e sabe a ferramenta certa. É o exercício 2.
+`sacar(5000)` numa conta com R$ 100 simplesmente... não faz nada. Depois do módulo 14 você sabe que isso é um problema, e sabe a ferramenta certa. É o exercício 2.
 
 ## Exercícios
 
 Os dois exercícios transformam as críticas do roteiro em trabalho prático:
 
-1. [EXERCICIO-01-polimorfismo-no-banco.md](exercicios/EXERCICIO-01-polimorfismo-no-banco.md) — elimine os `instanceof` com um método polimórfico.
-2. [EXERCICIO-02-excecoes-no-banco.md](exercicios/EXERCICIO-02-excecoes-no-banco.md) — acabe com as falhas silenciosas usando exceções personalizadas.
+1. [EXERCICIO-01-polimorfismo-no-banco.md](exercicios/EXERCICIO-01-polimorfismo-no-banco.md): elimine os `instanceof` com um método polimórfico.
+2. [EXERCICIO-02-excecoes-no-banco.md](exercicios/EXERCICIO-02-excecoes-no-banco.md): acabe com as falhas silenciosas usando exceções personalizadas.
 
 ## Auto-avaliação
 

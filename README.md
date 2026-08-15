@@ -82,11 +82,11 @@ Essa separação em pacotes (`model`, `app`, `util`, `exception`) é uma conven�
 
 ## Material de apoio
 
-- [GUIA-DO-ALUNO.md](GUIA-DO-ALUNO.md) — como instalar tudo e como compilar e executar os projetos.
-- [GLOSSARIO.md](GLOSSARIO.md) — todos os termos de POO explicados em linguagem simples.
-- [material-apoio/resumo-sintaxe.md](material-apoio/resumo-sintaxe.md) — cola rápida da sintaxe Java usada nos módulos.
-- [material-apoio/rubrica-avaliacao.md](material-apoio/rubrica-avaliacao.md) — como os exercícios são avaliados.
-- [gabaritos/](gabaritos/) — resoluções comentadas dos exercícios (use com responsabilidade).
+- [GUIA-DO-ALUNO.md](GUIA-DO-ALUNO.md): como instalar tudo e como compilar e executar os projetos.
+- [GLOSSARIO.md](GLOSSARIO.md): todos os termos de POO explicados em linguagem simples.
+- [material-apoio/resumo-sintaxe.md](material-apoio/resumo-sintaxe.md): cola rápida da sintaxe Java usada nos módulos.
+- [material-apoio/rubrica-avaliacao.md](material-apoio/rubrica-avaliacao.md): como os exercícios são avaliados.
+- [gabaritos/](gabaritos/): resoluções comentadas dos exercícios (use com responsabilidade).
 
 ## Público-alvo
 

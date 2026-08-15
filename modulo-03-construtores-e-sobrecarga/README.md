@@ -1,6 +1,6 @@
 # Módulo 03 — Construtores e sobrecarga
 
-Uma classe pode ter mais de um construtor. Este módulo explica a regra que permite isso — a **sobrecarga** — e por que ela é útil: dar ao aluno mais de uma forma de criar o mesmo tipo de objeto.
+Uma classe pode ter mais de um construtor. Este módulo explica a regra que permite isso, chamada **sobrecarga**, e por que ela é útil: dar ao aluno mais de uma forma de criar o mesmo tipo de objeto.
 
 ## Objetivos de aprendizagem
 
@@ -33,7 +33,7 @@ public Pessoa(String nome, int idade, double altura) { ... }  // assinatura: (St
 public Pessoa() { ... }                                        // assinatura: ()
 ```
 
-As três são válidas porque nenhuma tem a mesma lista de parâmetros que outra. Quando você escreve `new Pessoa("Davi", 20)`, o Java compara os argumentos com cada construtor disponível e escolhe o que bate — isso se chama **resolução de sobrecarga**, e acontece em tempo de compilação.
+As três são válidas porque nenhuma tem a mesma lista de parâmetros que outra. Quando você escreve `new Pessoa("Davi", 20)`, o Java compara os argumentos com cada construtor disponível e escolhe o que bate. Isso se chama **resolução de sobrecarga**, e acontece em tempo de compilação.
 
 O que **não** é sobrecarga válida: mudar só o nome do parâmetro.
 
@@ -42,7 +42,7 @@ public Pessoa(String nome, int idade) { ... }
 public Pessoa(String apelido, int anos) { ... }   // ERRO: mesma assinatura (String, int)
 ```
 
-Para o compilador, nomes de parâmetro não existem — só importam os tipos, a ordem e a quantidade.
+Para o compilador, nomes de parâmetro não existem: só importam os tipos, a ordem e a quantidade.
 
 ```mermaid
 flowchart LR
@@ -63,12 +63,12 @@ Você vai ouvir os dois termos o curso inteiro; eles não têm nada a ver um com
 | Parâmetros | Diferentes (tipo e/ou quantidade) |
 | Quando o Java decide | Em tempo de **compilação**, olhando os argumentos do `new`/chamada |
 
-Existe um segundo termo parecido no nome — **sobrescrita** (override) — que só faz sentido quando uma classe herda de outra e reescreve um método da classe mãe. Como herança ainda não foi vista, sobrescrita fica para o [módulo 11](../modulo-11-sobrescrita-e-polimorfismo/), quando fizer sentido comparar os dois lado a lado.
+Existe um segundo termo parecido no nome, **sobrescrita** (override), que só faz sentido quando uma classe herda de outra e reescreve um método da classe mãe. Como herança ainda não foi vista, sobrescrita fica para o [módulo 11](../modulo-11-sobrescrita-e-polimorfismo/), quando fizer sentido comparar os dois lado a lado.
 
 ## Exemplo guiado
 
-- [model/Pessoa.java](exemplo/model/Pessoa.java) — a classe com 3 construtores sobrecarregados.
-- [app/TestePessoa.java](exemplo/app/TestePessoa.java) — cria um objeto com cada construtor.
+- [model/Pessoa.java](exemplo/model/Pessoa.java): a classe com 3 construtores sobrecarregados.
+- [app/TestePessoa.java](exemplo/app/TestePessoa.java): cria um objeto com cada construtor.
 
 ```bash
 cd exemplo
@@ -85,7 +85,7 @@ Roteiro de leitura:
 
 ## Exercícios
 
-1. [EXERCICIO-01-formas-geometricas.md](exercicios/EXERCICIO-01-formas-geometricas.md) — fixação: uma classe com construtores sobrecarregados.
+1. [EXERCICIO-01-formas-geometricas.md](exercicios/EXERCICIO-01-formas-geometricas.md) (fixação): uma classe com construtores sobrecarregados.
 
 > Este módulo ainda vai ganhar mais exercícios (aplicação e desafio) numa próxima revisão do material.
 
@@ -100,7 +100,7 @@ Roteiro de leitura:
 
 | Erro | O que está acontecendo |
 | --- | --- |
-| `constructor Pessoa(String,int) is already defined` | Dois construtores com a mesma assinatura — o Java não sabe qual escolher |
+| `constructor Pessoa(String,int) is already defined` | Dois construtores com a mesma assinatura: o Java não sabe qual escolher |
 | Mudar só o nome do parâmetro achando que sobrecarregou | Sobrecarga exige TIPOS ou QUANTIDADE diferentes, não nomes |
 | Esquecer um construtor sem parâmetros e depender só do completo | Não é erro, mas tira flexibilidade de quem usa a classe |
 | Confundir sobrecarga com sobrescrita | Sobrecarga é vários métodos na MESMA classe; sobrescrita precisa de herança (módulo 11) |
