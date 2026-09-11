@@ -76,9 +76,9 @@ Experimente: crie uma terceira classe filha de `Veiculo` (ex.: `Caminhao`), adic
 
 ## Exercícios
 
-1. [EXERCICIO-01-animais.md](exercicios/EXERCICIO-01-animais.md): sobrescrita e polimorfismo com uma hierarquia de animais.
-
-> Este módulo ainda vai ganhar mais exercícios (fixação e desafio) numa próxima revisão do material.
+1. [EXERCICIO-01-instrumentos.md](exercicios/EXERCICIO-01-instrumentos.md) (fixação): sobrecarga e sobrescrita lado a lado, numa hierarquia pequena.
+2. [EXERCICIO-02-animais.md](exercicios/EXERCICIO-02-animais.md) (aplicação): sobrescrita e polimorfismo com uma hierarquia de animais.
+3. [EXERCICIO-03-central-de-notificacoes.md](exercicios/EXERCICIO-03-central-de-notificacoes.md) (desafio): estender o sistema com um tipo novo, sem mudar código existente.
 
 ## Auto-avaliação
 

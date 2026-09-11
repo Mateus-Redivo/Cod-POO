@@ -65,7 +65,9 @@ Experimente: comente as sobrescritas de `equals`/`hashCode` em `Aluno.java`, rec
 
 ## Exercícios
 
-1. [EXERCICIO-01-livraria.md](exercicios/EXERCICIO-01-livraria.md) (aplicação): `equals`/`hashCode` numa lista de livros.
+1. [EXERCICIO-01-ponto.md](exercicios/EXERCICIO-01-ponto.md) (fixação): `equals`/`hashCode` numa classe simples, sem lista.
+2. [EXERCICIO-02-livraria.md](exercicios/EXERCICIO-02-livraria.md) (aplicação): `equals`/`hashCode` numa lista de livros.
+3. [EXERCICIO-03-lista-de-presenca.md](exercicios/EXERCICIO-03-lista-de-presenca.md) (desafio): `equals` como base de deduplicação de uma lista.
 
 ## Auto-avaliação
 

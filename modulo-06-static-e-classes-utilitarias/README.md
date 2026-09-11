@@ -73,9 +73,9 @@ Experimente: tente escrever `new Validacoes()` em algum lugar do código. Leia a
 
 ## Exercícios
 
-1. [EXERCICIO-01-termostato.md](exercicios/EXERCICIO-01-termostato.md) (desafio): quando a regra depende de dois atributos ao mesmo tempo.
-
-> Este módulo ainda vai ganhar um exercício de fixação numa próxima revisão do material.
+1. [EXERCICIO-01-conversor-de-moeda.md](exercicios/EXERCICIO-01-conversor-de-moeda.md) (fixação): uma classe utilitária simples, usada por uma classe de domínio.
+2. [EXERCICIO-02-termostato.md](exercicios/EXERCICIO-02-termostato.md) (aplicação): quando a regra depende de dois atributos ao mesmo tempo.
+3. [EXERCICIO-03-assinatura-de-streaming.md](exercicios/EXERCICIO-03-assinatura-de-streaming.md) (desafio): `this(...)` encadeado em três níveis, junto com uma classe utilitária.
 
 ## Auto-avaliação
 

@@ -115,6 +115,12 @@ seguintes:
 - A versão procedural é "errada"? (Dica: não. A questão é escala e manutenção.)
 - Que atributos você escolheria para uma classe `Pessoa` de um app de banco? E de uma rede social?
 
+## Exercícios
+
+1. [EXERCICIO-01-prevendo-o-no.md](exercicios/EXERCICIO-01-prevendo-o-no.md) (fixação): prever no papel o custo de escalar a versão procedural.
+2. [EXERCICIO-02-identificando-abstracao.md](exercicios/EXERCICIO-02-identificando-abstracao.md) (aplicação): decidir o que entra e o que fica de fora do modelo em três domínios diferentes.
+3. [EXERCICIO-03-os-4-pilares.md](exercicios/EXERCICIO-03-os-4-pilares.md) (desafio): reconhecer os 4 pilares na descrição de um sistema, antes mesmo de escrever código.
+
 ---
 
 Anterior: [Módulo 00](../modulo-00-preparacao/) | Próximo: [Módulo 02 — Classes e objetos](../modulo-02-classes-e-objetos/)

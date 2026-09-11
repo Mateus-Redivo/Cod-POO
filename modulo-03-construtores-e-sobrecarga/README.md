@@ -86,8 +86,8 @@ Roteiro de leitura:
 ## Exercícios
 
 1. [EXERCICIO-01-formas-geometricas.md](exercicios/EXERCICIO-01-formas-geometricas.md) (fixação): uma classe com construtores sobrecarregados.
-
-> Este módulo ainda vai ganhar mais exercícios (aplicação e desafio) numa próxima revisão do material.
+2. [EXERCICIO-02-pedido-de-pizza.md](exercicios/EXERCICIO-02-pedido-de-pizza.md) (aplicação): sobrecarga numa classe, mais um construtor que recebe outro objeto como parâmetro.
+3. [EXERCICIO-03-desconto.md](exercicios/EXERCICIO-03-desconto.md) (desafio): sobrecarga por tipo de parâmetro (`int` × `double`).
 
 ## Auto-avaliação
 

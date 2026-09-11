@@ -66,6 +66,12 @@ Aprender a ler erros do compilador agora vai economizar horas depois. Faça cada
 
 Desfaça tudo e confirme que volta a compilar.
 
+## Exercícios
+
+1. [EXERCICIO-01-cartao-de-visita.md](exercicios/EXERCICIO-01-cartao-de-visita.md) (fixação): seu primeiro programa do zero.
+2. [EXERCICIO-02-decifrando-erros.md](exercicios/EXERCICIO-02-decifrando-erros.md) (aplicação): ler e consertar cinco erros de compilação.
+3. [EXERCICIO-03-compilacao-vs-execucao.md](exercicios/EXERCICIO-03-compilacao-vs-execucao.md) (desafio): distinguir erro de compilação de erro de execução.
+
 ## Auto-avaliação
 
 Antes de ir ao módulo 01, confirme:

@@ -2,7 +2,7 @@
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 1 de 1 | 45 min | ArrayList, for-each, acesso por índice |
+| 1 de 3 | 45 min | ArrayList, for-each, acesso por índice |
 
 ## Objetivo
 

@@ -1,8 +1,8 @@
-# Exercício 01 — Termostato (aplicação)
+# Exercício 02 — Termostato (aplicação)
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 1 de 1 | 1h | classe utilitária `static`, `static final`, invariante de classe, validação que depende de outro atributo |
+| 2 de 3 | 1h | classe utilitária `static`, `static final`, invariante de classe, validação que depende de outro atributo |
 
 ## Objetivo
 

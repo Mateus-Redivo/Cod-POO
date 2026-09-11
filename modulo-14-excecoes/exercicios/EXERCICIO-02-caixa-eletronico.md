@@ -1,4 +1,4 @@
-# Exercício 01 — Caixa eletrônico (aplicação)
+# Exercício 02 — Caixa eletrônico (aplicação)
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |

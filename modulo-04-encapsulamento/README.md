@@ -88,8 +88,7 @@ Experimente: no `TestePessoa`, tente escrever `pessoa.nome = "Ana";` direto (sem
 
 1. [EXERCICIO-01-produto.md](exercicios/EXERCICIO-01-produto.md) (fixação): uma classe única bem simples.
 2. [EXERCICIO-02-biblioteca.md](exercicios/EXERCICIO-02-biblioteca.md) (aplicação): duas classes interagindo.
-
-> Este módulo ainda vai ganhar um exercício de desafio numa próxima revisão do material.
+3. [EXERCICIO-03-temperatura.md](exercicios/EXERCICIO-03-temperatura.md) (desafio): getters que calculam em vez de só devolver.
 
 ## Auto-avaliação
 

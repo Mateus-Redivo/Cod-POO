@@ -2,7 +2,7 @@
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 1 de 1 | 30 min | sobrecarga de construtor, resolução de sobrecarga |
+| 1 de 3 | 30 min | sobrecarga de construtor, resolução de sobrecarga |
 
 ## Objetivo
 

@@ -1,4 +1,4 @@
-# Exercício 02 — Exceções no banco
+# Exercício 03 — Exceções no banco
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |

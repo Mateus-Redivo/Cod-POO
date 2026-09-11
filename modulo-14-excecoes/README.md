@@ -103,7 +103,9 @@ Experimento: no `TesteExcecoes`, remova o try/catch do TESTE 2 e compile. O comp
 
 ## Exercícios
 
-1. [EXERCICIO-01-caixa-eletronico.md](exercicios/EXERCICIO-01-caixa-eletronico.md): um caixa eletrônico que trata todas as falhas com exceções personalizadas.
+1. [EXERCICIO-01-calculadora-de-desconto.md](exercicios/EXERCICIO-01-calculadora-de-desconto.md) (fixação): sua primeira exceção personalizada, um único `throw`.
+2. [EXERCICIO-02-caixa-eletronico.md](exercicios/EXERCICIO-02-caixa-eletronico.md) (aplicação): um caixa eletrônico que trata todas as falhas com exceções personalizadas.
+3. [EXERCICIO-03-estacionamento-com-excecoes.md](exercicios/EXERCICIO-03-estacionamento-com-excecoes.md) (desafio): checked e unchecked juntas, exceção com atributos próprios.
 
 ## Auto-avaliação
 

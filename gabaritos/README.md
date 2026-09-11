@@ -1,6 +1,6 @@
 # Gabaritos
 
-Resoluções comentadas de alguns exercícios dos módulos.
+Resoluções comentadas dos exercícios dos módulos.
 
 ## Antes de abrir, um combinado
 
@@ -16,39 +16,53 @@ Quem inverte essa ordem chega ao projeto integrador sem saber começar um exerc�
 
 Sua solução pode ser diferente do gabarito e ainda assim estar correta (às vezes melhor). O que importa é atender aos critérios de aceitação do enunciado. Na dúvida, traga as duas versões para discutir em aula.
 
+## Como as pastas são nomeadas
+
+A pasta espelha a estrutura do curso: um diretório por módulo, e dentro dele um por exercício.
+
+```text
+gabaritos/modulo-NN/exNN-tema/
+```
+
+Por exemplo, a resolução do exercício 02 do módulo 10 está em [modulo-10/ex02-rpg/](modulo-10/ex02-rpg/).
+
+Exercícios de leitura/análise (sem código para escrever do zero) têm gabarito em `RESPOSTAS.md` em vez de um arquivo `.java`. Alguns, como o exercício 01 do módulo 16, não têm gabarito nenhum, de propósito — o próprio enunciado explica por quê.
+
 ## Índice
 
-| Gabarito | Exercício correspondente |
+| Módulo | Gabaritos |
 | --- | --- |
-| [modulo-02-lampada/](modulo-02-lampada/) | [Módulo 02, Exercício 01 — Lâmpada inteligente](../modulo-02-classes-e-objetos/exercicios/EXERCICIO-01-produto.md) |
-| [modulo-03-retangulo/](modulo-03-retangulo/) | [Módulo 03, Exercício 01 — Retângulo sobrecarregado](../modulo-03-construtores-e-sobrecarga/exercicios/EXERCICIO-01-formas-geometricas.md) |
-| [modulo-04-produto/](modulo-04-produto/) | [Módulo 04, Exercício 01 — Produto](../modulo-04-encapsulamento/exercicios/EXERCICIO-01-produto.md) |
-| [modulo-04-biblioteca/](modulo-04-biblioteca/) | [Módulo 04, Exercício 02 — Biblioteca](../modulo-04-encapsulamento/exercicios/EXERCICIO-02-biblioteca.md) |
-| [modulo-05-conta-de-jogador/](modulo-05-conta-de-jogador/) | [Módulo 05, Exercício 01 — Conta de jogador](../modulo-05-validacao-e-integridade/exercicios/EXERCICIO-01-conta-de-jogador.md) |
-| [modulo-06-termostato/](modulo-06-termostato/) | [Módulo 06, Exercício 01 — Termostato](../modulo-06-static-e-classes-utilitarias/exercicios/EXERCICIO-01-termostato.md) |
-| [modulo-07-playlist/](modulo-07-playlist/) | [Módulo 07, Exercício 01 — Playlist](../modulo-07-colecoes/exercicios/EXERCICIO-01-playlist.md) |
-| [modulo-08-agenda-de-contatos/](modulo-08-agenda-de-contatos/) | [Módulo 08, Exercício 01 — Agenda de contatos](../modulo-08-scanner-e-menus/exercicios/EXERCICIO-01-agenda-de-contatos.md) |
-| [modulo-09-livraria/](modulo-09-livraria/) | [Módulo 09, Exercício 01 — Livraria](../modulo-09-igualdade-de-objetos/exercicios/EXERCICIO-01-livraria.md) |
-| [modulo-10-moto/](modulo-10-moto/) | [Módulo 10, Exercício 01 — Moto](../modulo-10-heranca/exercicios/EXERCICIO-01-moto.md) |
-| [modulo-10-rpg/](modulo-10-rpg/) | [Módulo 10, Exercício 02 — RPG](../modulo-10-heranca/exercicios/EXERCICIO-02-rpg.md) |
-| [modulo-11-animais/](modulo-11-animais/) | [Módulo 11, Exercício 01 — Animais](../modulo-11-sobrescrita-e-polimorfismo/exercicios/EXERCICIO-01-animais.md) |
-| [modulo-12-funcionarios/](modulo-12-funcionarios/) | [Módulo 12, Exercício 01 — Funcionários](../modulo-12-abstracao/exercicios/EXERCICIO-01-funcionarios.md) |
-| [modulo-13-dispositivos/](modulo-13-dispositivos/) | [Módulo 13, Exercício 01 — Dispositivos inteligentes](../modulo-13-interfaces/exercicios/EXERCICIO-01-dispositivos.md) |
-| [modulo-14-caixa-eletronico/](modulo-14-caixa-eletronico/) | [Módulo 14, Exercício 01 — Caixa eletrônico](../modulo-14-excecoes/exercicios/EXERCICIO-01-caixa-eletronico.md) |
-| [modulo-15-farmacia/](modulo-15-farmacia/) | [Módulo 15, Exercício 01 — Refatorar a farmácia](../modulo-15-refatoracao/exercicios/EXERCICIO-01-refatorar-farmacia.md) |
-| [modulo-16-ex01-polimorfismo/](modulo-16-ex01-polimorfismo/) | [Módulo 16, Exercício 01 — Polimorfismo no banco](../modulo-16-estudo-de-caso-banco/exercicios/EXERCICIO-01-polimorfismo-no-banco.md) |
-| [modulo-16-ex02-excecoes/](modulo-16-ex02-excecoes/) | [Módulo 16, Exercício 02 — Exceções no banco](../modulo-16-estudo-de-caso-banco/exercicios/EXERCICIO-02-excecoes-no-banco.md) |
+| [00 — Preparação](../modulo-00-preparacao/) | [ex01-cartao-de-visita](modulo-00/ex01-cartao-de-visita/) · [ex02-decifrando-erros](modulo-00/ex02-decifrando-erros/) (RESPOSTAS.md) · [ex03-compilacao-vs-execucao](modulo-00/ex03-compilacao-vs-execucao/) (RESPOSTAS.md) |
+| [01 — Por que POO](../modulo-01-por-que-poo/) | [ex01-prevendo-o-no](modulo-01/ex01-prevendo-o-no/) · [ex02-identificando-abstracao](modulo-01/ex02-identificando-abstracao/) · [ex03-os-4-pilares](modulo-01/ex03-os-4-pilares/) (todos RESPOSTAS.md) |
+| [02 — Classes e objetos](../modulo-02-classes-e-objetos/) | [ex01-lampada](modulo-02/ex01-lampada/) · [ex02-estacionamento](modulo-02/ex02-estacionamento/) · [ex03-semaforo](modulo-02/ex03-semaforo/) |
+| [03 — Construtores e sobrecarga](../modulo-03-construtores-e-sobrecarga/) | [ex01-retangulo](modulo-03/ex01-retangulo/) · [ex02-pedido-de-pizza](modulo-03/ex02-pedido-de-pizza/) · [ex03-desconto](modulo-03/ex03-desconto/) |
+| [04 — Encapsulamento](../modulo-04-encapsulamento/) | [ex01-produto](modulo-04/ex01-produto/) · [ex02-biblioteca](modulo-04/ex02-biblioteca/) · [ex03-temperatura](modulo-04/ex03-temperatura/) |
+| [05 — Validação e integridade](../modulo-05-validacao-e-integridade/) | [ex01-conta-de-jogador](modulo-05/ex01-conta-de-jogador/) · [ex02-loja](modulo-05/ex02-loja/) · [ex03-tanque-de-combustivel](modulo-05/ex03-tanque-de-combustivel/) |
+| [06 — static e classes utilitárias](../modulo-06-static-e-classes-utilitarias/) | [ex01-conversor-de-moeda](modulo-06/ex01-conversor-de-moeda/) · [ex02-termostato](modulo-06/ex02-termostato/) · [ex03-assinatura-de-streaming](modulo-06/ex03-assinatura-de-streaming/) |
+| [07 — Coleções](../modulo-07-colecoes/) | [ex01-playlist](modulo-07/ex01-playlist/) · [ex02-turma](modulo-07/ex02-turma/) · [ex03-estoque-de-jogos](modulo-07/ex03-estoque-de-jogos/) |
+| [08 — Scanner e menus](../modulo-08-scanner-e-menus/) | [ex01-ficha-de-aluno](modulo-08/ex01-ficha-de-aluno/) · [ex02-agenda-de-contatos](modulo-08/ex02-agenda-de-contatos/) · [ex03-lista-de-tarefas](modulo-08/ex03-lista-de-tarefas/) |
+| [09 — Igualdade de objetos](../modulo-09-igualdade-de-objetos/) | [ex01-ponto](modulo-09/ex01-ponto/) · [ex02-livraria](modulo-09/ex02-livraria/) · [ex03-lista-de-presenca](modulo-09/ex03-lista-de-presenca/) |
+| [10 — Herança](../modulo-10-heranca/) | [ex01-moto](modulo-10/ex01-moto/) · [ex02-rpg](modulo-10/ex02-rpg/) · [ex03-eletrodomesticos](modulo-10/ex03-eletrodomesticos/) |
+| [11 — Sobrescrita e polimorfismo](../modulo-11-sobrescrita-e-polimorfismo/) | [ex01-instrumentos](modulo-11/ex01-instrumentos/) · [ex02-animais](modulo-11/ex02-animais/) · [ex03-central-de-notificacoes](modulo-11/ex03-central-de-notificacoes/) |
+| [12 — Abstração](../modulo-12-abstracao/) | [ex01-meios-de-transporte](modulo-12/ex01-meios-de-transporte/) · [ex02-formas-tridimensionais](modulo-12/ex02-formas-tridimensionais/) · [ex03-funcionarios](modulo-12/ex03-funcionarios/) |
+| [13 — Interfaces](../modulo-13-interfaces/) | [ex01-formas-de-pagamento](modulo-13/ex01-formas-de-pagamento/) · [ex02-dispositivos](modulo-13/ex02-dispositivos/) · [ex03-central-multimidia](modulo-13/ex03-central-multimidia/) |
+| [14 — Exceções](../modulo-14-excecoes/) | [ex01-calculadora-de-desconto](modulo-14/ex01-calculadora-de-desconto/) · [ex02-caixa-eletronico](modulo-14/ex02-caixa-eletronico/) · [ex03-estacionamento-com-excecoes](modulo-14/ex03-estacionamento-com-excecoes/) |
+| [15 — Refatoração](../modulo-15-refatoracao/) | [ex01-recibo-de-compra](modulo-15/ex01-recibo-de-compra/) · [ex02-refatorar-farmacia](modulo-15/ex02-refatorar-farmacia/) · [ex03-eliminando-a-escada-de-if](modulo-15/ex03-eliminando-a-escada-de-if/) |
+| [16 — Estudo de caso: banco](../modulo-16-estudo-de-caso-banco/) | ex01 sem gabarito (de propósito) · [ex02-polimorfismo](modulo-16/ex02-polimorfismo/) · [ex03-excecoes](modulo-16/ex03-excecoes/) |
+| [17 — Projeto integrador](../modulo-17-projeto-integrador/) | sem gabarito (é o projeto final, sua vez de criar do zero) |
 
-Todos os exercícios dos módulos têm gabarito. A única exceção intencional é o projeto integrador (módulo 17): ali é a sua vez de criar do zero, sem resposta pronta.
+Todo módulo de conteúdo (02 a 16) tem exatamente 3 exercícios, em ordem crescente de dificuldade (fixação → aplicação → desafio). Os módulos 00 e 01 também têm 3, adaptados ao início da trilha. O módulo 17 não tem exercícios próprios: ele é, inteiro, o exercício final.
 
 ## Como executar um gabarito
 
 Mesmo padrão de todos os módulos:
 
 ```bash
-cd gabaritos/modulo-10-rpg
+cd gabaritos/modulo-10/ex02-rpg
 javac -d bin model/*.java app/*.java
 java -cp bin app.TestePersonagens
 ```
 
 Quando o gabarito tiver as pastas `util/` ou `exception/`, inclua-as na compilação (ex.: `javac -d bin exception/*.java model/*.java util/*.java app/*.java`).
+
+Gabaritos de exercícios de leitura/análise não compilam: a resposta está no `RESPOSTAS.md` da própria pasta.

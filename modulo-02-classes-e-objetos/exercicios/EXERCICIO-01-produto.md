@@ -2,7 +2,7 @@
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 1 de 1 | 30 min | classe, atributos, construtor, métodos que mudam o estado do objeto |
+| 1 de 3 | 30 min | classe, atributos, construtor, métodos que mudam o estado do objeto |
 
 ## Objetivo
 

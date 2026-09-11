@@ -1,8 +1,8 @@
-# Exercício 01 — Animais (aplicação)
+# Exercício 02 — Animais (aplicação)
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 1 de 1 | 1h | herança, sobrescrita, sobrecarga, polimorfismo |
+| 2 de 3 | 1h | herança, sobrescrita, sobrecarga, polimorfismo |
 
 ## Objetivo
 

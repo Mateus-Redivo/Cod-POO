@@ -94,6 +94,7 @@ Experimentos que valem a pena:
 
 1. [EXERCICIO-01-moto.md](exercicios/EXERCICIO-01-moto.md) (fixação): mais uma filha para `Veiculo`.
 2. [EXERCICIO-02-rpg.md](exercicios/EXERCICIO-02-rpg.md) (aplicação): hierarquia de personagens de RPG com sobrescritas.
+3. [EXERCICIO-03-eletrodomesticos.md](exercicios/EXERCICIO-03-eletrodomesticos.md) (desafio): herança em três níveis, `super` chamando `super`.
 
 ## Auto-avaliação
 

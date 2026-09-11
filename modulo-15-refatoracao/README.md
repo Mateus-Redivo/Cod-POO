@@ -95,7 +95,9 @@ A prova de que a refatoração valeu a pena é perguntar "e se...":
 
 ## Exercícios
 
-1. [EXERCICIO-01-refatorar-farmacia.md](exercicios/EXERCICIO-01-refatorar-farmacia.md): você recebe um código monolítico funcionando e o transforma em POO, nos mesmos três atos.
+1. [EXERCICIO-01-recibo-de-compra.md](exercicios/EXERCICIO-01-recibo-de-compra.md) (fixação): só extração de método, sem classe nova.
+2. [EXERCICIO-02-refatorar-farmacia.md](exercicios/EXERCICIO-02-refatorar-farmacia.md) (aplicação): você recebe um código monolítico funcionando e o transforma em POO, nos mesmos três atos.
+3. [EXERCICIO-03-eliminando-a-escada-de-if.md](exercicios/EXERCICIO-03-eliminando-a-escada-de-if.md) (desafio): substituir escada de `if` por polimorfismo.
 
 ## Auto-avaliação
 

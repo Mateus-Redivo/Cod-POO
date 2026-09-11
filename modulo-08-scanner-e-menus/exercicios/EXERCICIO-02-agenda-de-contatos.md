@@ -1,8 +1,8 @@
-# Exercício 01 — Agenda de contatos (aplicação)
+# Exercício 02 — Agenda de contatos (aplicação)
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 1 de 1 | 1h30 | ArrayList, Scanner, menu + switch, CRUD |
+| 2 de 3 | 1h30 | ArrayList, Scanner, menu + switch, CRUD |
 
 ## Objetivo
 

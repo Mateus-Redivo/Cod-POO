@@ -98,7 +98,9 @@ Observe no teste a linha `List<Pagavel> folhaDePagamento`, o mesmo padrão do `L
 
 ## Exercícios
 
-1. [EXERCICIO-01-dispositivos.md](exercicios/EXERCICIO-01-dispositivos.md): interfaces `Conectavel` e `Carregavel` com dispositivos variados.
+1. [EXERCICIO-01-formas-de-pagamento.md](exercicios/EXERCICIO-01-formas-de-pagamento.md) (fixação): sua primeira interface, implementada por classes sem parentesco.
+2. [EXERCICIO-02-dispositivos.md](exercicios/EXERCICIO-02-dispositivos.md) (aplicação): interfaces `Conectavel` e `Carregavel` com dispositivos variados.
+3. [EXERCICIO-03-central-multimidia.md](exercicios/EXERCICIO-03-central-multimidia.md) (desafio): três interfaces numa classe só, constante de interface.
 
 ## Auto-avaliação
 

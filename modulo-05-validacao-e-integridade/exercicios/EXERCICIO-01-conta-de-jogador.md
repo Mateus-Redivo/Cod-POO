@@ -1,8 +1,8 @@
-# Exercício 01 — Conta de jogador (aplicação)
+# Exercício 01 — Conta de jogador (fixação)
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 1 de 1 | 1h | validação em setters e construtor |
+| 1 de 3 | 1h | validação em setters e construtor |
 
 ## Objetivo
 

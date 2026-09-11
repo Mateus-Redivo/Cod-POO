@@ -2,7 +2,7 @@
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 1 de 2 | 30 min | private, getters, `toString()` sobrescrito |
+| 1 de 3 | 30 min | private, getters, `toString()` sobrescrito |
 
 ## Objetivo
 

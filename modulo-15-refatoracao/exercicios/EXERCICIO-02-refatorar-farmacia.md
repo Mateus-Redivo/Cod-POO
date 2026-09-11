@@ -1,4 +1,4 @@
-# Exercício 01 — Refatorar a farmácia (aplicação)
+# Exercício 02 — Refatorar a farmácia (aplicação)
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |

@@ -1,4 +1,4 @@
-# Exercício 01 — Dispositivos inteligentes (aplicação)
+# Exercício 02 — Dispositivos inteligentes (aplicação)
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |

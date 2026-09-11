@@ -85,27 +85,28 @@ Funciona, mas depois do módulo 12, esse `instanceof` em cadeia deveria incomoda
 <details>
 <summary>Pense antes de abrir a resposta</summary>
 
-Criando um método comum, por exemplo, um abstrato `processarFimDeMes()` em `Conta`, que cada filha implementa do seu jeito (a corrente desconta tarifa, a poupança rende juros). O `Banco` viraria uma linha: `conta.processarFimDeMes();`. Essa melhoria é exatamente o exercício 1.
+Criando um método comum, por exemplo, um abstrato `processarFimDeMes()` em `Conta`, que cada filha implementa do seu jeito (a corrente desconta tarifa, a poupança rende juros). O `Banco` viraria uma linha: `conta.processarFimDeMes();`. Essa melhoria é exatamente o exercício 2.
 
 </details>
 
 ### 4. O silêncio do sacar
 
-`sacar(5000)` numa conta com R$ 100 simplesmente... não faz nada. Depois do módulo 14 você sabe que isso é um problema, e sabe a ferramenta certa. É o exercício 2.
+`sacar(5000)` numa conta com R$ 100 simplesmente... não faz nada. Depois do módulo 14 você sabe que isso é um problema, e sabe a ferramenta certa. É o exercício 3.
 
 ## Exercícios
 
-Os dois exercícios transformam as críticas do roteiro em trabalho prático:
+Os três exercícios seguem o roteiro de estudo: primeiro mapear o sistema, depois transformar as críticas em trabalho prático.
 
-1. [EXERCICIO-01-polimorfismo-no-banco.md](exercicios/EXERCICIO-01-polimorfismo-no-banco.md): elimine os `instanceof` com um método polimórfico.
-2. [EXERCICIO-02-excecoes-no-banco.md](exercicios/EXERCICIO-02-excecoes-no-banco.md): acabe com as falhas silenciosas usando exceções personalizadas.
+1. [EXERCICIO-01-mapeando-o-sistema.md](exercicios/EXERCICIO-01-mapeando-o-sistema.md) (fixação): use, leia e rastreie o sistema antes de mexer nele. Sem gabarito, de propósito.
+2. [EXERCICIO-02-polimorfismo-no-banco.md](exercicios/EXERCICIO-02-polimorfismo-no-banco.md) (aplicação): elimine os `instanceof` com um método polimórfico.
+3. [EXERCICIO-03-excecoes-no-banco.md](exercicios/EXERCICIO-03-excecoes-no-banco.md) (desafio): acabe com as falhas silenciosas usando exceções personalizadas.
 
 ## Auto-avaliação
 
 - [ ] Sei explicar o papel de cada uma das 6 classes sem olhar o código
 - [ ] Sei apontar onde estão encapsulamento, herança e validação no sistema
 - [ ] Entendi por que o `instanceof` em cadeia é um sinal de alerta
-- [ ] Fiz os dois exercícios e o sistema continuou funcionando
+- [ ] Fiz os três exercícios e o sistema continuou funcionando
 
 ## Erros comuns nesta fase
 
@@ -113,7 +114,7 @@ Os dois exercícios transformam as críticas do roteiro em trabalho prático:
 | --- | --- |
 | Estender o sistema alterando a classe mãe para cada caso novo | Prefira adicionar filhas; a mãe deve ficar estável |
 | Filha acessando `saldo` diretamente | `saldo` é `private` de propósito: use `depositar`/`sacar`/`getSaldo` |
-| Resolver o exercício 1 mantendo os `instanceof` "só por garantia" | O objetivo é exatamente removê-los; confie no polimorfismo |
+| Resolver o exercício 2 mantendo os `instanceof` "só por garantia" | O objetivo é exatamente removê-los; confie no polimorfismo |
 
 ---
 

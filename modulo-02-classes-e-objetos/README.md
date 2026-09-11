@@ -89,8 +89,8 @@ Roteiro de leitura sugerido:
 ## Exercícios
 
 1. [EXERCICIO-01-produto.md](exercicios/EXERCICIO-01-produto.md) (fixação): uma classe única, com um método que muda o estado do objeto.
-
-> Este módulo ainda vai ganhar mais exercícios (aplicação e desafio) numa próxima revisão do material.
+2. [EXERCICIO-02-estacionamento.md](exercicios/EXERCICIO-02-estacionamento.md) (aplicação): duas classes interagindo, um objeto guardando outros como atributos.
+3. [EXERCICIO-03-semaforo.md](exercicios/EXERCICIO-03-semaforo.md) (desafio): estado interno que muda de forma cíclica.
 
 ## Auto-avaliação
 

@@ -1,8 +1,8 @@
-# Exercício 01 — Sistema de funcionários (aplicação)
+# Exercício 03 — Sistema de funcionários (desafio)
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 1 de 1 | 2h | classe abstrata, sobrecarga, sobrescrita, polimorfismo |
+| 3 de 3 | 2h | classe abstrata, sobrecarga, sobrescrita, polimorfismo |
 
 ## Objetivo
 

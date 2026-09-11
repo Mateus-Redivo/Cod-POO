@@ -78,7 +78,9 @@ Experimente: tente `new Forma("X", "Azul")` em algum lugar do teste. Leia a mens
 
 ## Exercícios
 
-1. [EXERCICIO-01-funcionarios.md](exercicios/EXERCICIO-01-funcionarios.md): o grande exercício final do bloco, com classe abstrata, sobrecarga, sobrescrita e polimorfismo juntos, numa folha de pagamento.
+1. [EXERCICIO-01-meios-de-transporte.md](exercicios/EXERCICIO-01-meios-de-transporte.md) (fixação): sua primeira classe abstrata do zero.
+2. [EXERCICIO-02-formas-tridimensionais.md](exercicios/EXERCICIO-02-formas-tridimensionais.md) (aplicação): classe abstrata com dois métodos abstratos, agregação sobre uma lista.
+3. [EXERCICIO-03-funcionarios.md](exercicios/EXERCICIO-03-funcionarios.md) (desafio): o grande exercício final do bloco, com classe abstrata, sobrecarga, sobrescrita e polimorfismo juntos, numa folha de pagamento.
 
 ## Auto-avaliação
 

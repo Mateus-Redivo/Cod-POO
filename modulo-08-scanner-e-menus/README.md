@@ -66,9 +66,9 @@ Pontos para observar na leitura do `Main`:
 
 ## Exercícios
 
-1. [EXERCICIO-01-agenda-de-contatos.md](exercicios/EXERCICIO-01-agenda-de-contatos.md): seu primeiro CRUD completo, sozinho.
-
-> Este módulo ainda vai ganhar mais exercícios (fixação e desafio) numa próxima revisão do material.
+1. [EXERCICIO-01-ficha-de-aluno.md](exercicios/EXERCICIO-01-ficha-de-aluno.md) (fixação): leitura validada com `Scanner`, sem menu ainda.
+2. [EXERCICIO-02-agenda-de-contatos.md](exercicios/EXERCICIO-02-agenda-de-contatos.md) (aplicação): seu primeiro CRUD completo, sozinho.
+3. [EXERCICIO-03-lista-de-tarefas.md](exercicios/EXERCICIO-03-lista-de-tarefas.md) (desafio): CRUD com atualização, não só criar/listar/remover.
 
 ## Auto-avaliação
 

@@ -52,6 +52,8 @@ java -cp bin app.TesteColecoes
 ## Exercícios
 
 1. [EXERCICIO-01-playlist.md](exercicios/EXERCICIO-01-playlist.md) (fixação): uma lista de músicas com cálculo de duração total.
+2. [EXERCICIO-02-turma.md](exercicios/EXERCICIO-02-turma.md) (aplicação): busca, agregação e filtro para uma lista nova.
+3. [EXERCICIO-03-estoque-de-jogos.md](exercicios/EXERCICIO-03-estoque-de-jogos.md) (desafio): busca que precisa diferenciar dois tipos de "não encontrado".
 
 ## Auto-avaliação
 

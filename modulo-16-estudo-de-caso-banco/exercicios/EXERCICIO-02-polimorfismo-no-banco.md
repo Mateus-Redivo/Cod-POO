@@ -1,4 +1,4 @@
-# Exercício 01 — Polimorfismo no banco
+# Exercício 02 — Polimorfismo no banco
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |

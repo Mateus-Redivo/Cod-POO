@@ -73,9 +73,9 @@ Leia a saída com atenção: toda vez que um valor inválido é recusado, o obje
 
 ## Exercícios
 
-1. [EXERCICIO-01-conta-de-jogador.md](exercicios/EXERCICIO-01-conta-de-jogador.md): construa uma classe blindada por validações.
-
-> Este módulo ainda vai ganhar mais exercícios (aplicação e desafio) numa próxima revisão do material.
+1. [EXERCICIO-01-conta-de-jogador.md](exercicios/EXERCICIO-01-conta-de-jogador.md) (fixação): construa uma classe blindada por validações.
+2. [EXERCICIO-02-loja.md](exercicios/EXERCICIO-02-loja.md) (aplicação): validação em duas classes, uma regra de negócio que depende da outra.
+3. [EXERCICIO-03-tanque-de-combustivel.md](exercicios/EXERCICIO-03-tanque-de-combustivel.md) (desafio): um invariante mantido por dois métodos diferentes.
 
 ## Auto-avaliação
 

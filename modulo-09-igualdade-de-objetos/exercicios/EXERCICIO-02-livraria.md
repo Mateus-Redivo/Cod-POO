@@ -1,8 +1,8 @@
-# Exercício 01 — Livraria (aplicação)
+# Exercício 02 — Livraria (aplicação)
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 1 de 1 | 1h | equals, hashCode, contains numa lista |
+| 2 de 3 | 1h | equals, hashCode, contains numa lista |
 
 ## Objetivo
 
