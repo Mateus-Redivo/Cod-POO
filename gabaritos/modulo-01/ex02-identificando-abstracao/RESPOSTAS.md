@@ -22,5 +22,5 @@ Não existe uma única resposta certa aqui; o que importa é a justificativa faz
 
 ## Pergunta final
 
-1. **`nome`** apareceu nos três domínios. Isso acontece porque identificar "de quem" estamos falando é útil em praticamente qualquer sistema que lide com pessoas, independente do problema específico — é o tipo de atributo que quase nunca é "abstraído para fora".
+1. **`nome`** apareceu nos três domínios. Isso acontece porque identificar "de quem" estamos falando é útil em praticamente qualquer sistema que lide com pessoas, independente do problema específico: é o tipo de atributo que quase nunca é "abstraído para fora".
 2. **`tipo sanguíneo`** é um bom exemplo de atributo exclusivo de um domínio (só aparece no hospital). Isso mostra que abstração não é uma propriedade da PESSOA em si (ela sempre tem um tipo sanguíneo, o dado sempre existe no mundo real), é uma propriedade da RELAÇÃO entre a pessoa e o problema que o sistema resolve. O mesmo dado real pode ser essencial num domínio e totalmente irrelevante em outro.

@@ -33,7 +33,7 @@ O domínio é livre; os requisitos técnicos, não.
 
 Seu sistema deve conter, no mínimo (**marque cada linha antes de entregar**):
 
-| ✔ | # | Requisito | Módulo |
+| Feito | # | Requisito | Módulo |
 | --- | --- | --- | --- |
 | [ ] | 1 | Pelo menos 4 classes de domínio no pacote `model` | 02 |
 | [ ] | 2 | Todos os atributos privados, com validação nos setters ou construtor | 04, 05 |

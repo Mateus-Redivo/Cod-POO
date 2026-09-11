@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Sua primeira refatoração: só extração de método, sem extração de classe ainda (isso vem no próximo exercício). A fórmula `preco * quantidade` está repetida três vezes — resolva com UM método.
+Sua primeira refatoração: só extração de método, sem extração de classe ainda (isso vem no próximo exercício). A fórmula `preco * quantidade` está repetida três vezes: resolva com UM método.
 
 ## O que fazer
 

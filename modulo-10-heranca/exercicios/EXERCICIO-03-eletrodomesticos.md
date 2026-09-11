@@ -10,7 +10,7 @@ Os exercícios anteriores tinham hierarquias de um nível (mãe → filha). Aqui
 
 ## Requisitos
 
-### Classe Eletrodomestico (pacote `model`) — nível avó
+### Classe Eletrodomestico (pacote `model`), nível avó
 
 Atributos protegidos:
 
@@ -26,7 +26,7 @@ Métodos:
 - `desligar()`: muda `ligado` para `false`, imprime confirmação.
 - `exibirInfo()`: imprime marca, voltagem e se está ligado.
 
-### Classe AparelhoCozinha (pacote `model`, herda de Eletrodomestico) — nível mãe
+### Classe AparelhoCozinha (pacote `model`, herda de Eletrodomestico), nível mãe
 
 Atributo protegido adicional:
 
@@ -38,7 +38,7 @@ Sobrescrita:
 
 - `exibirInfo()`: chama `super.exibirInfo()` (que é o da `Eletrodomestico`) e acrescenta a potência.
 
-### Classe Geladeira (pacote `model`, herda de AparelhoCozinha) — nível filha
+### Classe Geladeira (pacote `model`, herda de AparelhoCozinha), nível filha
 
 Atributo adicional:
 
@@ -51,7 +51,7 @@ Métodos:
 - `resfriar(int graus)`: diminui `temperaturaAtual` em `graus`; recusa se o resultado for menor que `-5`.
 - `exibirInfo()` (sobrescrita): chama `super.exibirInfo()` (o da `AparelhoCozinha`, que por sua vez já chamou o da `Eletrodomestico`) e acrescenta a temperatura atual.
 
-### Classe Microondas (pacote `model`, herda de AparelhoCozinha) — nível filha
+### Classe Microondas (pacote `model`, herda de AparelhoCozinha), nível filha
 
 Atributo adicional:
 
@@ -81,7 +81,7 @@ Métodos:
 
 ## Dica
 
-Pense em `super.exibirInfo()` como "primeiro deixa quem vier antes de mim terminar o trabalho dela". Quando `Geladeira.exibirInfo()` chama `super.exibirInfo()`, ela está chamando a versão de `AparelhoCozinha` — que, por sua vez, TAMBÉM chama `super.exibirInfo()` (a de `Eletrodomestico`) antes de acrescentar a potência. A cadeia se desenrola de trás para frente.
+Pense em `super.exibirInfo()` como "primeiro deixa quem vier antes de mim terminar o trabalho dela". Quando `Geladeira.exibirInfo()` chama `super.exibirInfo()`, ela está chamando a versão de `AparelhoCozinha`, que, por sua vez, TAMBÉM chama `super.exibirInfo()` (a de `Eletrodomestico`) antes de acrescentar a potência. A cadeia se desenrola de trás para frente.
 
 ---
 

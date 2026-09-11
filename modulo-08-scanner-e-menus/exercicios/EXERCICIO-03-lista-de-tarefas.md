@@ -26,7 +26,7 @@ Métodos:
 
 - Getters para os três atributos.
 - `marcarComoConcluida()`: muda `concluida` para `true`.
-- `exibirDados()`: imprime um índice-friendly (a tarefa em si, sem número — o número quem mostra é o menu), descrição, prioridade e status (`[X]` se concluída, `[ ]` se não).
+- `exibirDados()`: imprime a tarefa em si, sem número (quem mostra o número é o menu), descrição, prioridade e status (`[X]` se concluída, `[ ]` se não).
 
 ### Classe Main (pacote `app`)
 
@@ -46,7 +46,7 @@ Comportamentos exigidos:
 
 - **Adicionar**: pede descrição (não vazia) e prioridade (1 a 3, validada).
 - **Listar todas**: mostra todas, numeradas, com o status de cada uma.
-- **Marcar como concluída**: lista as tarefas numeradas, pede o número, valida contra o tamanho da lista, e chama `marcarComoConcluida()` na tarefa escolhida — sem recriar a tarefa, sem removê-la e adicionar outra no lugar.
+- **Marcar como concluída**: lista as tarefas numeradas, pede o número, valida contra o tamanho da lista, e chama `marcarComoConcluida()` na tarefa escolhida, sem recriar a tarefa, sem removê-la e adicionar outra no lugar.
 - **Remover**: mesma lógica de escolher por número.
 - **Listar apenas pendentes**: usa uma lista nova (filtrada), só com `concluida == false`.
 - Lista vazia em qualquer listagem mostra `"Nenhuma tarefa cadastrada."`, nunca uma lista em branco.
@@ -70,7 +70,7 @@ app/
 
 ## Dica
 
-"Marcar como concluída" e "Remover" pedem a mesma coisa do usuário (escolher um número da lista) e validam do mesmo jeito. Perceber essa repetição agora é um bom aquecimento para o [módulo 15 — Refatoração](../../modulo-15-refatoracao/), que ensina a extrair esse padrão para um método só.
+"Marcar como concluída" e "Remover" pedem a mesma coisa do usuário (escolher um número da lista) e validam do mesmo jeito. Perceber essa repetição agora é um bom aquecimento para o [módulo 15, Refatoração](../../modulo-15-refatoracao/), que ensina a extrair esse padrão para um método só.
 
 ---
 

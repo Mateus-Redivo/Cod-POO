@@ -12,7 +12,7 @@
 
 **Programa D** é o caso em que a linha apontada não é onde o erro realmente está.
 
-Isso acontece porque o `javac` não sabe, ao ler o código, "faltou uma chave aqui" — ele só sabe que, ao terminar de ler o arquivo inteiro, ainda esperava encontrar mais alguma coisa (o `}` que fecharia a classe) e não achou. Por isso o erro aparece na **última linha do arquivo**, não na linha onde a chave deveria estar. Contar chaves (`{` sempre tem um `}` correspondente) é uma forma melhor de achar esse tipo de erro do que confiar cegamente no número da linha.
+Isso acontece porque o `javac` não sabe, ao ler o código, "faltou uma chave aqui". Ele só sabe que, ao terminar de ler o arquivo inteiro, ainda esperava encontrar mais alguma coisa (o `}` que fecharia a classe) e não achou. Por isso o erro aparece na **última linha do arquivo**, não na linha onde a chave deveria estar. Contar chaves (`{` sempre tem um `}` correspondente) é uma forma melhor de achar esse tipo de erro do que confiar cegamente no número da linha.
 
 ## Programas corrigidos
 

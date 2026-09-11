@@ -41,7 +41,7 @@ Construtor:
 
 Métodos:
 
-- `calcularTotalDeFatias()`: retorna a soma de `quantidadeFatias` das duas pizzas. Você vai precisar de um jeito de "ler" essa informação de dentro do `Pedido` — pense em qual método de `Pizza` te ajudaria a expor esse número sem usar a palavra "getter" (uma dica: um método pode devolver um valor com `return` sem precisar seguir a convenção `getAlgo()`).
+- `calcularTotalDeFatias()`: retorna a soma de `quantidadeFatias` das duas pizzas. Você vai precisar de um jeito de "ler" essa informação de dentro do `Pedido`: pense em qual método de `Pizza` te ajudaria a expor esse número sem usar a palavra "getter" (uma dica: um método pode devolver um valor com `return` sem precisar seguir a convenção `getAlgo()`).
 - `exibirPedido()`: imprime o número do pedido, e chama `exibirDados()` das duas pizzas.
 
 ### Classe TestePedido (pacote `app`)

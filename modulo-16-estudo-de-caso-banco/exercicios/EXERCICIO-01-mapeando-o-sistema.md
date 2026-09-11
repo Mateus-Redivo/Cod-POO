@@ -6,9 +6,9 @@
 
 ## Objetivo
 
-Entender o sistema bancário do módulo sem alterar uma linha. Você vai usá-lo, mapeá-lo e rastrear uma operação de ponta a ponta — antes de tentar mexer nele nos próximos dois exercícios.
+Entender o sistema bancário do módulo sem alterar uma linha. Você vai usá-lo, mapeá-lo e rastrear uma operação de ponta a ponta, antes de tentar mexer nele nos próximos dois exercícios.
 
-## Parte 1 — Use antes de ler
+## Parte 1: use antes de ler
 
 Rode [exemplo/app/Main.java](../exemplo/app/Main.java) e faça, nesta ordem:
 
@@ -20,7 +20,7 @@ Rode [exemplo/app/Main.java](../exemplo/app/Main.java) e faça, nesta ordem:
 
 Anote **o que aconteceu** em cada passo, principalmente no passo 4.
 
-## Parte 2 — O mapa
+## Parte 2: o mapa
 
 Só agora releia o código com calma. Preencha:
 
@@ -37,13 +37,13 @@ E responda:
 
 **b)** `ContaCorrente` e `ContaPoupanca` repetem algum código entre si? Se sim, qual, e por que ele não precisou ser repetido (o que a herança já resolveu)?
 
-## Parte 3 — Rastreie o processarMensal
+## Parte 3: rastreie o processarMensal
 
 1. Abra `Banco.processarMensal`. Que estrutura de decisão ele usa para saber o que fazer com cada conta?
 2. Para uma `ContaCorrente`, qual método é chamado? E para uma `ContaPoupanca`?
 3. Se alguém criar uma `ContaSalario` nova (mais uma filha de `Conta`) e esquecer de atualizar `processarMensal`, o que acontece quando o fechamento mensal rodar para essa conta? O programa quebra, ou faz silenciosamente a coisa errada?
 
-## Parte 4 — O saque silencioso
+## Parte 4: o saque silencioso
 
 No passo 4 da Parte 1, você tentou sacar mais do que o saldo.
 

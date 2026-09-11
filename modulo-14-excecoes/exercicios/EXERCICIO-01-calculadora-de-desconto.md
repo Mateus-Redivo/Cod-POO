@@ -25,7 +25,7 @@ Método:
 
 1. Chame `aplicarDesconto(200.0, 10.0)` dentro de um `try`, capture `PercentualInvalidoException` num `catch`, e imprima o resultado dentro do `try` se der certo.
 2. Chame `aplicarDesconto(200.0, 150.0)` (percentual inválido) do mesmo jeito, e confirme que o `catch` captura a exceção e imprime a mensagem dela (`e.getMessage()`).
-3. Em AMBOS os casos (sucesso e erro), um bloco `finally` deve imprimir `"Calculo finalizado."` — confirme isso rodando os dois cenários.
+3. Em AMBOS os casos (sucesso e erro), um bloco `finally` deve imprimir `"Calculo finalizado."`. Confirme isso rodando os dois cenários.
 
 ## Exemplo de saída
 

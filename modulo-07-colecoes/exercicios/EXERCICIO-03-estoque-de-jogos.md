@@ -62,7 +62,7 @@ Métodos:
 
 ## Dica
 
-Para separar "não encontrado" de "sem estoque" dentro do mesmo `for`, uma técnica comum é: quando achar o título, resolva tudo ali dentro (confira a quantidade, aja de acordo, e dê um `return` para sair do método). Se o `for` terminar sem nenhum `return` ter acontecido, você sabe que caiu no caso "não encontrado" — trate isso depois do laço.
+Para separar "não encontrado" de "sem estoque" dentro do mesmo `for`, uma técnica comum é: quando achar o título, resolva tudo ali dentro (confira a quantidade, aja de acordo, e dê um `return` para sair do método). Se o `for` terminar sem nenhum `return` ter acontecido, você sabe que caiu no caso "não encontrado": trate isso depois do laço.
 
 ---
 

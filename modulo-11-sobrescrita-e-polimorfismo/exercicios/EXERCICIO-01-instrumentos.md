@@ -21,8 +21,8 @@ Construtor: recebe `nome`.
 Métodos:
 
 - `tocar()`: imprime `"[nome] esta tocando."` Será sobrescrito pelas filhas.
-- `afinar()`: SOBRECARGA — imprime `"[nome] afinado no padrao."`
-- `afinar(int nivel)`: SOBRECARGA do método acima — imprime `"[nome] afinado no nivel " + nivel + "."`
+- `afinar()`: SOBRECARGA, imprime `"[nome] afinado no padrao."`
+- `afinar(int nivel)`: SOBRECARGA do método acima, imprime `"[nome] afinado no nivel " + nivel + "."`
 
 ### Classe Violao (pacote `model`, herda de Instrumento)
 

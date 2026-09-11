@@ -34,7 +34,7 @@ Métodos:
 3. Imprima `a.equals(b)` (deve ser `true`: mesmo conteúdo).
 4. Imprima `a.hashCode()` e `b.hashCode()` (devem ser iguais, pelo contrato).
 5. Crie `Ponto c = new Ponto(5, 4);` (só o `x` diferente) e imprima `a.equals(c)` (deve ser `false`).
-6. Compare `a.equals(null)` — deve devolver `false`, não lançar exceção.
+6. Compare `a.equals(null)`: deve devolver `false`, não lançar exceção.
 
 ## Exemplo de saída
 
@@ -55,7 +55,7 @@ a.equals(null) -> false
 
 ## Dica
 
-Use `java.util.Objects.equals(...)` e `java.util.Objects.hash(...)` para não escrever a lógica de comparação na mão — é exatamente o que o exemplo guiado do módulo faz.
+Use `java.util.Objects.equals(...)` e `java.util.Objects.hash(...)` para não escrever a lógica de comparação na mão: é exatamente o que o exemplo guiado do módulo faz.
 
 ---
 

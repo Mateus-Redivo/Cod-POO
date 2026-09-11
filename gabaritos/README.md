@@ -26,7 +26,7 @@ gabaritos/modulo-NN/exNN-tema/
 
 Por exemplo, a resolução do exercício 02 do módulo 10 está em [modulo-10/ex02-rpg/](modulo-10/ex02-rpg/).
 
-Exercícios de leitura/análise (sem código para escrever do zero) têm gabarito em `RESPOSTAS.md` em vez de um arquivo `.java`. Alguns, como o exercício 01 do módulo 16, não têm gabarito nenhum, de propósito — o próprio enunciado explica por quê.
+Exercícios de leitura/análise (sem código para escrever do zero) têm gabarito em `RESPOSTAS.md` em vez de um arquivo `.java`. Alguns, como o exercício 01 do módulo 16, não têm gabarito nenhum, de propósito: o próprio enunciado explica por quê.
 
 ## Índice
 

@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Nos exercícios anteriores, os construtores sobrecarregados diferiam pela QUANTIDADE de parâmetros. Aqui a diferença está no TIPO — e essa é a armadilha clássica da sobrecarga em Java: `10` e `10.0` não são a mesma coisa para o compilador.
+Nos exercícios anteriores, os construtores sobrecarregados diferiam pela QUANTIDADE de parâmetros. Aqui a diferença está no TIPO, e essa é a armadilha clássica da sobrecarga em Java: `10` e `10.0` não são a mesma coisa para o compilador.
 
 ## Requisitos
 
@@ -31,8 +31,8 @@ Métodos:
 
 ### Classe TesteDesconto (pacote `app`)
 
-1. Crie `new Desconto(10)` — anote num comentário qual construtor é chamado e por quê.
-2. Crie `new Desconto(15.0)` — anote qual construtor é chamado e por quê. Se você escrever `new Desconto(15)` (sem o `.0`) em vez disso, o que muda?
+1. Crie `new Desconto(10)`; anote num comentário qual construtor é chamado e por quê.
+2. Crie `new Desconto(15.0)`; anote qual construtor é chamado e por quê. Se você escrever `new Desconto(15)` (sem o `.0`) em vez disso, o que muda?
 3. Crie `new Desconto(20, true)`.
 4. Para cada um dos três, exiba os dados e aplique sobre um preço de `R$ 200,00`, mostrando o resultado.
 

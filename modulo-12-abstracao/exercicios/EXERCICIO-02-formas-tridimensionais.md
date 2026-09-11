@@ -25,7 +25,7 @@ Métodos abstratos:
 
 Método concreto:
 
-- `exibirInfo()`: imprime nome, volume e área de superfície (chamando os dois métodos abstratos — mesmo sendo abstratos na classe mãe, o método concreto pode chamá-los, porque em tempo de execução sempre existe uma implementação real na filha).
+- `exibirInfo()`: imprime nome, volume e área de superfície (chamando os dois métodos abstratos; mesmo sendo abstratos na classe mãe, o método concreto pode chamá-los, porque em tempo de execução sempre existe uma implementação real na filha).
 
 ### Classe Cubo (pacote `model`, herda de FormaTridimensional)
 
@@ -61,7 +61,7 @@ Método concreto:
 
 ## Dica
 
-Um método CONCRETO numa classe abstrata pode chamar um método ABSTRATO da mesma classe sem problema — parece estranho ("como ele chama algo que não tem corpo?"), mas funciona porque, quando `exibirInfo()` realmente executa, o objeto já é um `Cubo`, uma `Esfera` ou um `Cilindro` de verdade, com a implementação real disponível.
+Um método CONCRETO numa classe abstrata pode chamar um método ABSTRATO da mesma classe sem problema. Parece estranho ("como ele chama algo que não tem corpo?"), mas funciona porque, quando `exibirInfo()` realmente executa, o objeto já é um `Cubo`, uma `Esfera` ou um `Cilindro` de verdade, com a implementação real disponível.
 
 ---
 
