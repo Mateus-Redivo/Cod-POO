@@ -50,8 +50,8 @@ Métodos:
 
 ### Parte final: a prova do polimorfismo
 
-4. **Sem alterar nenhuma linha de `CentralDeNotificacoes` ou `TesteCentral` feitas até aqui**, crie uma NOVA classe `PushNotificacao` (pacote `model`, herda de `Notificacao`), sobrescrevendo `enviar()` do seu próprio jeito (invente o texto extra).
-5. Adicione uma instância de `PushNotificacao` na fila (isso sim exige uma linha nova no `TesteCentral`, um `adicionar(...)` a mais) e rode de novo. Confirme que `enviarTodas()` já sabe lidar com o tipo novo.
+1. **Sem alterar nenhuma linha de `CentralDeNotificacoes` ou `TesteCentral` feitas até aqui**, crie uma NOVA classe `PushNotificacao` (pacote `model`, herda de `Notificacao`), sobrescrevendo `enviar()` do seu próprio jeito (invente o texto extra).
+2. Adicione uma instância de `PushNotificacao` na fila (isso sim exige uma linha nova no `TesteCentral`, um `adicionar(...)` a mais) e rode de novo. Confirme que `enviarTodas()` já sabe lidar com o tipo novo.
 
 ## Critérios de aceitação
 
